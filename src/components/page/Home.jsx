@@ -155,7 +155,7 @@ export default function Home() {
             <img
               className="w-2xl h-100 rounded-4xl"
               src="public/image/codeimage.png"
-              alt=""
+              alt="codeimage"
             />
             <h1 className="text-xl font-bold text-[#4c8b81] mt-4">
               Why Choose AI, ML, and Java & Python Development Services?
