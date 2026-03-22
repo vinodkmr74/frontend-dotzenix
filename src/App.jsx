@@ -5,7 +5,7 @@ import Footer from "./components/footer/Footer";
 export default function App() {
   return (
     <>
-      <div className="mt-26">
+      <div className="">
         <Header />
       </div>
 

@@ -1,7 +1,11 @@
 import React from 'react'
+import CardAllImage from '../../component/CardAllImage'
 
 export default function Crm() {
   return (
-    <div>C</div>
+    <CardAllImage
+         image="/image/vector.avif"
+         title="CRM"
+        />
   )
 }

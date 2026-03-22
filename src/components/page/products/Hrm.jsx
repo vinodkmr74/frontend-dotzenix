@@ -1,7 +1,11 @@
 import React from 'react'
+import CardAllImage from '../../component/CardAllImage'
 
 export default function Hrm() {
   return (
-    <div>Hrm</div>
+    <CardAllImage
+         image="/image/vector.avif"
+         title="HRM"
+        />
   )
 }

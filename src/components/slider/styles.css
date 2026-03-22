@@ -1,74 +1,85 @@
-/* #app {
+    /* #app {
     height: 100%;
 } */
-
-html,
-body {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.swiper {
-    width: 100%;
-    height: 100%;
-}
-
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #444;
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.mySwiper img {
-    width: 100%;
-    height: 550px;
-    object-fit: cover;
-}
-
-@media (max-width: 768px) {
-    .mySwiper img {
-        height: 350px;
+    
+    html,
+    body {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
-}
-
-
-/* compmany */
-
-.companySlider {
-    width: 100%;
-}
-
-.companySlider .swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: white;
-    border-radius: 12px;
-    height: 120px;
-    transition: all 0.3s ease;
-}
-
-.companySlider .swiper-slide:hover {
-    transform: scale(1.09);
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
-}
-
-.companySlider img {
-    width: 100%;
-    border-radius: 18px;
-    height: 80px;
-    object-fit: contain;
-}
+    
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #444;
+        /* Center slide text vertically */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .mySwiper img {
+        width: 100%;
+        height: 550px;
+        object-fit: cover;
+    }
+    
+    .swiper-button-prev {
+        color: rgba(255, 255, 255, 0.11);
+    }
+    
+    .swiper-button-next {
+        color: rgba(255, 255, 255, 0.11);
+    }
+    
+    @media (max-width: 768px) {
+        .mySwiper img {
+            height: 350px;
+        }
+    }
+    /* compmany */
+    
+    .companySlider {
+        width: 100%;
+    }
+    
+    .companySlider .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        border-radius: 12px;
+        height: 120px;
+        transition: all 0.3s ease;
+    }
+    
+    .companySlider .swiper-slide:hover {
+        transform: scale(1.09);
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+    }
+    
+    .companySlider img {
+        width: 100%;
+        border-radius: 18px;
+        height: 100px;
+        object-fit: cover;
+        padding: 10px;
+    }
+    
+    .swiper-pagination-bullet {
+        display: none;
+    }

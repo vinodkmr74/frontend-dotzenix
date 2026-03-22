@@ -1,7 +1,16 @@
 import React from 'react'
+import CardAllImage from '../../component/CardAllImage'
 
 export default function CaseStudy() {
   return (
-    <div>CaseStudy</div>
+    <>
+      
+     <CardAllImage
+         image="/image/vector.avif"
+         title="Case Study"
+        />
+      
+      
+      </>
   )
 }

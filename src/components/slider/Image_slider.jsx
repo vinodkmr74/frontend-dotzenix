@@ -20,7 +20,8 @@ export default function Image_slider() {
 
   return (
     <>
-      <Swiper
+    <div className='w-full'>
+     <Swiper
         cssMode={true}
         navigation={true}
         pagination={true}
@@ -34,16 +35,20 @@ export default function Image_slider() {
         modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
         className="mySwiper"
       >
-        <div className='flex relative'>
+        <div className='flex md:w-full w-full relative'>
         {sliderData.map((item) => (
           <SwiperSlide key={item.id}>
-            <img src={`${BASE_URL}${item.image}`} />
-            <p className='absolute top-1/3 left-[10%] text-2xl md:text-4xl font-bold text-white'>{item.text}</p>
+            <img className='md:w-full w-full'
+            src={`${BASE_URL}${item.image}`} />
+            <p className='absolute top-30 md:top-60 left-[12%] text-xl md:text-4xl font-bold text-white'>{item.text}</p>
           </SwiperSlide>
         ))}
 
         </div>
       </Swiper>
+
+    </div>
+     
     </>
   );
 }

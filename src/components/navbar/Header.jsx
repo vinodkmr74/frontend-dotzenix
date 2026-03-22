@@ -58,9 +58,9 @@ export default function Header() {
   return (
     <>
 
-    <div className="fixed top-0 left-0 w-full z-50 bg-gray-200 shadow-4xl" >
+    <div className="fixe top-0 left-0 w-full z-50 bg-gray-200 shadow-4xl" >
 
-     <div className="flex w-full md:h-12 bg-[#cfdff1] justify-center">
+     <div className="flex md:w-full w-full md:h-12 bg-[#cfdff1] justify-center">
         {contact.map((item) => (
           <div
             key={item.id}
@@ -193,7 +193,7 @@ export default function Header() {
                 onClick={() =>
                   setOpenMenu(openMenu === "service" ? null : "service")
                 }
-                className="cursor-pointer"
+                className="cursor-pointer text-[#123a6c] hover:text-[#4c8b81]"
               >
                 Service
               </span>
@@ -238,7 +238,7 @@ export default function Header() {
                 onClick={() =>
                   setOpenMenu(openMenu === "products" ? null : "products")
                 }
-                className="cursor-pointer"
+                className="cursor-pointer text-[#123a6c] hover:text-[#4c8b81]"
               >
                 Products
               </span>
@@ -274,7 +274,7 @@ export default function Header() {
                 onClick={() =>
                   setOpenMenu(openMenu === "industries" ? null : "industries")
                 }
-                className="cursor-pointer"
+                className="cursor-pointer text-[#123a6c] hover:text-[#4c8b81]"
               >
                 Industries
               </span>

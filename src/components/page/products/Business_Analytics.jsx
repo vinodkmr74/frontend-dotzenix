@@ -1,7 +1,11 @@
 import React from 'react'
+import CardAllImage from '../../component/CardAllImage'
 
 export default function Business_Analytics() {
   return (
-    <div>Business_Analytics</div>
+     <CardAllImage
+          image="/image/vector.avif"
+          title="Business Analytics"
+         />
   )
 }

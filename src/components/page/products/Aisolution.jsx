@@ -1,7 +1,11 @@
 import React from 'react'
+import CardAllImage from '../../component/CardAllImage'
 
 export default function Aisolution() {
   return (
-    <div>AiSolution</div>
+     <CardAllImage
+          image="/image/vector.avif"
+          title="Products"
+         />
   )
 }

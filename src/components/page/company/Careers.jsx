@@ -1,7 +1,13 @@
-import React from 'react'
+import React from 'react';
+import CardAllImage from '../../component/CardAllImage';
 
 export default function Careers() {
   return (
-    <div>C</div>
-  )
+    <>
+      <CardAllImage
+        image="/image/vector.avif"
+        title="Careers"
+      />
+    </>
+  );
 }

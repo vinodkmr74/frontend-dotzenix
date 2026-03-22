@@ -1,7 +1,11 @@
 import React from 'react'
+import CardAllImage from '../../component/CardAllImage'
 
 export default function Erp() {
   return (
-    <div>Erp</div>
+     <CardAllImage
+          image="/image/vector.avif"
+          title="ERP"
+         />
   )
 }

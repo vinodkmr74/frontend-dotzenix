@@ -1,7 +1,10 @@
 import React from 'react'
-
+import CardAllImage from '../../component/CardAllImage'
 export default function Healthcare () {
   return (
-    <div>Healthcare </div>
+        <CardAllImage
+      image="/image/vector.avif"
+      title="Healthcare "
+     />
   )
 }
