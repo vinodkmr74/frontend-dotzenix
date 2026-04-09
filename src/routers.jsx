@@ -3,7 +3,7 @@ import App from "./App"
 import Home from "./components/page/Home"
 import About from "./components/page/company/About"
 import Blogs from "./components/page/company/Blogs"
-import Careers from "./components/page/company/careers"
+import Career from "./components/page/company/Career"
 import CaseStudy from "./components/page/company/CaseStudy"
 import Ourtem from "./components/page/company/Ourtem"
 import ECommerce from "./components/page/industries/ECommerce"
@@ -67,7 +67,7 @@ export default function Router() {
           {/* .......aboute.......... */}
           <Route path="/about" element={<About />} />
           <Route path="/blogs" element={<Blogs />} />
-          <Route path="/careers" element={<Careers />} />
+          <Route path="/careers" element={<Career />} />
           <Route path="/casestudy" element={<CaseStudy />} />
           <Route path="/ourteam" element={<Ourtem />} />
            {/* ............Industries.......... */}
