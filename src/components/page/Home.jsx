@@ -13,9 +13,9 @@ import { FaLinkedin } from "react-icons/fa";
 import { BsFacebook } from "react-icons/bs";
 import { FaXTwitter } from "react-icons/fa6";
 import { BASE_URL } from "../../config";
+import { appData } from "../../data/appData";
 
 export default function Home() {
-  const [headingdata, setHeadingData] = useState([]);
   const [ourexpertise, setOurexpertise] = useState([]);
   const [exploreour, setExploreour] = useState([]);
 
@@ -24,19 +24,16 @@ export default function Home() {
   }, []);
   const hendelHeader = async () => {
     try {
-      const [headdingRef, ourexpertiseRef, exploreourRef] = await Promise.all([
-        fetch(`${BASE_URL}/api/heddingsunhedding/`),
+      const [ourexpertiseRef, exploreourRef] = await Promise.all([
         fetch(`${BASE_URL}/api/ourexpertise/`),
         fetch(`${BASE_URL}/api/exploreour/`),
       ]);
 
-      const [headingdata, ourexpertise, exploreour] = await Promise.all([
-        headdingRef.json(),
+      const [ourexpertise, exploreour] = await Promise.all([
         ourexpertiseRef.json(),
         exploreourRef.json(),
       ]);
 
-      setHeadingData(headingdata);
       setOurexpertise(ourexpertise);
       setExploreour(exploreour);
     } catch (error) {
@@ -46,45 +43,27 @@ export default function Home() {
 
   return (
     <div>
-      <div className="mt-2 w-full">
-        <Image_slider />
-      </div>
+      <Image_slider />
 
-      <div className="flex flex-col w-full p-2 bg-white justify-center items-center mt-4">
-        {headingdata
-          .filter((item) => item.id === 1)
-          .map((item) => (
-            <div key={item.id} className="flex flex-col items-center w-full">
-              <div className="flex w-[56%] p-4">
-                <h1 className="text-[#092241] font-bold text-2xl font-serif">
-                  {item.hedding}
-                </h1>
-              </div>
-
-              <div className="flex w-[70%] p-2">
-                <h3 className="text-[#092241d2] font-semibold text-xl">
-                  {item.subhedding}
-                </h3>
-              </div>
+      <div className="text-container">
+        {appData.TextData.filter((item) => item.id === 1).map((item) => (
+          <div key={item.id} className="text-wrapper">
+            <div className="heading-box">
+              <h1 className="heading">{item.hedding}</h1>
             </div>
-          ))}
-      </div>
-
-      {headingdata
-        .filter((item) => item.id == 2)
-        .map((item) => (
-          <div
-            key={item.id}
-            className=" full justify-center items-center mt-6  w-full bg-[#022d62] p-6 "
-          >
-            <h1 className="text-center text-white font-bold text-4xl">
-              {item.hedding}
-            </h1>
-            <h2 className="text-center text-white font-bold text-xl mt-4">
-              {item.subhedding}
-            </h2>
+            <div className="subheading-box">
+              <h3 className="subheading">{item.subhedding}</h3>
+            </div>
           </div>
         ))}
+      </div>
+
+      {appData.TextData.filter((item) => item.id == 2).map((item) => (
+        <div key={item.id} className="banner-container">
+          <h1 className="banner-heading">{item.hedding}</h1>
+          <h2 className="banner-subheading">{item.subhedding}</h2>
+        </div>
+      ))}
 
       <div className="flex w-full p-2 bg-white justify-center items-center mt-4">
         <div className="flex gap-4 w-[90%]">
@@ -146,16 +125,14 @@ export default function Home() {
         <div className="absolute inset-0 bg-[#f0f5f786]"></div>
 
         <div className="w-[90%] flex flex-col md:flex-row relative justify-between">
-          {headingdata
-            .filter((item) => item.id == 3)
-            .map((item) => (
-              <div key={item.id} className="w-full md:w-[30%] mt-10">
-                <h1 className="text-[#022d62] font-bold text-2xl md:text-4xl">
-                  {item.hedding}
-                </h1>
-                <p className="mt-4 font-semibold text-xl">{item.subhedding}</p>
-              </div>
-            ))}
+          {appData.TextData.filter((item) => item.id == 3).map((item) => (
+            <div key={item.id} className="w-full md:w-[30%] mt-10">
+              <h1 className="text-[#022d62] font-bold text-2xl md:text-4xl">
+                {item.hedding}
+              </h1>
+              <p className="mt-4 font-semibold text-xl">{item.subhedding}</p>
+            </div>
+          ))}
 
           <div className="flex w-full md:w-[60%] gap-6 mt-10 h-[450px] overflow-y-auto scrollbar-hide rounded-2xl">
             <div className="flex flex-col gap-6 rounded-2xl">
@@ -184,28 +161,20 @@ export default function Home() {
         </div>
       </div>
 
-
-
-
-
-
-
       <div className="w-full flex flex-col  justify-center items-center mt-8 ">
-        {headingdata
-          .filter((item) => item.id == 4)
-          .map((item) => (
-            <div
-              key={item.id}
-              className="w-[90%] flex flex-col justify-center items-center gap-2"
-            >
-              <h1 className="text-2xl md:text-3xl text-[#022d62] font-bold">
-                {item.hedding}
-              </h1>
-              <p className="text-xl font-semibold text-[#4e4d4d]">
-                {item.subhedding}
-              </p>
-            </div>
-          ))}
+        {appData.TextData.filter((item) => item.id == 4).map((item) => (
+          <div
+            key={item.id}
+            className="w-[90%] flex flex-col justify-center items-center gap-2"
+          >
+            <h1 className="text-2xl md:text-3xl text-[#022d62] font-bold">
+              {item.hedding}
+            </h1>
+            <p className="text-xl font-semibold text-[#4e4d4d]">
+              {item.subhedding}
+            </p>
+          </div>
+        ))}
 
         <div className="w-[90%] flex flex-col md:flex-row gap-8 justify-between mt-8 p-6 border-b border-gray-400">
           <div className="w-full md:w-[60%]">
@@ -264,17 +233,17 @@ export default function Home() {
       </div>
 
       <div className="w-full flex justify-center items-center mt-8 p-4 bg-[#022d62]">
-        {headingdata
-          .filter((item) => item.id == 5)
-          .map((item) => (
-            <div
-              key={item.id}
-              className="w-[90%] flex flex-col justify-center items-center text-white gap-4"
-            >
-              <h1 className="text-2xl md:text-4xl font-bold">{item.hedding}</h1>
-              <p className="text-md md:text-xl font-semibold ">{item.subhedding}</p>
-            </div>
-          ))}
+        {appData.TextData.filter((item) => item.id == 5).map((item) => (
+          <div
+            key={item.id}
+            className="w-[90%] flex flex-col justify-center items-center text-white gap-4"
+          >
+            <h1 className="text-2xl md:text-4xl font-bold">{item.hedding}</h1>
+            <p className="text-md md:text-xl font-semibold ">
+              {item.subhedding}
+            </p>
+          </div>
+        ))}
       </div>
 
       <div className="w-full flex justify-center items-center mt-8 bg-[#bebbbb69] ">
