@@ -15,7 +15,7 @@ import RealEstate from "./components/page/industries/RealEstate"
 import Hrm from "./components/page/products/Hrm"
 import Business_Analytics from "./components/page/products/Business_Analytics"
 import Website_bulder from "./components/page/products/Website_bulder"
-import Aisolution from "./components/page/products/AiSolution"
+import AiSolution from "./components/page/products/AiSolution"
 import Crm from "./components/page/products/crm"
 import Erp from "./components/page/products/Erp"
 import Seo from "./components/page/services/digital_markrting/Seo"
@@ -81,7 +81,7 @@ export default function Router() {
           <Route path="/crm" element={<Crm />} />
           <Route path="/erp" element={<Erp /> } />
           <Route path="/hrm" element={<Hrm />} />
-          <Route path="/aisolutions" element={<Aisolution />} />
+          <Route path="/aisolutions" element={<AiSolution />} />
           <Route path="/businessanalytics" element={<Business_Analytics />} />
           <Route path="/websitebuilder" element={<Website_bulder />} />
           {/* ....................digital markrting............ */}
