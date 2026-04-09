@@ -1,7 +1,7 @@
 import React from 'react'
 import CardAllImage from '../../component/CardAllImage'
 
-export default function AiSolution() {
+export default function Aisolution() {
   return (
      <CardAllImage
           image="/image/vector.avif"

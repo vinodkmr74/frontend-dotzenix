@@ -15,7 +15,6 @@ import RealEstate from "./components/page/industries/RealEstate"
 import Hrm from "./components/page/products/Hrm"
 import Business_Analytics from "./components/page/products/Business_Analytics"
 import Website_bulder from "./components/page/products/Website_bulder"
-import AiSolution from "./components/page/products/AiSolution"
 import Crm from "./components/page/products/crm"
 import Erp from "./components/page/products/Erp"
 import Seo from "./components/page/services/digital_markrting/Seo"
@@ -56,6 +55,7 @@ import Iot from "./components/page/services/digital_transformation/Iot"
 import Devops from "./components/page/services/digital_transformation/Devops"
 import Magento from "./components/page/services/e_commerce_development/Magento"
 import Consulting from "./components/page/services/salesforce_development/Consulting"
+import Aisolution from "./components/page/products/AiSolution"
 
 
 export default function Router() {
@@ -81,7 +81,7 @@ export default function Router() {
           <Route path="/crm" element={<Crm />} />
           <Route path="/erp" element={<Erp /> } />
           <Route path="/hrm" element={<Hrm />} />
-          <Route path="/aisolutions" element={<AiSolution />} />
+          <Route path="/aisolutions" element={<Aisolution />} />
           <Route path="/businessanalytics" element={<Business_Analytics />} />
           <Route path="/websitebuilder" element={<Website_bulder />} />
           {/* ....................digital markrting............ */}
