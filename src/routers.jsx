@@ -55,7 +55,7 @@ import Devops from "./components/page/services/digital_transformation/Devops"
 import Magento from "./components/page/services/e_commerce_development/Magento"
 import Consulting from "./components/page/services/salesforce_development/Consulting"
 import Crms from "./components/page/products/Crms"
-import Aisolution from "./components/page/products/AiSolution"
+import Ai_Solution from "./components/page/products/Ai_Solution"
 
 
 export default function Router() {
@@ -81,7 +81,7 @@ export default function Router() {
           <Route path="/crm" element={<Crms />} />
           <Route path="/erp" element={<Erp /> } />
           <Route path="/hrm" element={<Hrm />} />
-          <Route path="/aisolutions" element={<Aisolution />} />
+          <Route path="/aisolutions" element={<Ai_Solution />} />
           <Route path="/businessanalytics" element={<Business_Analytics />} />
           <Route path="/websitebuilder" element={<Website_bulder />} />
           {/* ....................digital markrting............ */}
