@@ -54,8 +54,8 @@ import Iot from "./components/page/services/digital_transformation/Iot"
 import Devops from "./components/page/services/digital_transformation/Devops"
 import Magento from "./components/page/services/e_commerce_development/Magento"
 import Consulting from "./components/page/services/salesforce_development/Consulting"
-import Aisolution from "./components/page/products/AiSolution"
 import Crms from "./components/page/products/Crms"
+import Aisolution from "./components/page/products/AiSolution"
 
 
 export default function Router() {
