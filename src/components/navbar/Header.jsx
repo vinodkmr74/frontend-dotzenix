@@ -72,7 +72,7 @@ export default function Header() {
               ☰
             </div>
             <div className="logo">
-              <img src="/public/image/comany_logo1.png" alt="logo" />
+              <img src="image/comany_logo1.png" alt="logo" />
             </div>
             <div className={`nav-links ${open ? "show" : ""}`}>
               <NavLink to="/" className="nav-link">
