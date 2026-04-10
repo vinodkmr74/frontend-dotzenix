@@ -503,5 +503,34 @@ missionvission:[
         "title": "Our Technology Partners",
         "subtext": "We collaborate with world-class technology partners to deliver advanced, scalable solutions that enable exceptional and personalized customer experiences."
     }
+],
+Satisfied:[
+  
+    {
+        "id": 5,
+        "text": "Satisfied Clients",
+        "number": 100
+    },
+    {
+        "id": 6,
+        "text": "INDUSTRY EXPERTISE",
+        "number": 5
+    },
+    {
+        "id": 7,
+        "text": "Awards & Achievement",
+        "number": 15
+    },
+    {
+        "id": 8,
+        "text": "Finished Projects",
+        "number": 150
+    },
+    {
+        "id": 9,
+        "text": "Skilled Experts",
+        "number": 40
+    }
 ]
+
 };

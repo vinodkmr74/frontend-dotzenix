@@ -35,9 +35,9 @@ export default function Footer() {
 
   return (
     <>
-     <div className="flex w-full justify-center p-4 mt-2 bg-gray-100">
+     <div className="flex w-full justify-center p-4 mt-2 text-[#e2e8f0]">
   <div className="w-[95%] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-6 p-4">
-
+    
     {/* COMPANY */}
     <div>
       <h2 className="font-bold text-base md:text-lg mb-3">Company</h2>
@@ -46,7 +46,7 @@ export default function Footer() {
           <li key={index}>
             <Link
               to={item.company_path}
-              className="text-sm md:text-base font-semibold text-[#213349] hover:text-[#4c8b81]"
+              className="text-sm md:text-base font-semibold text-[#a5b4fc] hover:text-[#3b82f6]"
             >
               {item.company}
             </Link>

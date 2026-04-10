@@ -5,28 +5,16 @@ import { GiTrophyCup } from "react-icons/gi";
 import { FaRegCircleCheck } from "react-icons/fa6";
 import { FcMindMap } from "react-icons/fc";
 import { PiBuildingOfficeLight } from "react-icons/pi";
-import { BASE_URL } from "../../config";
+import { appData } from "../../data/appData";
 
 export default function Certified() {
-  const [data, DataSet] = useState([]);
   const [counts, setCounts] = useState({});
 
   useEffect(() => {
-    hendelData();
-  }, []);
-
-  const hendelData = async () => {
-    try {
-      const request = await fetch(`${BASE_URL}/api/satisfied/`);
-      const response = await request.json();
-      DataSet(response);
-
-      // start counter
-      response.forEach((item) => startCounter(item.id, item.number));
-    } catch (error) {
-      console.log(error);
-    }
-  };
+    appData.Satisfied.forEach((item) => {
+      startCounter(item.id, item.number);
+    });
+  }, []); 
 
   const startCounter = (id, target) => {
     let current = 0;
@@ -45,72 +33,31 @@ export default function Certified() {
   };
 
   return (
-    <div className="w-full flex flex-col justify-center items-center bg-[#022d62]">
-      <div className="w-[90%] flex flex-wrap justify-between items-center gap-8 p-8 ">
-        {data.map((item) => (
-          <div key={item.id} className="flex justify-between items-center p-2">
-            {item.id == 5 && (
-              <div className="flex flex-col items-center gap-2">
-                <MdOutlineAddTask className="text-[#4c8b81] text-6xl" />
-                <h1 className="text-white text-xl font-semibold">
-                  {item.text}
-                </h1>
-                <h1 className="text-white text-5xl font-medium">
-                  {counts[item.id] || 0}+
-                </h1>
-              </div>
-            )}
+   <div className="certified-section">
+  <div className="certified-container">
+    {appData.Satisfied.map((item) => (
+      <div key={item.id} className="certified-item">
+        
+        <div className="certified-card">
 
-            {item.id == 6 && (
-              <div className="flex flex-col items-center gap-2">
-                <PiBuildingOfficeLight className="text-[#4c8b81] text-6xl" />
-                <h1 className="text-white text-xl font-semibold">
-                  {item.text}
-                </h1>
-                <h1 className="text-white text-5xl font-medium">
-                  {counts[item.id] || 0}+
-                </h1>
-              </div>
-            )}
+          {/* Icon Logic */}
+          {item.id == 5 && <MdOutlineAddTask className="icon" />}
+          {item.id == 6 && <PiBuildingOfficeLight className="icon" />}
+          {item.id == 7 && <GiTrophyCup className="icon" />}
+          {item.id == 8 && <FaRegCircleCheck className="icon" />}
+          {item.id == 9 && <FcMindMap className="icon" />}
 
-            {item.id == 7 && (
-              <div className="flex flex-col items-center gap-2">
-                <GiTrophyCup className="text-[#4c8b81] text-6xl" />
-                <h1 className="text-white font-semibold text-xl">
-                  {item.text}
-                </h1>
-                <h1 className="text-white text-5xl font-medium">
-                  {counts[item.id] || 0}+
-                </h1>
-              </div>
-            )}
+          <h1 className="title">{item.text}</h1>
 
-            {item.id == 8 && (
-              <div className="flex flex-col items-center gap-2">
-                <FaRegCircleCheck className="text-[#4c8b81] text-6xl" />
-                <h1 className="text-white font-semibold text-xl">
-                  {item.text}
-                </h1>
-                <h1 className="text-white text-5xl font-medium">
-                  {counts[item.id] || 0}+
-                </h1>
-              </div>
-            )}
+          <h1 className="count">
+            {counts[item.id] || 0}+
+          </h1>
 
-            {item.id == 9 && (
-              <div className="flex flex-col items-center gap-2">
-                <FcMindMap className="text-[#4c8b81] text-6xl" />
-                <h1 className="text-white font-semibold text-xl">
-                  {item.text}
-                </h1>
-                <h1 className="text-white text-5xl font-medium">
-                  {counts[item.id] || 0}+
-                </h1>
-              </div>
-            )}
-          </div>
-        ))}
+        </div>
+
       </div>
-    </div>
+    ))}
+  </div>
+</div>
   );
 }
