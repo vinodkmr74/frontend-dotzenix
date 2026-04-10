@@ -441,4 +441,43 @@ export const appData = {
           ]
         }
   ],
+  productCard:[
+    {
+        "id": 1,
+        "image": "image/download-hrm.jpg",
+        "title": "HRM",
+        "path": "/hrm"
+    },
+    {
+        "id": 2,
+        "image": "image/erp.avif",
+        "title": "ERP",
+        "path": "/erp"
+    },
+    {
+        "id": 3,
+        "image": "image/images-crm.jpg",
+        "title": "CRM",
+        "path": "/crm"
+    },
+    {
+        "id": 5,
+        "image": "image/artificial-intelligen.webp",
+        "title": "AI Solutions",
+        "path": "/aisolutions"
+    },
+    {
+        "id": 6,
+        "image": "image/business.jpg",
+        "title": "Business Analytics",
+        "path": "/businessanalytics"
+    },
+    {
+        "id": 7,
+        "image": "image/images-web-buld.png",
+        "title": "Website Builder",
+        "path": "/websitebuilder"
+    }
+],
+
 };

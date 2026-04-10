@@ -64,31 +64,29 @@ export default function Home() {
           <h2 className="banner-subheading">{item.subhedding}</h2>
         </div>
       ))}
+      <ServiceCard />
 
-      <div className="flex w-full p-2 bg-white justify-center items-center mt-4">
-        <div className="flex gap-4 w-[90%]">
-          <ServiceCard />
-        </div>
-      </div>
-
-      <div className="flex full mt-8 bg-[#f1f4fc] w-full justify-center">
-        <div className="flex flex-col md:flex-row  w-[90%] md:p-8 p-4 gap-4  ">
-          <div className="w-full md:w-150 p-4 mt-2 md:mt-24 ">
-            <p className="font-semibold">
-              <span className="font-bold text-[18px] text-[#37558d]">
+      <div className="product-main-container">
+        <div className="pro-in-container">
+          <div className="leftsection">
+            <p>
+              <span>
                 Integrated business platforms including CRM, ERP, HRM, AI
-                solutions {}
-              </span>
+                solutions
+              </span>{" "}
+              {}
               and analytics tools built to optimize performance and drive
               innovation.
             </p>
+
             <img
-              className="w-100 md:w-120 h-60 rounded-4xl mt-6 "
-              src="/public/image/crm-software-examples.jpg"
+              className="image-style"
+              src="image/crm-software-examples.jpg"
               alt=""
             />
           </div>
-          <div className="flex w-full md:w-[40%]">
+
+          <div className="rightsection">
             <ProductCard />
           </div>
         </div>
