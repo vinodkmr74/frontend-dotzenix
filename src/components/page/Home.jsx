@@ -92,26 +92,20 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex  h-110 mt-200 md:mt-8 w-full relative justify-center items-center">
-        <img
-          className="w-full  md:h-110 h-480"
-          src="public/image/depositphotos.jpg"
-          alt="depositphotos"
-        />
-        <div className="flex justify-center w-[90%] absolute -top-180 md:top-4 p-4 gap-8">
-          <div className="flex w-[70%] justify-center items-center">
-            <h1 className="text-white font-bold md:text-4xl text-xl">
-              DotZenix Technologies Empowering Growth and Transformation at
-              Speed and Scale.
-            </h1>
-          </div>
+      <div className="maim-growth" style={{backgroundImage: "url('image/depositphotos.jpg')" , backgroundSize: "cover", backgroundPosition: "center"}}>
+        <div className="text-box">
+          <h1>
+            DotZenix Technologies Empowering Growth and Transformation at Speed
+            and Scale.
+          </h1>
         </div>
-
-        <div className="flex flex-col md:flex-row w-[60%] md:w-[90%] absolute  -top-130 md:top-60 p-4 gap-4">
+        <div className="scale-card">
           <Scale />
         </div>
       </div>
-      <div className="w-full bg-white  md:mt-90 mt-190"></div>
+
+      <div className="gap-space"></div>
+
       <div className="mt-8">
         <Certified />
       </div>

@@ -1,3 +1,5 @@
+import { FcMissedCall } from "react-icons/fc";
+
 export const appData = {
   contact: [
     {
@@ -479,5 +481,27 @@ export const appData = {
         "path": "/websitebuilder"
     }
 ],
-
+missionvission:[
+    {
+        "id": 3,
+        "heading": "Mission & Vision",
+        "image": "image/target.png",
+        "title": "Mission and Vision",
+        "subtext": "To empower businesses by delivering innovative solutions that help our clients build a successful and future-ready world.   Delivering next-level technology to drive innovation and business growth."
+    },
+    {
+        "id": 4,
+        "heading": "Growing Companies & Businesses",
+        "image": "image/rise-glowing-arrow.jpg",
+        "title": "Helping businesses scale with smart technology.",
+        "subtext": "DotZenix Technologies has been a global IT consulting company with more than 50+ employees, helping businesses grow through innovative solutions."
+    },
+    {
+        "id": 5,
+        "heading": "Technology Partners",
+        "image": "image/businessman-handshake.avif",
+        "title": "Our Technology Partners",
+        "subtext": "We collaborate with world-class technology partners to deliver advanced, scalable solutions that enable exceptional and personalized customer experiences."
+    }
+]
 };
