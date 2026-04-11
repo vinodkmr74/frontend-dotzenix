@@ -252,12 +252,12 @@ export default function Home() {
               alt=""
             />
           </div>
-          <div className="flex justify-center items-center gap-4">
+          {/* <div className="flex justify-center items-center gap-4">
             <FaInstagramSquare size={30} />
             <FaLinkedin size={30} />
             <BsFacebook size={30} />
             <FaXTwitter size={30} />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
