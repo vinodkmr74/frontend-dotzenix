@@ -15,9 +15,17 @@ body {
 }
 body {
   background: linear-gradient(135deg, #0f172a, #1e293b);
-}
-/* scrollbar hide */
 
+}
+
+body {
+  overflow-x: hidden;
+}
+* {
+  box-sizing: border-box;
+ margin: 0px;
+ padding: 0px;
+}
 .scrollbar-hide::-webkit-scrollbar {
     display: none;
 }
