@@ -17,30 +17,6 @@ import { appData } from "../../data/appData";
 
 export default function Home() {
  
-  const [exploreour, setExploreour] = useState([]);
-
-  useEffect(() => {
-    hendelHeader();
-  }, []);
-  const hendelHeader = async () => {
-    try {
-      const [ exploreourRef] = await Promise.all([
-      
-        fetch(`${BASE_URL}/api/exploreour/`),
-      ]);
-
-      const [ exploreour] = await Promise.all([
-      
-        exploreourRef.json(),
-      ]);
-
-     
-      setExploreour(exploreour);
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
-
   return (
     <div>
       <Image_slider />
@@ -153,72 +129,56 @@ export default function Home() {
               ))}
             </div>
           </div>
-
-
         </div>
       </div>
 
-      <div className="w-full flex flex-col  justify-center items-center mt-8 ">
-        {appData.TextData.filter((item) => item.id == 4).map((item) => (
-          <div
-            key={item.id}
-            className="w-[90%] flex flex-col justify-center items-center gap-2"
-          >
-            <h1 className="text-2xl md:text-3xl text-[#022d62] font-bold">
-              {item.hedding}
-            </h1>
-            <p className="text-xl font-semibold text-[#4e4d4d]">
-              {item.subhedding}
-            </p>
+
+
+     <div className="explore-main">
+  {appData.TextData.filter((item) => item.id == 4).map((item) => (
+    <div key={item.id} className="explore-header">
+      <h1>{item.hedding}</h1>
+      <p>{item.subhedding}</p>
+    </div>
+  ))}
+
+  <div className="explore-content">
+    
+    {/* LEFT SIDE */}
+    <div className="explore-left">
+      {appData.exploreour
+        .filter((item) => item.id === 5)
+        .map((item) => (
+          <div key={item.id} className="explore-left1">
+            <img src={item.image} alt="" />
+
+            <h1>{item.tital}</h1>
+
+            <div className="explore-text">
+              {item.text.split(". ").map((para, index) => (
+                <p key={index}>{para}.</p>
+              ))}
+            </div>
           </div>
         ))}
+    </div>
 
-        <div className="w-[90%] flex flex-col md:flex-row gap-8 justify-between mt-8 p-6 border-b border-gray-400">
-          <div className="w-full md:w-[60%]">
-            {exploreour
-              .filter((item) => item.id === 5)
-              .map((item) => (
-                <div key={item.id}>
-                  <img
-                    className="w-full h-[100%] rounded-2xl object-cover"
-                    src={`${BASE_URL}${item.image}`}
-                    alt=""
-                  />
-
-                  <h1 className="text-md md:text-xl font-bold text-[#4c8b81] mt-4">
-                    {item.tital}
-                  </h1>
-
-                  <div className="space-y-4 mt-4 text-[#4e4d4d]">
-                    {item.text.split(". ").map((para, index) => (
-                      <p key={index} className="leading-relaxed">
-                        {para}.
-                      </p>
-                    ))}
-                  </div>
-                </div>
-              ))}
+    {/* RIGHT SIDE */}
+    <div className="explore-right">
+      {appData.exploreour
+        .filter((item) => item.id === 6 || item.id === 7)
+        .map((item) => (
+          <div key={item.id} className="explore-right2">
+            <img src={item.image} alt="" />
+            <h1>{item.tital}</h1>
           </div>
+        ))}
+    </div>
+  </div>
+</div>
 
-          <div className="w-full md:w-[35%]  flex flex-col gap-6">
-            {exploreour
-              .filter((item) => item.id === 6 || item.id === 7)
-              .map((item) => (
-                <div key={item.id}>
-                  <img
-                    className="w-full h-[180px] rounded-xl object-cover"
-                    src={`${BASE_URL}${item.image}`}
-                    alt=""
-                  />
 
-                  <h1 className="text-md font-bold text-[#4c8b81] mt-2">
-                    {item.tital}
-                  </h1>
-                </div>
-              ))}
-          </div>
-        </div>
-      </div>
+
 
       <div className="w-full flex flex-col mt-10 p-4 justify-center items-center bg-[#e0e4e76c]">
         <div>

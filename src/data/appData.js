@@ -575,6 +575,26 @@ ourexpertise:[
         "text": "Launch and grow your online store with BigCommerce solutions designed for performance, flexibility, and seamless user experience.",
         "buttonlink": "/bigcommerce"
     }
-]
+],
 
+exploreour:[
+{
+        "id": 5,
+        "image": "image/codeimage.png",
+        "tital": "Why Choose AI, ML, and Java & Python Development Services?",
+        "text": "Java and Python are powerful programming languages used to build secure, scalable, and high-performance applications  They help businesses develop web applications, AI solutions, enterprise software, and modern digital platforms efficiently. Python is widely used for Artificial Intelligence, Machine Learning, and Data Analytics because of powerful libraries like TensorFlow, Pandas, and Scikit-Learn  It helps companies build AI chatbots, automation tools, and predictive systems."
+    },
+    {
+        "id": 6,
+        "image": "image/software-developer-ai.jpg",
+        "tital": "Why DotZenix Technologies is Leading AI & ML Company in Noida",
+        "text": ""
+    },
+    {
+        "id": 7,
+        "image": "image/web.png",
+        "tital": "Why Choose Java & Python Development Services?",
+        "text": ""
+    }
+],
 };
