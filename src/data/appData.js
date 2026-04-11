@@ -535,42 +535,42 @@ Satisfied:[
 ourexpertise:[
     {
         "id": 3,
-        "image": "\\media\\card_images\\seo.png",
+        "image": "image/seo.png",
         "tital": "Search Engine Optimization (SEO)",
         "text": "Search Engine Optimization (SEO) Boost your online visibility with our SEO expertise. We will optimize your website to rank higher in search engines and attract more organic traffic.",
         "buttonlink": "/seo"
     },
     {
         "id": 4,
-        "image": "\\media\\card_images\\app-deve.png",
+        "image": "mage/app-deve.png",
         "tital": "Mobile App Development Services",
         "text": "Turn your ideas into powerful mobile experiences. We create intuitive, scalable apps that deliver smooth performance and keep users engaged.",
         "buttonlink": "/android-app"
     },
     {
         "id": 5,
-        "image": "\\media\\card_images\\digital.png",
+        "image": "image/digital.png",
         "tital": "Social Media Marketing",
         "text": "Grow your brand’s presence on social platforms with strategic marketing. We help you engage your audience, build trust, and generate quality leads.",
         "buttonlink": "/paid-media-marketing"
     },
     {
         "id": 6,
-        "image": "\\media\\card_images\\product-dev.png",
+        "image": "image/product-dev.png",
         "tital": "Product Development",
         "text": "Transform your ideas into powerful digital products. We design and develop scalable, high-quality solutions tailored to your business needs.",
         "buttonlink": "/salesforce-product-development"
     },
     {
         "id": 7,
-        "image": "\\media\\card_images\\devops-logo.webp",
+        "image": "image/devops-logo.webp",
         "tital": "DevOps",
         "text": "Streamline your development and operations with our DevOps solutions. We automate workflows, improve deployment speed, and ensure reliable system performance.",
         "buttonlink": "/devops"
     },
     {
         "id": 8,
-        "image": "\\media\\card_images\\bigcommerce-logo-icon.png",
+        "image": "image/bigcommerce-logo-icon.png",
         "tital": "BigCommerce Development",
         "text": "Launch and grow your online store with BigCommerce solutions designed for performance, flexibility, and seamless user experience.",
         "buttonlink": "/bigcommerce"
