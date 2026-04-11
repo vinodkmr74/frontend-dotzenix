@@ -542,7 +542,7 @@ ourexpertise:[
     },
     {
         "id": 4,
-        "image": "mage/app-deve.png",
+        "image": "image/app-deve.png",
         "tital": "Mobile App Development Services",
         "text": "Turn your ideas into powerful mobile experiences. We create intuitive, scalable apps that deliver smooth performance and keep users engaged.",
         "buttonlink": "/android-app"

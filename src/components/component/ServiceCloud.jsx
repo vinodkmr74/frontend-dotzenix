@@ -20,7 +20,7 @@ export default function ServiceCloud({
           ></div>
           <div className="ovcole"></div>
           <div className="imgcloud">
-            <img src={`${BASE_URL}${image}`} alt={title} />
+            <img src={image} alt={title} />
             <h1>{title}</h1>
             <p>{desc}</p>
             <Link to={buttonlink} className="cloud-btn">
