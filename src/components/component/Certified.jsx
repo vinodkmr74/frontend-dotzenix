@@ -37,24 +37,17 @@ export default function Certified() {
   <div className="certified-container">
     {appData.Satisfied.map((item) => (
       <div key={item.id} className="certified-item">
-        
         <div className="certified-card">
-
-          {/* Icon Logic */}
           {item.id == 5 && <MdOutlineAddTask className="icon" />}
           {item.id == 6 && <PiBuildingOfficeLight className="icon" />}
           {item.id == 7 && <GiTrophyCup className="icon" />}
           {item.id == 8 && <FaRegCircleCheck className="icon" />}
           {item.id == 9 && <FcMindMap className="icon" />}
-
           <h1 className="title">{item.text}</h1>
-
           <h1 className="count">
             {counts[item.id] || 0}+
           </h1>
-
         </div>
-
       </div>
     ))}
   </div>

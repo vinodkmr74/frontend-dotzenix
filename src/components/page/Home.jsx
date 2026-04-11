@@ -16,7 +16,7 @@ import { BASE_URL } from "../../config";
 import { appData } from "../../data/appData";
 
 export default function Home() {
-  const [ourexpertise, setOurexpertise] = useState([]);
+ 
   const [exploreour, setExploreour] = useState([]);
 
   useEffect(() => {
@@ -24,17 +24,17 @@ export default function Home() {
   }, []);
   const hendelHeader = async () => {
     try {
-      const [ourexpertiseRef, exploreourRef] = await Promise.all([
-        fetch(`${BASE_URL}/api/ourexpertise/`),
+      const [ exploreourRef] = await Promise.all([
+      
         fetch(`${BASE_URL}/api/exploreour/`),
       ]);
 
-      const [ourexpertise, exploreour] = await Promise.all([
-        ourexpertiseRef.json(),
+      const [ exploreour] = await Promise.all([
+      
         exploreourRef.json(),
       ]);
 
-      setOurexpertise(ourexpertise);
+     
       setExploreour(exploreour);
     } catch (error) {
       console.error("Error fetching data:", error);
@@ -92,7 +92,14 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="maim-growth" style={{backgroundImage: "url('image/depositphotos.jpg')" , backgroundSize: "cover", backgroundPosition: "center"}}>
+      <div
+        className="maim-growth"
+        style={{
+          backgroundImage: "url('image/depositphotos.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
         <div className="text-box">
           <h1>
             DotZenix Technologies Empowering Growth and Transformation at Speed
@@ -110,25 +117,20 @@ export default function Home() {
         <Certified />
       </div>
 
-      <div
-        className="w-full h-140 flex justify-center mt-8 p-4 relative "
-        style={{ backgroundImage: "url('public/image/vector.avif')" }}
-      >
-        <div className="absolute inset-0 bg-[#f0f5f786]"></div>
+      <div className="our-success">
+        <div className="ourcolor"></div>
 
-        <div className="w-[90%] flex flex-col md:flex-row relative justify-between">
+        <div className="our-success-box">
           {appData.TextData.filter((item) => item.id == 3).map((item) => (
-            <div key={item.id} className="w-full md:w-[30%] mt-10">
-              <h1 className="text-[#022d62] font-bold text-2xl md:text-4xl">
-                {item.hedding}
-              </h1>
-              <p className="mt-4 font-semibold text-xl">{item.subhedding}</p>
+            <div key={item.id} className="success-text">
+              <h1>{item.hedding}</h1>
+              <p>{item.subhedding}</p>
             </div>
           ))}
 
-          <div className="flex w-full md:w-[60%] gap-6 mt-10 h-[450px] overflow-y-auto scrollbar-hide rounded-2xl">
-            <div className="flex flex-col gap-6 rounded-2xl">
-              {ourexpertise.slice(0, 3).map((item) => (
+          <div className="banner-scroll">
+            <div className="column">
+              {appData.ourexpertise.slice(0, 3).map((item) => (
                 <ServiceCloud
                   key={item.id}
                   image={item.image}
@@ -138,8 +140,9 @@ export default function Home() {
                 />
               ))}
             </div>
-            <div className="flex flex-col gap-6 mt-20 rounded-2xl">
-              {ourexpertise.slice(3, 6).map((item) => (
+
+            <div className="column column-offset">
+              {appData.ourexpertise.slice(3, 6).map((item) => (
                 <ServiceCloud
                   key={item.id}
                   image={item.image}
@@ -150,6 +153,8 @@ export default function Home() {
               ))}
             </div>
           </div>
+
+
         </div>
       </div>
 
