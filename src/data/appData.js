@@ -437,7 +437,7 @@ export const appData = {
             },
             {
                 "id": 40,
-                "subitem": "Big Data dddddd"
+                "subitem": "Big Data"
             }
     
           ]

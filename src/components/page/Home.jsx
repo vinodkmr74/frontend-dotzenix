@@ -24,10 +24,10 @@ export default function Home() {
         {appData.TextData.filter((item) => item.id === 1).map((item) => (
           <div key={item.id} className="text-wrapper">
             <div className="heading-box">
-              <h1 className="heading">{item.hedding}</h1>
+              <h1>{item.hedding}</h1>
             </div>
             <div className="subheading-box">
-              <h3 className="subheading">{item.subhedding}</h3>
+              <h3>{item.subhedding}</h3>
             </div>
           </div>
         ))}
@@ -35,8 +35,8 @@ export default function Home() {
 
       {appData.TextData.filter((item) => item.id == 2).map((item) => (
         <div key={item.id} className="banner-container">
-          <h1 className="banner-heading">{item.hedding}</h1>
-          <h2 className="banner-subheading">{item.subhedding}</h2>
+          <h1>{item.hedding}</h1>
+          <h2>{item.subhedding}</h2>
         </div>
       ))}
       <ServiceCard />

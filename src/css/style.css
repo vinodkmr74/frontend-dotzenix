@@ -163,7 +163,7 @@ body {
   flex-direction: column;
   width: 100%;
   padding: 8px;
-  background-color: white;
+  /* background-color: white; */
   justify-content: center;
   align-items: center;
   margin-top: 12px;
@@ -179,10 +179,10 @@ body {
   width: 80%;
   padding: 16px;
 }
-.heading {
-  color: #092241;
+.heading-box h1 {
+  color: #22d3ee;
   font-weight: bold;
-  font-size: 28px;
+  font-size: 26px;
   font-family: serif;
   text-align: center;
 }
@@ -191,8 +191,8 @@ body {
   width: 80%;
   padding: 8px;
 }
-.subheading {
-  color: #092241d2;
+.subheading-box h3 {
+  color:#a5b4fc;
   font-weight: 600;
   font-size: 20px;
   text-align: center;
@@ -211,13 +211,13 @@ body {
   justify-content: center;
   align-items: center;
 }
-.banner-heading {
+.banner-container h1 {
   text-align: center;
-  color: white;
+  color: #22d3ee;
   font-weight: bold;
-  font-size: 28px;
+  font-size: 26px;
 }
-.banner-subheading {
+.banner-container h2 {
   text-align: center;
   color: white;
   font-weight: bold;
@@ -229,7 +229,6 @@ body {
   display: flex;
   width: 100%;
   padding: 8px;
-  /* background-color: white; */
   justify-content: center;
   align-items: center;
   margin-top: 16px;
@@ -248,7 +247,7 @@ body {
   max-width: 255px;
   padding: 8px;
   margin-top: 16px;
-  background-color: white;
+  background-color: #badcebc0;
   border: 1px solid #ccc;
   border-radius: 6px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -259,7 +258,7 @@ body {
 }
 .service-card:hover {
   background-color: #1e293b;
-  color: white;
+   color:#a5b4fc;
   transform: rotateY(180deg);
   box-shadow: rgba(100, 233, 240, 0.904) 0px 20px 30px -10px;
 }
@@ -284,7 +283,7 @@ body {
   margin-top: 8px;
 }
 .service-card:hover .service-title {
-  color: white;
+  color: #22d3ee;
 }
 .service-subitem {
   font-size: 16px;
@@ -296,7 +295,8 @@ body {
   display: flex;
   width: 100%;
   margin-top: 32px;
-  background-color: #f1f4fc;
+  /* background-color: #f1f4fc; */
+background: linear-gradient(135deg, #354969, #6f8db8);
   justify-content: center;
 }
 .pro-in-container {
@@ -318,11 +318,12 @@ body {
   font-weight: 500;
   font-size: 18px;
   font-family: "Segoe UI", Arial, sans-serif;
+ color:white;
 }
 .leftsection p span {
   font-weight: bold;
   font-size: 20px;
-  color: #092241;
+ color: #22d3ee;
   font-family: "Segoe UI", Arial, sans-serif;
 }
 .image-style {
@@ -343,9 +344,9 @@ body {
 .product-card {
   position: relative;
   overflow: hidden;
-  background-color: #ffffff;
+  background-color: #badcebc0;
   border-radius: 16px;
-  border: 1px solid #e5e7eb;
+  /* border: 1px solid #e5e7eb; */
   padding: 16px;
   text-align: center;
   z-index: 1;
@@ -357,7 +358,7 @@ body {
   left: 50%;
   width: 0%;
   height: 0%;
-  background-color: #37558d;
+  background-color: #2e3e5cf8;
   transform: translate(-50%, -50%);
   transition:
     width 0.3s ease,
@@ -368,14 +369,15 @@ body {
   width: 200%;
   height: 200%;
 }
-.product-card:hover {
-  color: #ffffff;
+.product-card:hover h2{
+color: #ffffff;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
 }
-.product-card:hover h2,
 .product-card:hover a {
-  color: #ffffff;
+  color: #4c8b81;
 }
+
 .card-image {
   width: 100px;
   height: 100px;
@@ -386,7 +388,7 @@ body {
 .card-title {
   font-size: 16px;
   font-weight: 600;
-  color: #1f2937;
+    color: #092241;
   margin-bottom: 8px;
 }
 .card-link {
@@ -395,10 +397,10 @@ body {
   text-decoration: none;
   transition: 0.3s;
 }
-.card-link:hover {
-  text-decoration: underline;
-  color: #4c8b81;
+.card-link :hover {
+  color: #8b4c4c;
 }
+
 .maim-growth {
   display: flex;
   width: 100%;
