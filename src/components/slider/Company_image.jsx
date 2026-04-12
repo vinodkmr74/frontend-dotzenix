@@ -1,9 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import "swiper/css/pagination";
-
 import { Pagination, Autoplay } from "swiper/modules";
 
 export default function Company_image() {
@@ -11,6 +9,11 @@ export default function Company_image() {
     <div className="w-full">
       <Swiper
         slidesPerView={4}
+         breakpoints={{
+      0: { slidesPerView: 2 },
+      480: { slidesPerView: 3 },
+      768: { slidesPerView: 4 },
+  }}
         spaceBetween={30}
         loop={true}
         autoplay={{
@@ -22,35 +25,35 @@ export default function Company_image() {
         className="companySlider"
       >
         <SwiperSlide>
-          <img src="/image/download.png" alt="" />
+          <img src="/image/abcxyz.jpg" alt="" />
         </SwiperSlide>
 
         <SwiperSlide>
-          <img src="/image/download2.png" alt="" />
+          <img src="/image/abcxyz.jpg" alt="" />
         </SwiperSlide>
 
         <SwiperSlide>
-          <img src="/image/images (2).png" alt="" />
+          <img src="/image/abcxyz.jpg" alt="" />
         </SwiperSlide>
 
         <SwiperSlide>
-          <img src="/image/logo.png" alt="" />
+          <img src="/image/abcxyz.jpg" alt="" />
         </SwiperSlide>
 
         <SwiperSlide>
-          <img src="/image/download.png" alt="" />
+          <img src="/image/abcxyz.jpg" alt="" />
         </SwiperSlide>
 
         <SwiperSlide>
-          <img src="/image/download2.png" alt="" />
+          <img src="/image/abcxyz.jpg" alt="" />
         </SwiperSlide>
 
         <SwiperSlide>
-          <img src="/image/images (2).png" alt="" />
+          <img src="/image/abcxyz.jpg" alt="" />
         </SwiperSlide>
 
         <SwiperSlide>
-          <img src="/image/logo.png" alt="" />
+          <img src="/image/abcxyz.jpg" alt="" />
         </SwiperSlide>
       </Swiper>
     </div>

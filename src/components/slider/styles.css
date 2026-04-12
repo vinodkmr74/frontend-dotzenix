@@ -9,22 +9,17 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-
 .swiper {
   width: 100%;
   height: 100%;
 }
-
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #444;
-  /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .swiper-slide img {
   display: block;
   width: 100%;
@@ -61,7 +56,55 @@ body {
   color: white;
  font-family: 'Poppins', 'Arial', sans-serif;
 }
-
+/* compmany */
+.companySlider {
+  width: 100%;
+}
+.companySlider .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    background: linear-gradient(135deg, #354969, #6f8db8);
+  border-radius: 12px;
+  height: 90px;
+  transition: all 0.3s ease;
+}
+.companySlider .swiper-slide:hover {
+  transform: scale(1.09);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+}
+.companySlider img {
+   width: 100%;
+  border-radius: 12px;
+  object-fit: cover; 
+}
+.swiper-pagination-bullet {
+  display: none;
+}
+.partners-slider {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  padding: 20px;
+    background: linear-gradient(135deg, #354969, #6f8db8);
+}
+.partners-slidet-title {
+  text-align: center;
+}
+.partners-slidet-title h1 {
+  font-weight: bold;
+  color: #22d3ee;
+    font-size: 24px;
+}
+.partners-content {
+  width: 90%;
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: 12px;
+  overflow: hidden;
+}
 @media (max-width: 768px) {
   .mySwiper img {
     height: 350px;
@@ -71,43 +114,24 @@ body {
     top: 130px;
     left: 8%;
   }
+.partners-content {
+padding: 1px;
 }
-
+.companySlider .swiper-slide {
+height: 70px ;
+}
+.partners-slidet-title h1 {
+   font-size: 20px;
+}
+}
 @media (max-width: 480px) {
   .slider-text {
     font-size: 16px;
   }
-}
-
-/* compmany */
-
-.companySlider {
-  width: 100%;
-}
-
 .companySlider .swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: white;
-  border-radius: 12px;
-  height: 120px;
-  transition: all 0.3s ease;
+height: 55px ;
 }
-
-.companySlider .swiper-slide:hover {
-  transform: scale(1.09);
-  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+.partners-slidet-title h1 {
+   font-size: 18px;
 }
-
-.companySlider img {
-  width: 100%;
-  border-radius: 18px;
-  height: 100px;
-  object-fit: cover;
-  padding: 10px;
-}
-
-.swiper-pagination-bullet {
-  display: none;
 }

@@ -16,7 +16,6 @@ import { BASE_URL } from "../../config";
 import { appData } from "../../data/appData";
 
 export default function Home() {
- 
   return (
     <div>
       <Image_slider />
@@ -132,92 +131,78 @@ export default function Home() {
         </div>
       </div>
 
+      <div className="explore-main">
+        {appData.TextData.filter((item) => item.id == 4).map((item) => (
+          <div key={item.id} className="explore-header">
+            <h1>{item.hedding}</h1>
+            <p>{item.subhedding}</p>
+          </div>
+        ))}
 
+        <div className="explore-content">
+          {/* LEFT SIDE */}
+          <div className="explore-left">
+            {appData.exploreour
+              .filter((item) => item.id === 5)
+              .map((item) => (
+                <div key={item.id} className="explore-left1">
+                  <img src={item.image} alt="" />
 
-     <div className="explore-main">
-  {appData.TextData.filter((item) => item.id == 4).map((item) => (
-    <div key={item.id} className="explore-header">
-      <h1>{item.hedding}</h1>
-      <p>{item.subhedding}</p>
-    </div>
-  ))}
+                  <h1>{item.tital}</h1>
 
-  <div className="explore-content">
-    
-    {/* LEFT SIDE */}
-    <div className="explore-left">
-      {appData.exploreour
-        .filter((item) => item.id === 5)
-        .map((item) => (
-          <div key={item.id} className="explore-left1">
-            <img src={item.image} alt="" />
-
-            <h1>{item.tital}</h1>
-
-            <div className="explore-text">
-              {item.text.split(". ").map((para, index) => (
-                <p key={index}>{para}.</p>
+                  <div className="explore-text">
+                    {item.text.split(". ").map((para, index) => (
+                      <p key={index}>{para}.</p>
+                    ))}
+                  </div>
+                </div>
               ))}
-            </div>
           </div>
-        ))}
-    </div>
 
-    {/* RIGHT SIDE */}
-    <div className="explore-right">
-      {appData.exploreour
-        .filter((item) => item.id === 6 || item.id === 7)
-        .map((item) => (
-          <div key={item.id} className="explore-right2">
-            <img src={item.image} alt="" />
-            <h1>{item.tital}</h1>
+          {/* RIGHT SIDE */}
+          <div className="explore-right">
+            {appData.exploreour
+              .filter((item) => item.id === 6 || item.id === 7)
+              .map((item) => (
+                <div key={item.id} className="explore-right2">
+                  <img src={item.image} alt="" />
+                  <h1>{item.tital}</h1>
+                </div>
+              ))}
           </div>
-        ))}
-    </div>
-  </div>
-</div>
-
-
-
-
-      <div className="w-full flex flex-col mt-10 p-4 justify-center items-center bg-[#e0e4e76c]">
-        <div>
-          <h1 className="text-xl text-[#4c8b81] font-bold">Our partners</h1>
         </div>
-        <div className="w-[90%] p-4 mt-4  rounded-xl">
+      </div>
+      <div className="partners-slider">
+        <div className="partners-slidet-title">
+          <h1>Our partners</h1>
+        </div>
+        <div className="partners-content">
           <Company_image />
         </div>
       </div>
 
-      <div className="w-full flex justify-center items-center mt-8 p-4 bg-[#022d62]">
+      <div className="cta-main">
         {appData.TextData.filter((item) => item.id == 5).map((item) => (
-          <div
-            key={item.id}
-            className="w-[90%] flex flex-col justify-center items-center text-white gap-4"
-          >
-            <h1 className="text-2xl md:text-4xl font-bold">{item.hedding}</h1>
-            <p className="text-md md:text-xl font-semibold ">
-              {item.subhedding}
-            </p>
+          <div key={item.id} className="cta-content">
+            <h1>{item.hedding}</h1>
+            <p>{item.subhedding}</p>
           </div>
         ))}
       </div>
 
-      <div className="w-full flex justify-center items-center mt-8 bg-[#bebbbb69] ">
-        <div className="w-[90%] flex p-2 justify-between ">
-          <div className="flex">
-            <img
-              className="w-50 rounded-xl"
-              src="/public/image/comany_logo1.png"
-              alt=""
-            />
+      <div className="media-contact-main">
+        <div className="media-contact1">
+          <div className="my-logo">
+            <Link to="/">
+              <img src="/image/comany_logo1.png" alt="logo" />{" "}
+            </Link>
           </div>
-          {/* <div className="flex justify-center items-center gap-4">
-            <FaInstagramSquare size={30} />
-            <FaLinkedin size={30} />
-            <BsFacebook size={30} />
-            <FaXTwitter size={30} />
-          </div> */}
+          <div className="media-contact2">
+            <FaInstagramSquare />
+            <FaLinkedin />
+            <BsFacebook />
+            <FaXTwitter />
+          </div>
         </div>
       </div>
     </div>

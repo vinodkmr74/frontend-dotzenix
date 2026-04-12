@@ -3,8 +3,8 @@ body {
 }
 * {
   box-sizing: border-box;
- margin: 0px;
- padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 /* contact-container*/
@@ -697,22 +697,22 @@ body {
   align-items: center;
   gap: 8px;
 }
-.explore-header h1{
+.explore-header h1 {
   font-size: 24px;
   font-weight: bold;
-  color: #0a72f1;
-text-align: center;
+  color: #22d3ee;
+  text-align: center;
 }
 .explore-header p {
   font-size: 20px;
   font-weight: 600;
   color: #a5b4fc;
-text-align: center;
+  text-align: center;
 }
 .explore-content {
   width: 90%;
   display: flex;
-  gap: 32px;
+  gap: 50px;
   margin-top: 32px;
   padding: 24px;
   border-bottom: 1px solid #9ca3af;
@@ -762,6 +762,144 @@ text-align: center;
   font-weight: bold;
   color: #29bba3;
   margin-top: 8px;
+}
+.cta-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  padding: 20px;
+}
+.cta-content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+}
+.cta-content h1 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #22d3ee;
+}
+.cta-content p {
+  font-weight: 400;
+  color: #a5b4fc;
+  line-height: 1.6;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* MAIN WRAPPER */
+.media-contact-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  background: linear-gradient(135deg, #354969, #6f8db8);
+  padding: 10px 0;
+}
+.media-contact1 {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.my-logo img {
+  width: 17%;
+  border-radius: 10px;
+}
+.media-contact2 {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.media-contact2 svg {
+  font-size: 30px;
+  color: rgb(14, 241, 241);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.media-contact2 svg:hover {
+  color: #0ea5e9;
+  transform: scale(1.15);
+}
+
+/* footer */
+.footer-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 10px;
+  color: #e2e8f0;
+}
+.footer-grid {
+  width: 90%;
+  display: flex;
+  padding: 4px;
+  gap: 4px;
+}
+.footer-grid1 {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 4px;
+}
+.footer-heading {
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 12px;
+  margin-top: 10px;
+}
+.footer-list {
+  list-style: none;
+  padding: 0;
+}
+.footer-link {
+  font-size: 16px;
+  font-weight: 400;
+  color: #a5b4fc;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.footer-link:hover {
+  color: #4c8b81;
+}
+
+/* CONTACT */
+.footer-contact {
+  padding: 16px;
+}
+.footer-contact h1 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.footer-contact-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 18px;
+  color: #a5b4fc;
+}
+.footer-contact-text p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer-contact-text span {
+  font-weight: 600;
+  font-size: 18px;
+}
+.footer-copy {
+  text-align: center;
+  padding: 16px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #6e6f70;
 }
 
 /* RESPONSIVE */
@@ -892,37 +1030,79 @@ text-align: center;
   .imgcloud p {
     font-size: 14px;
   }
-.explore-content {
-flex-direction: column;
-}
-.explore-header h1{
-  font-size: 20px;
-text-align: center;
-}
-.explore-header p {
-  font-size: 16px;
-text-align: center;
-}
-.explore-left1 img {
-  height: 350px;
-}
-.explore-left1 h1
-{
-  font-size: 18px;
-}
-.explore-left1 p
-{
-  font-size: 14px;
-}
-.explore-left {
-  width: 100%;
-}
-.explore-right {
-  width: 100%;
-}
-.explore-right h1{
-font-size: 16px;
-}
+  .explore-content {
+    flex-direction: column;
+  }
+  .explore-header h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  .explore-header p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .explore-left1 img {
+    height: 350px;
+  }
+  .explore-left1 h1 {
+    font-size: 18px;
+  }
+  .explore-left1 p {
+    font-size: 14px;
+  }
+  .explore-left {
+    width: 100%;
+  }
+  .explore-right {
+    width: 100%;
+  }
+  .explore-right h1 {
+    font-size: 16px;
+  }
+
+  .cta-content h1 {
+    font-size: 20px;
+  }
+  .cta-content p {
+    font-size: 16px;
+  }
+  .my-logo img {
+    width: 28%;
+  }
+  .media-contact2 svg {
+    font-size: 26px;
+  }
+  .footer-grid {
+    flex-direction: column;
+  }
+  .footer-grid1 {
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 100%;
+  }
+  .footer-contact {
+    text-align: center;
+  }
+  .footer-heading {
+    font-size: 16px;
+  }
+  .footer-link {
+    font-size: 14px;
+  }
+  .footer-contact h1 {
+    font-size: 16px;
+  }
+  .footer-contact-text p {
+    font-size: 14px;
+  }
+  .footer-contact-text span {
+    font-size: 16px;
+  }
+  .footer-copy {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -970,9 +1150,9 @@ font-size: 16px;
   .banner-scroll {
     flex-direction: column;
   }
-.column-offset {
-  margin-top: 10px;
-}
+  .column-offset {
+    margin-top: 10px;
+  }
   .success-text h1 {
     font-size: 18px;
   }
@@ -985,28 +1165,55 @@ font-size: 16px;
   .imgcloud p {
     font-size: 12px;
   }
-.explore-header h1{
-  font-size: 16px;
-text-align: center;
-}
+  .explore-header h1 {
+    font-size: 16px;
+    text-align: center;
+  }
 
-.explore-header p {
-  font-size: 12px;
-text-align: center;
-}
-.explore-left1 img {
-  height: 300px;
-}
-.explore-left1 h1
-{
-  font-size: 16px;
-}
-.explore-left1 p
-{
-  font-size: 14px;
-}
-.explore-right h1{
-font-size: 14px;
-}
-
+  .explore-header p {
+    font-size: 12px;
+    text-align: center;
+  }
+  .explore-left1 img {
+    height: 300px;
+  }
+  .explore-left1 h1 {
+    font-size: 16px;
+  }
+  .explore-left1 p {
+    font-size: 14px;
+  }
+  .explore-right h1 {
+    font-size: 14px;
+  }
+  .cta-content h1 {
+    font-size: 18px;
+  }
+  .cta-content p {
+    font-size: 14px;
+  }
+  .my-logo img {
+    width: 50%;
+  }
+  .media-contact2 svg {
+    font-size: 24px;
+  }
+  .footer-heading {
+    font-size: 14px;
+  }
+  .footer-link {
+    font-size: 12px;
+  }
+  .footer-contact h1 {
+    font-size: 14px;
+  }
+  .footer-contact-text p {
+    font-size: 14px;
+  }
+  .footer-contact-text span {
+    font-size: 14px;
+  }
+  .footer-copy {
+    font-size: 14px;
+  }
 }
