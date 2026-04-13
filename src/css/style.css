@@ -164,6 +164,7 @@ body {
   width: 100%;
   padding: 8px;
   /* background-color: white; */
+  background: linear-gradient(135deg, #354969, #6f8db8);
   justify-content: center;
   align-items: center;
   margin-top: 12px;
@@ -192,7 +193,7 @@ body {
   padding: 8px;
 }
 .subheading-box h3 {
-  color:#a5b4fc;
+  color: #ffffff;
   font-weight: 600;
   font-size: 20px;
   text-align: center;
@@ -201,7 +202,8 @@ body {
 /* banner */
 .banner-container {
   width: 100%;
-  background: linear-gradient(135deg, #354969, #6f8db8);
+  /* background: linear-gradient(135deg, #354969, #6f8db8); */
+  background-color: #badcebc0;
   /* background: #37558d; */
   padding: 24px;
   margin-top: 24px;
@@ -219,7 +221,7 @@ body {
 }
 .banner-container h2 {
   text-align: center;
-  color: white;
+  color: #ffffff;
   font-weight: bold;
   font-size: 20px;
   margin-top: 16px;
@@ -258,7 +260,7 @@ body {
 }
 .service-card:hover {
   background-color: #1e293b;
-   color:#a5b4fc;
+  color: #a5b4fc;
   transform: rotateY(180deg);
   box-shadow: rgba(100, 233, 240, 0.904) 0px 20px 30px -10px;
 }
@@ -296,7 +298,7 @@ body {
   width: 100%;
   margin-top: 32px;
   /* background-color: #f1f4fc; */
-background: linear-gradient(135deg, #354969, #6f8db8);
+  background: linear-gradient(135deg, #354969, #6f8db8);
   justify-content: center;
 }
 .pro-in-container {
@@ -318,12 +320,12 @@ background: linear-gradient(135deg, #354969, #6f8db8);
   font-weight: 500;
   font-size: 18px;
   font-family: "Segoe UI", Arial, sans-serif;
- color:white;
+  color: white;
 }
 .leftsection p span {
   font-weight: bold;
   font-size: 20px;
- color: #22d3ee;
+  color: #22d3ee;
   font-family: "Segoe UI", Arial, sans-serif;
 }
 .image-style {
@@ -369,15 +371,13 @@ background: linear-gradient(135deg, #354969, #6f8db8);
   width: 200%;
   height: 200%;
 }
-.product-card:hover h2{
-color: #ffffff;
+.product-card:hover h2 {
+  color: #ffffff;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-
 }
 .product-card:hover a {
   color: #4c8b81;
 }
-
 .card-image {
   width: 100px;
   height: 100px;
@@ -388,7 +388,7 @@ color: #ffffff;
 .card-title {
   font-size: 16px;
   font-weight: 600;
-    color: #092241;
+  color: #092241;
   margin-bottom: 8px;
 }
 .card-link {
@@ -397,108 +397,140 @@ color: #ffffff;
   text-decoration: none;
   transition: 0.3s;
 }
-.card-link :hover {
+/* .card-link :hover {
   color: #8b4c4c;
-}
-
+} */
 .maim-growth {
-  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 500px;
-  position: relative;
+  height: 600px;
   margin-top: 20px;
   justify-content: center;
   justify-items: center;
 }
 .text-box {
-  width: 70%;
+  width: 80%;
   text-align: center;
-  padding-top: 30px;
+  margin-top: 40px;
 }
 .text-box h1 {
   color: #f7f1f1;
-  font-size: 32px;
+  font-size: 26px;
   font-weight: bold;
   font-family: "Segoe UI", Arial, sans-serif;
+  padding: 20px;
 }
 .scale-card {
-  display: flex;
-  width: 80%;
-  position: absolute;
-  top: 200px;
-  padding: 16px;
-  gap: 16px;
+  width: 90%;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 16px;
+  border-radius: 10px;
 }
-/*mv-CARD */
-.mv-card {
-  display: flex;
-  flex-direction: column;
+.mv-slider {
   width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+.mv-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 5px;
+}
+
+.mv-card {
+  min-width: 32.33%;
+  box-sizing: border-box;
   border: 1px solid #9ca3af;
   border-radius: 6px;
   padding: 16px;
   background-color: #ffffff;
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
 }
-.mv-card:hover {
-  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
-  transform: translateY(-32px);
+.mv-card img {
+  height: 250px;
+  width: 100%;
+  border-radius: 10px;
 }
-.mv-heading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 16px;
+.mv-card h1 {
+  font-size: 16px;
+  color: #092241;
+  font-weight: 600;
+  font-family: "Segoe UI", Arial, sans-serif;
+  text-align: center;
+}
+.mv-card h2 {
+  font-size: 16px;
+  color: #092241;
+  font-weight: 600;
+  font-family: "Segoe UI", Arial, sans-serif;
+  text-align: center;
+}
+.mv-card p {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #11161dd2;
+  line-height: 1.5;
+}
+.mv-buttons {
+  display: none;
+}
+.mv-btn-pre,
+.mv-btn-next {
+  position: absolute;
+  top: 47.5%;
+  background: #e0e2e4b2;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 9;
+}
+.mv-btn-pre {
+  left: 60px;
 }
 
-.mv-heading h1 {
-  font-size: 20px;
-  color: #092241;
-  font-weight: 600;
-  font-family: "Segoe UI", Arial, sans-serif;
+.mv-btn-next {
+  right: 60px;
 }
-.mv-image-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 16px;
-  background-color: #022d62;
-  border: 1px solid #9ca3af;
-  border-radius: 6px;
+
+@media (max-width: 768px) {
+  .mv-card {
+    min-width: 100%;
+  }
+  .mv-buttons {
+    display: block;
+  }
+  .maim-growth {
+    height: 40rem;
+  }
+  .mv-btn-pre,
+  .mv-btn-next {
+    top: 48.5%;
+  }
 }
-.mv-image-box img {
-  border-radius: 12px;
-  max-width: 100%;
-}
-.mv-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 16px;
-}
-.mv-title {
-  font-size: 20px;
-  color: #092241;
-  font-weight: 600;
-  font-family: "Segoe UI", Arial, sans-serif;
-}
-.mv-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 16px;
-}
-.mv-text p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #092241d2;
-  font-family: "Segoe UI", Arial, sans-serif;
+
+@media (max-width: 480px) {
+  .mv-card {
+    min-width: 100%;
+  }
+  .maim-growth {
+    height: 44rem;
+  }
+
+  .mv-btn-pre,
+  .mv-btn-next {
+    top: 51%;
+  }
 }
 .gap-space {
   display: flex;
-  margin-top: 15em;
+  margin-top: 1em;
 }
 .certified-section {
   width: 100%;
@@ -968,13 +1000,9 @@ color: #ffffff;
   .pro-in-container {
     flex-direction: column;
   }
-  .maim-growth {
-    display: flex;
-    width: 100%;
-    height: 100rem;
-  }
+
   .text-box h1 {
-    font-size: 26px;
+    font-size: 20px;
     font-weight: bold;
   }
   .scale-card {
@@ -982,7 +1010,7 @@ color: #ffffff;
   }
   .gap-space {
     display: flex;
-    margin-top: 16em;
+    margin-top: 1em;
   }
   .certified-container {
     width: 100%;
@@ -1139,7 +1167,7 @@ color: #ffffff;
   }
   .text-box h1 {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
   }
   .mv-text p {

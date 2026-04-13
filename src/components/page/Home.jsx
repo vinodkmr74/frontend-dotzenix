@@ -81,9 +81,11 @@ export default function Home() {
             and Scale.
           </h1>
         </div>
+        
         <div className="scale-card">
           <Scale />
         </div>
+        
       </div>
 
       <div className="gap-space"></div>
