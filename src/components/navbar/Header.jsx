@@ -75,14 +75,20 @@ export default function Header() {
               <img src="image/comany_logo1.png" alt="logo" />
             </div>
             <div className={`nav-links ${open ? "show" : ""}`}>
-              <NavLink to="/" className="nav-link">
+
+              <div  className={`dropdown ${disableHover ? "no-hover" : ""}`}
+                onMouseLeave={() => setDisableHover(false)}>
+                <NavLink className="nav-link" to="/">
                 Home
               </NavLink>
+              </div>
+              
               <div
                 className={`dropdown ${disableHover ? "no-hover" : ""}`}
                 onMouseLeave={() => setDisableHover(false)}
               >
-                <span>Company</span>
+
+                <span className="nav-link">Company</span>
                 <div className="dropdown-menu">
                   <ul>
                     {appData.CompanyIndustriesProduct.map((item) => (
@@ -104,7 +110,7 @@ export default function Header() {
                 className={`dropdown ${disableHover ? "no-hover" : ""}`}
                 onMouseLeave={() => setDisableHover(false)}
               >
-                <span>Service</span>
+                <span className="nav-link">Service</span>
                 <div className="dropdown-menu large">
                   <div className="grid">
                     {appData.menuproduct.map((item) => (
@@ -133,7 +139,7 @@ export default function Header() {
                 className={`dropdown ${disableHover ? "no-hover" : ""}`}
                 onMouseLeave={() => setDisableHover(false)}
               >
-                <span>Products</span>
+                <span className="nav-link">Products</span>
                 <div className="dropdown-menu">
                   <ul>
                     {appData.CompanyIndustriesProduct.map((item) => (
@@ -155,7 +161,7 @@ export default function Header() {
                 className={`dropdown ${disableHover ? "no-hover" : ""}`}
                 onMouseLeave={() => setDisableHover(false)}
               >
-                <span>Industries</span>
+                <span className="nav-link">Industries</span>
                 <div className="dropdown-menu">
                   <ul>
                     {appData.CompanyIndustriesProduct.map((item) => (
