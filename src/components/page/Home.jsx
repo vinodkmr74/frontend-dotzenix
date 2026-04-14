@@ -18,7 +18,10 @@ import { appData } from "../../data/appData";
 export default function Home() {
   return (
     <div>
-      <Image_slider />
+      <div className="img-slider">
+              <Image_slider />
+
+      </div>
 
       <div className="text-container">
         {appData.TextData.filter((item) => item.id === 1).map((item) => (

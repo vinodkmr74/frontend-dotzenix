@@ -18,7 +18,7 @@ import {
 export default function Image_slider() {
   return (
     <>
-      <div className="w-full">
+      <div className="img-slider-container">
         <Swiper
           cssMode={true}
           navigation={true}

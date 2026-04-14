@@ -19,7 +19,6 @@ import Erp from "./components/page/products/Erp"
 import Seo from "./components/page/services/digital_markrting/Seo"
 import Smo from "./components/page/services/digital_markrting/Smo"
 import Paid_media_marketing from "./components/page/services/digital_markrting/Paid_media_marketing"
-import Ecommerce_seo from "./components/page/services/digital_markrting/Ecommerce_seo"
 import Content_marketing from "./components/page/services/digital_markrting/Content_marketing"
 import Affiliate_marketing from "./components/page/services/digital_markrting/Affiliate_marketing"
 import Video_marketing from "./components/page/services/digital_markrting/Video_marketing"
@@ -36,7 +35,7 @@ import Hybrid_app from "./components/page/services/mobile_app_development/Hybrid
 import IOS_app from "./components/page/services/mobile_app_development/IOS_app"
 import OTT_appd_evelopment from "./components/page/services/mobile_app_development/OTT_appd_evelopment"
 import React_native from "./components/page/services/mobile_app_development/React_native"
-import Bigcommerce from "./components/page/services/e_commerce_development/Bigcommerce"
+// import Bigcommerce from "./components/page/services/e_commerce_development/Bigcommerce"
 import Custom_ecommerce from "./components/page/services/e_commerce_development/Custom_ecommerce"
 import Prestashop from "./components/page/services/e_commerce_development/Prestashop"
 import Shopify from "./components/page/services/e_commerce_development/Shopify"
@@ -47,12 +46,11 @@ import Sales_cloud from "./components/page/services/salesforce_development/Sales
 import Service_cloud from "./components/page/services/salesforce_development/Service_cloud"
 import AI_and_mL from "./components/page/services/digital_transformation/AI_and_mL"
 import Big_data from "./components/page/services/digital_transformation/Big_data"
-import Blockchain from "./components/page/services/digital_transformation/Blockchain"
+// import Blockchain from "./components/page/services/digital_transformation/Blockchain"
 import Cloud_engineering from "./components/page/services/digital_transformation/Cloud_engineering"
-import Data_forecasting from "./components/page/services/digital_transformation/Data_forecasting"
-import Iot from "./components/page/services/digital_transformation/Iot"
+// import Iot from "./components/page/services/digital_transformation/Iot"
 import Devops from "./components/page/services/digital_transformation/Devops"
-import Magento from "./components/page/services/e_commerce_development/Magento"
+// import Magento from "./components/page/services/e_commerce_development/Magento"
 import Consulting from "./components/page/services/salesforce_development/Consulting"
 import Crms from "./components/page/products/Crms"
 import Ai_Solution from "./components/page/products/Ai_Solution"
@@ -88,7 +86,6 @@ export default function Router() {
           <Route path="/seo" element={<Seo />} />
           <Route path="/smo" element={<Smo />} />
           <Route path="/paid-media-marketing" element={<Paid_media_marketing />} />
-          <Route path="/ecommerce-seo" element={<Ecommerce_seo />} />
           <Route path="/content-marketing" element={<Content_marketing />} />
           <Route path="/affiliate-marketing" element={<Affiliate_marketing />} />
           <Route path="/video-marketing" element={<Video_marketing />} />
@@ -108,9 +105,9 @@ export default function Router() {
           <Route path="/ott-app-development" element={<OTT_appd_evelopment />} />
           <Route path="/react-native" element={<React_native />} />
           {/* ..................Ecommerce Development............... */}
-          <Route path="/bigcommerce" element={<Bigcommerce />} />
+          {/* <Route path="/bigcommerce" element={<Bigcommerce />} /> */}
           <Route path="/custom-ecommerce" element={<Custom_ecommerce />} />
-          <Route path="/magento" element={<Magento />} />
+          {/* <Route path="/magento" element={<Magento />} /> */}
           <Route path="/prestashop" element={<Prestashop />} />
           <Route path="/shopify" element={<Shopify />} />
           <Route path="/woocommerce" element={<Woocommerce />} />
@@ -123,10 +120,9 @@ export default function Router() {
           {/* ...................Digital Transformation................ */}
           <Route path="/ai-ml" element={<AI_and_mL />} />
           <Route path="/big-data" element={<Big_data />} />
-          <Route path="/blockchain" element={<Blockchain />} />
+          {/* <Route path="/blockchain" element={<Blockchain />} /> */}
           <Route path="/cloud-engineering" element={<Cloud_engineering />} />
-          <Route path="/data-forecasting" element={<Data_forecasting />} />
-          <Route path="/iot" element={<Iot />} />
+          {/* <Route path="/iot" element={<Iot />} /> */}
           <Route path="/devops" element={<Devops />} />
 
         </Route>

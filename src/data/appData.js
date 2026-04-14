@@ -131,7 +131,7 @@ export const appData = {
       id: 3,
       title: "Ecommerce Development",
       items: [
-        { id: 1, name: "Magento", path: "/magento" },
+        // { id: 1, name: "Magento", path: "/magento" },
         { id: 1, name: "Shopify", path: "/shopify" },
         {
           id: 3,
@@ -143,11 +143,11 @@ export const appData = {
           name: "WooCommerce",
           path: "/woocommerce",
         },
-        {
-          id: 5,
-          name: "BigCommerce",
-          path: "/bigcommerce",
-        },
+        // {
+        //   id: 5,
+        //   name: "BigCommerce",
+        //   path: "/bigcommerce",
+        // },
         {
           id: 6,
           name: "WordPress",
@@ -186,11 +186,7 @@ export const appData = {
           name: "Affiliate Marketing",
           path: "/affiliate-marketing",
         },
-        {
-          id: 7,
-          name: "Ecommerce SEO",
-          path: "/ecommerce-seo",
-        },
+      
       ],
     },
     {
@@ -219,23 +215,23 @@ export const appData = {
       id: 6,
       title: "Digital Transformation",
       items: [
-        { id: 1, name: "IoT", path: "/iot" },
+        // { id: 1, name: "IoT", path: "/iot" },
         { id: 1, name: "DevOps", path: "/devops" },
-        {
-          id: 3,
-          name: "Data Forecasting",
-          path: "/data-forecasting",
-        },
+        // {
+        //   id: 3,
+        //   name: "Data Forecasting",
+        //   path: "/data-forecasting",
+        // },
         {
           id: 4,
           name: "AI and ML",
           path: "/ai-ml",
         },
-        {
-          id: 5,
-          name: "Blockchain",
-          path: "/blockchain",
-        },
+        // {
+        //   id: 5,
+        //   name: "Blockchain",
+        //   path: "/blockchain",
+        // },
         {
           id: 6,
           name: "Cloud Engineering",
@@ -419,10 +415,10 @@ export const appData = {
                 "id": 35,
                 "subitem": "DevOps"
             },
-            {
-                "id": 36,
-                "subitem": "Data Forecasting"
-            },
+            // {
+            //     "id": 36,
+            //     "subitem": "Data Forecasting"
+            // },
             {
                 "id": 37,
                 "subitem": "AI and ML"
@@ -571,7 +567,7 @@ ourexpertise:[
     {
         "id": 8,
         "image": "image/bigcommerce-logo-icon.png",
-        "tital": "BigCommerce Development",
+        "tital": "E-Commerce Development",
         "text": "Launch and grow your online store with BigCommerce solutions designed for performance, flexibility, and seamless user experience.",
         "buttonlink": "/bigcommerce"
     }

@@ -20,7 +20,7 @@ export default function Header() {
 
   return (
     <>
-      <div className="fixe top-0 left-0 w-full z-50 bg-gray-200 shadow-4xl">
+      <div className="navbar-contact">
         <div className="contact">
           {appData.contact.map((item) => (
             <div key={item.id} className="contact-wrapper">
