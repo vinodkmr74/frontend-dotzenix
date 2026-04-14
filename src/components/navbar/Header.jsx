@@ -76,8 +76,8 @@ export default function Header() {
             </div>
             <div className={`nav-links ${open ? "show" : ""}`}>
 
-              <div  className={`dropdown ${disableHover ? "no-hover" : ""}`}
-                onMouseLeave={() => setDisableHover(false)}>
+              <div     className={`dropdown ${disableHover ? "no-hover" : ""}`}
+                onMouseLeave={() => setDisableHover(false)} >
                 <NavLink className="nav-link" to="/">
                 Home
               </NavLink>

@@ -87,7 +87,7 @@ padding: 8px;
 }
 .nav-links {
   display: flex;
-  gap: 30px;
+  gap: 25px;
   font-size: 18px;
   font-weight: 600;
   align-items: center;
@@ -965,7 +965,13 @@ padding: 8px;
   .dropdown-menu {
     position: static;
     width: 100%;
+
   }
+.dropdown-menu ul{
+display: flex;
+flex-direction: column;
+gap: 8px;
+}
   .quote-btn {
     font-size: 14px;
     padding: 6px;
@@ -982,7 +988,9 @@ padding: 8px;
   }
   .dropdown {
     width: 100%;
-    padding: 20px;
+    padding-left: 40px;
+
+
   }
   .nav-links {
     position: absolute;
@@ -992,13 +1000,15 @@ padding: 8px;
     background: #ffffff;
     flex-direction: column;
     display: none;
-    padding: 10px;
+    padding: 4px;
     z-index: 9;
     border-radius: 10px;
+
   }
   .nav-links.show {
     display: flex;
     text-align: start;
+
   }
   .grid {
     grid-template-columns: 1fr;
