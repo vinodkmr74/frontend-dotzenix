@@ -4,9 +4,7 @@ import { MdOutlineEmail } from "react-icons/md";
 import { IoLocationSharp } from "react-icons/io5";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import {appData} from "../../data/appData";
-
-
+import { appData } from "../../data/appData";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -16,7 +14,20 @@ export default function Header() {
   useEffect(() => {
     setOpen(false);
     setDisableHover(false);
+    handleScroll();
   }, [location]);
+
+  const handleScroll = () => {
+    const navbar = document.querySelector(".navbar");
+
+    if (window.scrollY > 100) {
+      navbar.classList.add("fixed");
+    } else {
+      navbar.classList.remove("fixed");
+    }
+  };
+      window.addEventListener("scroll", handleScroll);
+
 
   return (
     <>
@@ -75,19 +86,19 @@ export default function Header() {
               <img src="image/comany_logo1.png" alt="logo" />
             </div>
             <div className={`nav-links ${open ? "show" : ""}`}>
-
-              <div     className={`dropdown ${disableHover ? "no-hover" : ""}`}
-                onMouseLeave={() => setDisableHover(false)} >
-                <NavLink className="nav-link" to="/">
-                Home
-              </NavLink>
-              </div>
-              
               <div
                 className={`dropdown ${disableHover ? "no-hover" : ""}`}
                 onMouseLeave={() => setDisableHover(false)}
               >
+                <NavLink className="nav-link" to="/">
+                  Home
+                </NavLink>
+              </div>
 
+              <div
+                className={`dropdown ${disableHover ? "no-hover" : ""}`}
+                onMouseLeave={() => setDisableHover(false)}
+              >
                 <span className="nav-link">Company</span>
                 <div className="dropdown-menu">
                   <ul>

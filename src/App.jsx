@@ -5,9 +5,7 @@ import Footer from "./components/footer/Footer";
 export default function App() {
   return (
     <>
-      <div className="navbar">
         <Header />
-      </div>
 
       <div className="">
         <Outlet />

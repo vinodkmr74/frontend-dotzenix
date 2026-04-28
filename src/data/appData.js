@@ -189,28 +189,28 @@ export const appData = {
       
       ],
     },
-    {
-      id: 5,
-      title: "Salesforce Development",
-      items: [
-        { id: 1, name: "Consulting", path: "/salesforce-consulting" },
-        {
-          id: 1,
-          name: "Product Development",
-          path: "/salesforce-product-development",
-        },
-        {
-          id: 3,
-          name: "Sales Cloud",
-          path: "/sales-cloud",
-        },
-        {
-          id: 4,
-          name: "Service Cloud",
-          path: "/service-cloud",
-        },
-      ],
-    },
+    // {
+    //   id: 5,
+    //   title: "Salesforce Development",
+    //   items: [
+    //     { id: 1, name: "Consulting", path: "/salesforce-consulting" },
+    //     {
+    //       id: 1,
+    //       name: "Product Development",
+    //       path: "/salesforce-product-development",
+    //     },
+    //     {
+    //       id: 3,
+    //       name: "Sales Cloud",
+    //       path: "/sales-cloud",
+    //     },
+    //     {
+    //       id: 4,
+    //       name: "Service Cloud",
+    //       path: "/service-cloud",
+    //     },
+    //   ],
+    // },
     {
       id: 6,
       title: "Digital Transformation",
@@ -303,7 +303,7 @@ export const appData = {
   servicesCard:[
     {
         "id": 1,
-        "iconpath": "image/web-icon.png",
+        "iconpath": "image/web-icon-developer.jpg",
         "title": "Web Development",
         "subitems": [
             {
@@ -338,7 +338,7 @@ export const appData = {
     },
     {
         "id": 2,
-        "iconpath": "image/mobile.png",
+        "iconpath": "image/app-development.jpg",
         "title": "Mobile App Development",
         "subitems": [
             {
@@ -369,7 +369,7 @@ export const appData = {
     },
     {
         "id": 3,
-        "iconpath": "image/Marketing-Services.png",
+        "iconpath": "image/13137305.png",
         "title": "Digital Marketing",
         "subitems": [
             {
@@ -404,7 +404,7 @@ export const appData = {
     },
     {
         "id": 4,
-        "iconpath": "image/Transformation-Icon.jpg",
+        "iconpath": "image/digitalization-icon_1186366-109534.jpg",
         "title": "Digital Transformation",
         "subitems": [
             {
@@ -460,7 +460,7 @@ export const appData = {
     },
     {
         "id": 5,
-        "image": "image/artificial-intelligen.webp",
+        "image": "image/artificial-intelligen.jpg",
         "title": "AI Solutions",
         "path": "/aisolutions"
     },
@@ -472,28 +472,28 @@ export const appData = {
     },
     {
         "id": 7,
-        "image": "image/images-web-buld.png",
+        "image": "image/web-icon-developer.jpg",
         "title": "Website Builder",
         "path": "/websitebuilder"
     }
 ],
 missionvission:[
     {
-        "id": 3,
+        "id": 1,
         "heading": "Mission & Vision",
         "image": "image/target.png",
         "title": "Mission and Vision",
         "subtext": "To empower businesses by delivering innovative solutions that help our clients build a successful and future-ready world.   Delivering next-level technology to drive innovation and business growth."
     },
     {
-        "id": 4,
+        "id": 2,
         "heading": "Growing Companies & Businesses",
         "image": "image/rise-glowing-arrow.jpg",
         "title": "Helping businesses scale with smart technology.",
         "subtext": "DotZenix Technologies has been a global IT consulting company with more than 50+ employees, helping businesses grow through innovative solutions."
     },
     {
-        "id": 5,
+        "id": 3,
         "heading": "Technology Partners",
         "image": "image/businessman-handshake.avif",
         "title": "Our Technology Partners",

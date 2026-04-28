@@ -70,10 +70,12 @@ export default function Home() {
         </div>
       </div>
 
+
+
       <div
         className="maim-growth"
         style={{
-          backgroundImage: "url('image/depositphotos.jpg')",
+          // backgroundImage: "url('image/depositphotos.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
