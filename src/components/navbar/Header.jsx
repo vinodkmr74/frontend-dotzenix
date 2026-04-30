@@ -5,6 +5,7 @@ import { IoLocationSharp } from "react-icons/io5";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { appData } from "../../data/appData";
+import Logo from "../component/Logo";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -82,8 +83,8 @@ export default function Header() {
             <div className="menu-icon" onClick={() => setOpen(!open)}>
               ☰
             </div>
-            <div className="logo">
-              <img src="image/comany_logo1.png" alt="logo" />
+            <div>
+              <Logo />
             </div>
             <div className={`nav-links ${open ? "show" : ""}`}>
               <div

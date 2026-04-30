@@ -68,10 +68,8 @@ export default function Footer() {
                   </ul>
                 </div>
               ))}
-          </div>
 
-          {/* CONTACT */}
-          <div className="footer-contact">
+               <div className="footer-contact">
             <h1>Contacts</h1>
 
             <div className="footer-contact-text">
@@ -86,6 +84,10 @@ export default function Footer() {
               </p>
             </div>
           </div>
+          </div>
+
+          {/* CONTACT */}
+         
         </div>
       </div>
 

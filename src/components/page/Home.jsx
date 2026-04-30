@@ -14,6 +14,9 @@ import { BsFacebook } from "react-icons/bs";
 import { FaXTwitter } from "react-icons/fa6";
 import { BASE_URL } from "../../config";
 import { appData } from "../../data/appData";
+import Logo from "../component/Logo";
+import { FaLinkedinIn } from "react-icons/fa6";
+
 
 export default function Home() {
   return (
@@ -199,16 +202,15 @@ export default function Home() {
 
       <div className="media-contact-main">
         <div className="media-contact1">
-          <div className="my-logo">
-            <Link to="/">
-              <img src="/image/comany_logo1.png" alt="logo" />{" "}
-            </Link>
+          <div>
+            <Logo />
           </div>
           <div className="media-contact2">
-            <FaInstagramSquare />
-            <FaLinkedin />
-            <BsFacebook />
-            <FaXTwitter />
+            <div className="instra"><FaInstagramSquare /></div>
+            <div className="linkdin"><FaLinkedinIn /></div>
+            <div className="facebook"><BsFacebook /></div>
+            <div className="twitter"><FaXTwitter /></div>
+          
           </div>
         </div>
       </div>
