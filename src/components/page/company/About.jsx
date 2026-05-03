@@ -3,6 +3,7 @@ import CardAllImage from '../../component/CardAllImage'
 import Certified from '../../component/Certified'
 import Mission_vision from '../../component/Mission_vision'
 import Team from '../../component/Team'
+import Cta from '../../component/Cta'
 
 const About = () => {
   return (<>
@@ -30,6 +31,7 @@ const About = () => {
      <Mission_vision />
          <Certified />
          <Team />
+         <Cta />
   </>)
 }
 

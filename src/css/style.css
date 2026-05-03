@@ -286,7 +286,7 @@ font-family: "Segoe UI", Arial, sans-serif;
 }
 .banner-container h2 {
   text-align: center;
-  color: #a5b4fc;
+  color: #ffffff;
   font-weight: bold;
   font-size: 20px;
   margin-top: 16px;
@@ -314,7 +314,7 @@ font-family: "Segoe UI", Arial, sans-serif;
   max-width: 255px;
   padding: 8px;
   margin-top: 16px;
-  background-color: #badcebc0;
+  background-color: #ffffff;
   border: 1px solid #ccc;
   border-radius: 6px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -496,7 +496,8 @@ font-family: "Segoe UI", Arial, sans-serif;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #354969, #6f8db8);
+  /* background: linear-gradient(135deg, #354969, #6f8db8); */
+background: #153a63;
 }
 .certified-container {
   width: 90%;

@@ -230,6 +230,60 @@ border: 1px solid rgba(175, 167, 167, 0.274);
 }
 
 
+.cta2 {
+  background: #153a63; /* dark blue */
+  padding: 34px 14px;
+ margin-top: 20px;
+}
+
+.cta2-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+padding: 10px;
+}
+
+.cta2-left h2 {
+  color: #fff;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.cta2-left p {
+  color: #dbeafe;
+  font-size: 20px;
+}
+
+.highlight {
+  color: #f97316; /* orange highlight */
+  font-weight: 600;
+}
+
+.cta2-right {
+  display: flex;
+  align-items: center;
+}
+
+.cta2-btn {
+  background: #f97316;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.cta2-btn:hover {
+  background: #ffffff;
+  color: black;
+}
+
 
 @media (max-width: 768px) {
  .Who-are-we-in p{
@@ -268,7 +322,38 @@ height: 200px;
 }
 .team-card:hover {
   transform: translateY(-5px) scale(1.02);
-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+  .cta2-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta2-right {
+    margin-top: 15px;
+  }
+
+.cta2-left h2 {
+
+  font-size: 26px;
+
+}
+
+.cta2-left p {
+  font-size: 16px;
+}
+.cta2-btn {
+
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+font-size: 12px;
+}
+
+
+
 }
 
 
