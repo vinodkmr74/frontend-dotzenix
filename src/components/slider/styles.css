@@ -101,7 +101,7 @@ width: 100%;
 }
 .partners-slidet-title h1 {
   font-weight: bold;
-  color: #22d3ee;
+  color: #29bba3;
     font-size: 24px;
 }
 .partners-content {
@@ -157,11 +157,11 @@ align-items: center;
   height: 400px;
   border-radius: 6px;
   padding: 20px;
-  background-color: #90acbc;
+  background-color: #ffffff;
 
 }
 .mv-card:hover {
-  background: linear-gradient(135deg, #b3c2e4, #9bb9eb);
+  background: linear-gradient(135deg, #dde2ee, #d0ddf3);
   box-shadow: rgba(100, 233, 240, 0.904) 0px 20px 30px -10px;
 }
 
@@ -209,7 +209,6 @@ gap: 10px;
   height: 300px;
   border-radius: 6px;
   padding: 20px;
-  background-color: #90acbc;
 
 }
 

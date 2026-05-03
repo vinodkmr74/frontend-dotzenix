@@ -228,11 +228,11 @@ font-family: "Segoe UI", Arial, sans-serif;
   flex-direction: column;
   width: 100%;
   padding: 8px;
-  /* background-color: white; */
-  background: linear-gradient(135deg, #354969, #6f8db8);
+background: #153a63;
+  /* background: linear-gradient(135deg, #354969, #6f8db8); */
   justify-content: center;
   align-items: center;
-  margin-top: 12px;
+  margin-top: 6px;
 }
 .text-wrapper {
   display: flex;
@@ -246,9 +246,9 @@ font-family: "Segoe UI", Arial, sans-serif;
   padding: 16px;
 }
 .heading-box h1 {
-  color: #22d3ee;
+  color: white;
   font-weight: bold;
-  font-size: 26px;
+  font-size: 28px;
   font-family: serif;
   text-align: center;
 }
@@ -259,7 +259,7 @@ font-family: "Segoe UI", Arial, sans-serif;
 }
 .subheading-box h3 {
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 20px;
   text-align: center;
 }
@@ -280,14 +280,14 @@ font-family: "Segoe UI", Arial, sans-serif;
 }
 .banner-container h1 {
   text-align: center;
-  color: #22d3ee;
+  color: #29bba3;
   font-weight: bold;
   font-size: 26px;
 }
 .banner-container h2 {
   text-align: center;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 20px;
   margin-top: 16px;
 }
@@ -323,7 +323,7 @@ font-family: "Segoe UI", Arial, sans-serif;
 }
 .service-card:hover {
   background-color: #1e293b;
-  color: #a5b4fc;
+  color: #ffffff;
   box-shadow: rgba(100, 233, 240, 0.904) 0px 20px 30px -10px;
 }
 
@@ -345,7 +345,7 @@ font-family: "Segoe UI", Arial, sans-serif;
   margin-top: 8px;
 }
 .service-card:hover .service-title {
-  color: #22d3ee;
+  color: #29bba3;
 }
 .service-subitem {
   font-size: 16px;
@@ -357,7 +357,10 @@ font-family: "Segoe UI", Arial, sans-serif;
   display: flex;
   width: 100%;
   margin-top: 32px;
-  background: linear-gradient(135deg, #354969, #6f8db8);
+ padding: 20px 0px 20px;
+  /* background: linear-gradient(135deg, #354969, #6f8db8); */
+background: #153a63;
+
   justify-content: center;
 }
 .pro-in-container {
@@ -384,7 +387,7 @@ font-family: "Segoe UI", Arial, sans-serif;
 .leftsection p span {
   font-weight: bold;
   font-size: 20px;
-  color: #22d3ee;
+  color: white;
   font-family: "Segoe UI", Arial, sans-serif;
 }
 .image-style {
@@ -405,7 +408,7 @@ font-family: "Segoe UI", Arial, sans-serif;
 .product-card {
   position: relative;
   overflow: hidden;
-  background-color: #badcebc0;
+  background-color: white;
   border-radius: 16px;
   /* border: 1px solid #e5e7eb; */
   padding: 16px;
@@ -419,7 +422,7 @@ font-family: "Segoe UI", Arial, sans-serif;
   left: 50%;
   width: 0%;
   height: 0%;
-  background-color: #2e3e5cf8;
+  background-color: #11264df8;
   transform: translate(-50%, -50%);
   transition:
   width 0.3s ease,
@@ -463,7 +466,7 @@ font-family: "Segoe UI", Arial, sans-serif;
   flex-direction: column;
   width: 100%;
   /* height: 520px; */
-  margin-top: 10px;
+  margin-top: 20px;
   justify-content: center;
   justify-items: center;
 }
@@ -472,9 +475,9 @@ font-family: "Segoe UI", Arial, sans-serif;
   text-align: center;
 }
 .text-box h1 {
-  color: #22d3ee;
+  color: #29bba3;
   font-size: 26px;
-  font-weight: bold;
+  font-weight: 600;
   font-family: "Segoe UI", Arial, sans-serif;
   padding: 10px;
 }
@@ -551,7 +554,7 @@ background: #153a63;
 .ourcolor {
   inset: 0;
   position: absolute;
-  background: rgba(226, 227, 228, 0.548);
+  background: rgba(226, 227, 228, 0.384);
 }
 .our-success-box {
   width: 90%;
@@ -563,7 +566,7 @@ background: #153a63;
   margin-top: 40px;
 }
 .success-text h1 {
-  color: #e2e8f0;
+  color: #ffffff;
   font-weight: bold;
   font-size: 28px;
   font-family: "Segoe UI", Arial, sans-serif;
@@ -572,7 +575,7 @@ background: #153a63;
   margin-top: 16px;
   font-weight: 600;
   font-size: 20px;
-  color: #a5b4fc;
+  color: #ffffff;
   font-family: "Segoe UI", Arial, sans-serif;
 }
 
@@ -693,13 +696,13 @@ background: #153a63;
 .explore-header h1 {
   font-size: 24px;
   font-weight: bold;
-  color: #22d3ee;
+  color: #29bba3;
   text-align: center;
 }
 .explore-header p {
   font-size: 20px;
   font-weight: 600;
-  color: #a5b4fc;
+  color: #ffffff;
   text-align: center;
 }
 .explore-content {
@@ -775,11 +778,11 @@ background: #153a63;
 .cta-content h1 {
   font-size: 26px;
   font-weight: bold;
-  color: #22d3ee;
+  color: #29bba3;
 }
 .cta-content p {
   font-weight: 400;
-  color: #a5b4fc;
+  color: #ffffff;
   line-height: 1.6;
   font-size: 20px;
   font-weight: 600;
@@ -850,7 +853,7 @@ background: #153a63;
   justify-content: center;
   margin-top: 14px;
   padding: 10px;
-  color: #e2e8f0;
+  color: #29bba3;
 }
 .footer-grid {
   width: 90%;
@@ -862,22 +865,25 @@ background: #153a63;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding: 2px;
+  padding:4px;
 }
 .footer-heading {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 18px;
-  margin-bottom: 10px;
-  margin-top: 8px;
+  margin-bottom: 6px;
+  /* margin-top: 4px; */
+padding-left: 10px;
 }
 .footer-list {
   list-style: none;
-  padding: 0;
+  padding: 10px;
+line-height:1.5;
+margin-top: -10px;
 }
 .footer-link {
   font-size: 16px;
   font-weight: 400;
-  color: #a5b4fc;
+  color: #ffffff;
   text-decoration: none;
   transition: 0.3s;
 }
@@ -898,7 +904,7 @@ background: #153a63;
   flex-direction: column;
   gap: 8px;
   font-size: 18px;
-  color: #a5b4fc;
+  color: #ffffff;
 }
 .footer-contact-text p {
   font-size: 16px;
@@ -919,7 +925,7 @@ background: #153a63;
 .dddd {
   display: flex;
   width: 50%;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 200px;
 }
 
@@ -1133,18 +1139,26 @@ background: #153a63;
     align-items: center;
     align-self: center;
     width: 100%;
+   padding-left: 10px;
   }
   .footer-contact {
     text-align: center;
+
   }
   .footer-heading {
     font-size: 16px;
+   padding-left: 10px;
+
   }
   .footer-link {
     font-size: 14px;
+   padding-left: 10px;
+
+
   }
   .footer-contact h1 {
     font-size: 16px;
+
   }
   .footer-contact-text p {
     font-size: 14px;
