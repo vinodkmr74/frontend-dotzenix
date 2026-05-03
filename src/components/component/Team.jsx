@@ -31,7 +31,7 @@ export default function Team() {
     },
     {
       id: 3,
-      name: "Vinod Kumar",
+      name: "Aman Kumar",
       role: "Python Developer",
       about:
         "Experienced Python developer with expertise in FastAPI, MySQL, and backend systems.",
@@ -44,7 +44,7 @@ export default function Team() {
     },
     {
       id: 4,
-      name: "Rahul Sharma",
+      name: "Avinash Sharma",
       role: "Frontend Developer",
       about: "Skilled in React, JavaScript, and modern UI design.",
       img: "image/vinod.png",
