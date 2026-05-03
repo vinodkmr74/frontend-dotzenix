@@ -593,4 +593,32 @@ exploreour:[
         "text": ""
     }
 ],
+
+about_mission:[
+{
+  id:1,
+  heading:"Our Mission",
+  text:"Our mission is to deliver high-quality, scalable, and innovative digital solutions that help businesses grow and succeed in the modern world. We focus on creating reliable and user-friendly applications using the latest technologies.",
+  image:"image/mission.avif",
+},
+{
+  id:2,
+  heading:"Our vision",
+  text:"Our vision is to become a trusted technology partner, recognized for delivering innovative solutions and helping businesses achieve long-term digital success.",
+  image:"image/vision.jpg",
+},
+
+{
+  id:3,
+  heading:"Our Services",
+  text:"We provide design and Web development, software development, AI development, and custom software solutions. By leveraging modern technologies, we deliver secure, scalable, and high-performance digital solutions that support business growth.",
+  image:"image/images_service.jpg",
+}
+
+
+
+
+]
+
+
 };

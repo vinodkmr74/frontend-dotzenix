@@ -1,5 +1,7 @@
 body {
   overflow-x: hidden;
+font-family: "Segoe UI", Arial, sans-serif;
+
 }
 * {
   box-sizing: border-box;
@@ -420,8 +422,8 @@ body {
   background-color: #2e3e5cf8;
   transform: translate(-50%, -50%);
   transition:
-    width 0.3s ease,
-    height 0.3s ease;
+  width 0.3s ease,
+  height 0.3s ease;
   z-index: -1;
 }
 .product-card:hover::before {
@@ -919,6 +921,9 @@ body {
   border: 1px solid red;
   height: 200px;
 }
+
+
+
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
