@@ -1,7 +1,6 @@
 body {
   overflow-x: hidden;
-font-family: "Segoe UI", Arial, sans-serif;
-
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 * {
   box-sizing: border-box;
@@ -132,23 +131,33 @@ font-family: "Segoe UI", Arial, sans-serif;
   align-items: center;
   position: relative;
 }
-
 .menu-icon {
   display: none;
-  font-size: 30px;
+  font-size: 28px;
   cursor: pointer;
   color: #123a6c;
 }
 .nav-links {
   display: flex;
   gap: 25px;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 17px;
+  font-weight: 500;
   align-items: center;
 }
 .nav-link {
+  display: flex;
   color: #123a6c;
   text-decoration: none;
+}
+.arroup {
+  margin-top: 6px;
+  font-size: 18px;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  color: #123b6cad;
+}
+.nav-link:hover .arroup {
+  transform: rotate(180deg);
 }
 .nav-link:hover {
   color: #4c8b81;
@@ -158,10 +167,19 @@ font-family: "Segoe UI", Arial, sans-serif;
   cursor: pointer;
   z-index: 9;
 }
+
+.underline {
+  width: 0;
+  border-bottom: 2px solid #4c8b81;
+  transition: width 0.5s ease;
+}
+.dropdown:hover .underline {
+  width: 100%;
+}
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 110%;
   left: 0;
   background: white;
   padding: 15px;
@@ -186,7 +204,7 @@ font-family: "Segoe UI", Arial, sans-serif;
   gap: 15px;
 }
 .menu-title {
-  font-size: 18px;
+  font-size: 17px;
   margin-bottom: 5px;
 }
 .dropdown-menu ul {
@@ -217,6 +235,7 @@ font-family: "Segoe UI", Arial, sans-serif;
   height: 40px;
   border-radius: 10px;
   cursor: pointer;
+  font-size: 14px;
 }
 .quote-btn:hover {
   background: #123a6c;
@@ -228,7 +247,7 @@ font-family: "Segoe UI", Arial, sans-serif;
   flex-direction: column;
   width: 100%;
   padding: 8px;
-background: #153a63;
+  background: #153a63;
   /* background: linear-gradient(135deg, #354969, #6f8db8); */
   justify-content: center;
   align-items: center;
@@ -357,9 +376,9 @@ background: #153a63;
   display: flex;
   width: 100%;
   margin-top: 32px;
- padding: 20px 0px 20px;
+  padding: 20px 0px 20px;
   /* background: linear-gradient(135deg, #354969, #6f8db8); */
-background: #153a63;
+  background: #153a63;
 
   justify-content: center;
 }
@@ -425,8 +444,8 @@ background: #153a63;
   background-color: #11264df8;
   transform: translate(-50%, -50%);
   transition:
-  width 0.3s ease,
-  height 0.3s ease;
+    width 0.3s ease,
+    height 0.3s ease;
   z-index: -1;
 }
 .product-card:hover::before {
@@ -500,7 +519,7 @@ background: #153a63;
   justify-content: center;
   align-items: center;
   /* background: linear-gradient(135deg, #354969, #6f8db8); */
-background: #153a63;
+  background: #153a63;
 }
 .certified-container {
   width: 90%;
@@ -865,20 +884,20 @@ background: #153a63;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding:4px;
+  padding: 4px;
 }
 .footer-heading {
   font-weight: 500;
   font-size: 18px;
   margin-bottom: 6px;
   /* margin-top: 4px; */
-padding-left: 10px;
+  padding-left: 10px;
 }
 .footer-list {
   list-style: none;
   padding: 10px;
-line-height:1.5;
-margin-top: -10px;
+  line-height: 1.5;
+  margin-top: -10px;
 }
 .footer-link {
   font-size: 16px;
@@ -928,9 +947,6 @@ margin-top: -10px;
   /* border: 1px solid red; */
   height: 200px;
 }
-
-
-
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
@@ -1001,7 +1017,18 @@ margin-top: -10px;
     padding: 4px;
     z-index: 9;
     border-radius: 10px;
+    /* font-size: 16px; */
   }
+
+  .nav-link {
+    font-size: 16px;
+    background-color: #4c8b8013;
+    justify-content: space-between;
+  }
+  .menu-title {
+    font-size: 16px;
+  }
+
   .nav-links.show {
     display: flex;
     text-align: start;
@@ -1101,10 +1128,10 @@ margin-top: -10px;
     font-size: 16px;
     text-align: center;
   }
-.explore-left {
-  width: 100%;
-}
- 
+  .explore-left {
+    width: 100%;
+  }
+
   .explore-left1 h1 {
     font-size: 18px;
   }
@@ -1139,26 +1166,21 @@ margin-top: -10px;
     align-items: center;
     align-self: center;
     width: 100%;
-   padding-left: 10px;
+    padding-left: 10px;
   }
   .footer-contact {
     text-align: center;
-
   }
   .footer-heading {
     font-size: 16px;
-   padding-left: 10px;
-
+    padding-left: 10px;
   }
   .footer-link {
     font-size: 14px;
-   padding-left: 10px;
-
-
+    padding-left: 10px;
   }
   .footer-contact h1 {
     font-size: 16px;
-
   }
   .footer-contact-text p {
     font-size: 14px;
@@ -1255,7 +1277,6 @@ margin-top: -10px;
     font-size: 12px;
     text-align: center;
   }
-
 
   .explore-left1 img {
     height: 300px;

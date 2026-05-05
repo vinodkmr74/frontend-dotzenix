@@ -6,6 +6,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { appData } from "../../data/appData";
 import Logo from "../component/Logo";
+import { IoIosArrowDown } from "react-icons/io";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -27,8 +28,7 @@ export default function Header() {
       navbar.classList.remove("fixed");
     }
   };
-      window.addEventListener("scroll", handleScroll);
-
+  window.addEventListener("scroll", handleScroll);
 
   return (
     <>
@@ -81,8 +81,9 @@ export default function Header() {
         <nav className="navbar">
           <div className="navbar-container">
             <div className="menu-icon" onClick={() => setOpen(!open)}>
-              ☰
+              {open ? "✖" : "☰"}
             </div>
+
             <div>
               <Logo />
             </div>
@@ -94,13 +95,18 @@ export default function Header() {
                 <NavLink className="nav-link" to="/">
                   Home
                 </NavLink>
+                <div className="underline"></div>
               </div>
 
               <div
                 className={`dropdown ${disableHover ? "no-hover" : ""}`}
                 onMouseLeave={() => setDisableHover(false)}
               >
-                <span className="nav-link">Company</span>
+                <span className="nav-link">
+                  Company
+                  <IoIosArrowDown className="arroup" />
+                </span>
+
                 <div className="dropdown-menu">
                   <ul>
                     {appData.CompanyIndustriesProduct.map((item) => (
@@ -117,12 +123,17 @@ export default function Header() {
                     ))}
                   </ul>
                 </div>
+                <div className="underline"></div>
               </div>
+
               <div
                 className={`dropdown ${disableHover ? "no-hover" : ""}`}
                 onMouseLeave={() => setDisableHover(false)}
               >
-                <span className="nav-link">Service</span>
+                <span className="nav-link">
+                  Service
+                  <IoIosArrowDown className="arroup" />
+                </span>
                 <div className="dropdown-menu large">
                   <div className="grid">
                     {appData.menuproduct.map((item) => (
@@ -146,12 +157,16 @@ export default function Header() {
                     ))}
                   </div>
                 </div>
+                <div className="underline"></div>
               </div>
               <div
                 className={`dropdown ${disableHover ? "no-hover" : ""}`}
                 onMouseLeave={() => setDisableHover(false)}
               >
-                <span className="nav-link">Products</span>
+                <span className="nav-link">
+                  Products
+                  <IoIosArrowDown className="arroup" />
+                </span>
                 <div className="dropdown-menu">
                   <ul>
                     {appData.CompanyIndustriesProduct.map((item) => (
@@ -168,12 +183,16 @@ export default function Header() {
                     ))}
                   </ul>
                 </div>
+                <div className="underline"></div>
               </div>
               <div
                 className={`dropdown ${disableHover ? "no-hover" : ""}`}
                 onMouseLeave={() => setDisableHover(false)}
               >
-                <span className="nav-link">Industries</span>
+                <span className="nav-link">
+                  Industries
+                  <IoIosArrowDown className="arroup" />
+                </span>
                 <div className="dropdown-menu">
                   <ul>
                     {appData.CompanyIndustriesProduct.map((item) => (
@@ -190,6 +209,7 @@ export default function Header() {
                     ))}
                   </ul>
                 </div>
+                <div className="underline"></div>
               </div>
             </div>
             <button className="quote-btn">Request Quote</button>
