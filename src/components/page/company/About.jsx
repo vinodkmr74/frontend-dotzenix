@@ -28,7 +28,7 @@ const About = () => {
      </div>
      </div>
  
-     <Mission_vision />
+       <Mission_vision />
          <Certified />
          <Team />
          <Cta />

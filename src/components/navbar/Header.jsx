@@ -109,7 +109,7 @@ export default function Header() {
 
                 <div className="dropdown-menu">
                   <ul>
-                    {appData.CompanyIndustriesProduct.map((item) => (
+                    {appData.company.map((item) => (
                       <li key={item.id}>
                         <Link
                           to={item.company_path}
@@ -169,7 +169,7 @@ export default function Header() {
                 </span>
                 <div className="dropdown-menu">
                   <ul>
-                    {appData.CompanyIndustriesProduct.map((item) => (
+                    {appData.Product.map((item) => (
                       <li key={item.id}>
                         <Link
                           to={item.product_path}
@@ -195,7 +195,7 @@ export default function Header() {
                 </span>
                 <div className="dropdown-menu">
                   <ul>
-                    {appData.CompanyIndustriesProduct.map((item) => (
+                    {appData.Industries.map((item) => (
                       <li key={item.id}>
                         <Link
                           to={item.industries_path}

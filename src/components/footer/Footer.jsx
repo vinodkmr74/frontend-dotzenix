@@ -13,7 +13,7 @@ export default function Footer() {
             <div className="comp">
               <h2 className="footer-heading">Company</h2>
               <ul className="footer-list">
-                {appData.CompanyIndustriesProduct.map((item, index) => (
+                {appData.company.map((item, index) => (
                   <li key={index}>
                     <Link to={item.company_path} className="footer-link">
                       {item.company}
@@ -27,7 +27,7 @@ export default function Footer() {
             <div className="comp">
               <h2 className="footer-heading">Industries</h2>
               <ul className="footer-list">
-                {appData.CompanyIndustriesProduct.map((item, index) => (
+                {appData.Industries.map((item, index) => (
                   <li key={index}>
                     <a href={item.industries_path} className="footer-link">
                       {item.Industries}
@@ -41,7 +41,7 @@ export default function Footer() {
             <div className="comp">
               <p className="footer-heading">Products</p>
               <ul className="footer-list">
-                {appData.CompanyIndustriesProduct.map((item) => (
+                {appData.Product.map((item) => (
                   <li key={item.id}>
                     <Link to={item.product_path} className="footer-link">
                       {item.product}

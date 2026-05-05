@@ -46,6 +46,7 @@ display: flex;
 justify-content: center;
 justify-items: center;
 margin-top: 12px;
+margin-bottom: 26px;
 }
 .Misson-vision-in{
 width: 90%;
@@ -109,6 +110,8 @@ justify-items: center;
 gap: 10px;
 width: 90%;
   transition: 0.3s;
+
+
 }
 
 .team-card {
@@ -123,7 +126,7 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition: all 0.4s ease;
   overflow: hidden;
   position: relative;
-
+margin-top: 16px;
 }
 
 .team-card:hover {
@@ -233,7 +236,7 @@ border: 1px solid rgba(175, 167, 167, 0.274);
 .cta2 {
   background: #153a63; /* dark blue */
   padding: 34px 14px;
- margin-top: 20px;
+ margin-top: 28px;
 }
 
 .cta2-container {
