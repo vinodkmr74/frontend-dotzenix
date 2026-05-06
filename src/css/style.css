@@ -140,14 +140,15 @@ body {
 .nav-links {
   display: flex;
   gap: 25px;
-  font-size: 17px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
   align-items: center;
 }
 .nav-link {
   display: flex;
   color: #123a6c;
   text-decoration: none;
+
 }
 .arroup {
   margin-top: 6px;
@@ -155,6 +156,7 @@ body {
   display: inline-block;
   transition: transform 0.3s ease;
   color: #123b6cad;
+
 }
 .nav-link:hover .arroup {
   transform: rotate(180deg);
@@ -178,15 +180,13 @@ body {
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 110%;
-  left: 0;
+  top: 100%;
+  left: -30px;
   background: white;
   padding: 15px;
   border-radius: 10px;
   width: 180px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-
-
 }
 .dropdown:hover .dropdown-menu {
   display: block;
@@ -1025,6 +1025,7 @@ body {
     font-size: 16px;
     background-color: #4c8b8013;
     justify-content: space-between;
+
   }
   .menu-title {
     font-size: 16px;

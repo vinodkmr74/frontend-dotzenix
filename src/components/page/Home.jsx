@@ -7,23 +7,16 @@ import Certified from "../component/Certified";
 import ServiceCloud from "../component/ServiceCloud";
 import { Link } from "react-router-dom";
 import Company_image from "../slider/Company_image";
-
-import { FaInstagramSquare } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { BsFacebook } from "react-icons/bs";
-import { FaXTwitter } from "react-icons/fa6";
 import { BASE_URL } from "../../config";
 import { appData } from "../../data/appData";
 import Logo from "../component/Logo";
-import { FaLinkedinIn } from "react-icons/fa6";
-
+import Media_contact from "../component/Media_contact";
 
 export default function Home() {
   return (
     <div>
       <div className="img-slider">
-              <Image_slider />
-
+        <Image_slider />
       </div>
 
       <div className="text-container">
@@ -73,8 +66,6 @@ export default function Home() {
         </div>
       </div>
 
-
-
       <div
         className="maim-growth"
         style={{
@@ -89,11 +80,10 @@ export default function Home() {
             and Scale.
           </h1>
         </div>
-        
+
         <div className="scale-card">
           <Scale />
         </div>
-        
       </div>
 
       <div className="gap-space"></div>
@@ -200,20 +190,7 @@ export default function Home() {
         ))}
       </div>
 
-      <div className="media-contact-main">
-        <div className="media-contact1">
-          <div>
-            <Logo />
-          </div>
-          <div className="media-contact2">
-            <div className="instra"><FaInstagramSquare /></div>
-            <div className="linkdin"><FaLinkedinIn /></div>
-            <div className="facebook"><BsFacebook /></div>
-            <div className="twitter"><FaXTwitter /></div>
-          
-          </div>
-        </div>
-      </div>
+      <Media_contact />
     </div>
   );
 }
