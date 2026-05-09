@@ -498,11 +498,7 @@ font-size: 16px;
 width: 100%;
 }
 
-option{
-border-radius: 10px;
 
-
-}
 
 .application-form textarea {
   border: 1px solid rgb(29, 26, 68);
@@ -615,10 +611,9 @@ border-radius: 10px;
   .application-form {
     width: 70%;
   }
-.application-form select {
-  color: rgba(29, 26, 68, 0.884);
-  width: 100%;
-}
+  select option {
+  max-width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -670,7 +665,8 @@ border-radius: 10px;
   .application-form {
     width: 100%;
   }
-.application-form select {
-  width: 100%;
-}
+ select option {
+    max-width: 100%;
+
+  }
 }
