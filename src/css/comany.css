@@ -305,6 +305,7 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 2;
+  padding: 4px;
 }
 
 .career-opportunities {
@@ -313,6 +314,9 @@
   justify-content: center;
   justify-items: center;
   margin-top: 20px;
+}
+.career-opportunities-content {
+  width: 90%;
 }
 .career-opportunities-header {
   justify-content: center;
@@ -326,6 +330,8 @@
 }
 .career-opportunities-header p {
   color: #ffffff;
+  padding: 4px;
+
 }
 
 .card-job-box {
@@ -369,19 +375,48 @@
   padding: 10px;
   gap: 10px;
 }
+
 .job-card-description {
   padding: 10px;
-  /* border: 1px solid red; */
+  width: 100%;
 }
-.job-card-description h1 {
+.job-info {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+.job-info-de {
+  gap: 20px;
+  width: 100%;
+}
+.job-info h1 {
   color: #ffffffbe;
   font-weight: 500;
   line-height: 2;
+  font-size: 16px;
+
 }
-.job-card-description p {
+.job-info p {
   color: rgba(255, 255, 255, 0.555);
-  line-height: 2;
+  line-height: 1.5;
+  padding-top: 4px;
+font-size: 16px;
 }
+
+.job-info-de h1 {
+  color: #ffffffbe;
+  font-weight: 500;
+  line-height: 2;
+font-size: 16px;
+
+}
+.job-info-de p {
+  color: rgba(255, 255, 255, 0.555);
+  line-height: 1.5;
+font-size: 16px;
+
+}
+
 .job-card-apply {
   display: flex;
   justify-content: center;
@@ -461,6 +496,7 @@
 .application-form select {
   color: rgba(29, 26, 68, 0.884);
 }
+
 .application-form textarea {
   border: 1px solid rgb(29, 26, 68);
   border-radius: 5px;
@@ -572,6 +608,10 @@
   .application-form {
     width: 70%;
   }
+ .application-form option{
+width: 50%;
+
+}
 }
 
 @media (max-width: 480px) {

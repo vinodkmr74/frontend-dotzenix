@@ -20,49 +20,73 @@ export const careersData = {
         postDate:"07 May 2026",
         role:"SEO Developer",
         Requirement:"React JS, JavaScript, CSS",
+        salary:"5000k - 7000k",
+        qualification:"B.Tech, M.Tech, BCA, MCA",
+        location:"Bangalore",
         experience:"1+ Years",
         description:"Looking for a passionate developer to build responsive and modern web applications."
     },
-        {   id:1,
+       {   id:1,
         title:"Software Developer",
         postDate:"07 May 2026",
-        role:"Frontend Developer",
-        Requirement:" JavaScript, CSS",
-        experience:"1+ Years",
-        description:"Looking for a passionate developer to build responsive and modern web applications."
-    },
-        {   id:1,
-        title:"Software Developer",
-        postDate:"07 May 2026",
-        role:"Back Developer",
-        Requirement:"python ,React JS, JavaScript, CSS",
-        experience:"1+ Years",
-        description:"Looking for a passionate developer to build responsive and modern web applications."
-    },
-        {   id:1,
-        title:"Software Developer",
-        postDate:"07 May 2026",
-        role:"Back Developer",
-        Requirement:"java ,React JS, JavaScript, CSS",
-        experience:"1+ Years",
-        description:"Looking for a passionate developer to build responsive and modern web applications."
-    },
-        {   id:1,
-        title:"Software Developer",
-        postDate:"07 May 2026",
-        role:"Frontend Developer",
+        role:"SEO Developer",
         Requirement:"React JS, JavaScript, CSS",
+        salary:"5000k - 7000k",
+        qualification:"B.Tech, M.Tech, BCA, MCA",
+        location:"Bangalore",
         experience:"1+ Years",
-        description:"Looking for a passionate developer to build responsive and modern web applications. Looking for a passionate developer to build responsive and modern web applications. Looking for a passionate developer to build responsive and modern web applications. Looking for a passionate developer to build responsive and modern web applications."
+        description:"Looking for a passionate developer to build responsive and modern web applications."
     },
-            {   id:1,
+
+       {   id:1,
         title:"Software Developer",
         postDate:"07 May 2026",
-        role:"Frontend Developer",
+        role:"SEO Developer",
         Requirement:"React JS, JavaScript, CSS",
+        salary:"5000k - 7000k",
+        qualification:"B.Tech, M.Tech, BCA, MCA",
+        location:"Bangalore",
         experience:"1+ Years",
-        description:"Looking for a passionate developer to build responsive and modern web applications. Looking for a passionate developer to build responsive and modern web applications. Looking for a passionate developer to build responsive and modern web applications. Looking for a passionate developer to build responsive and modern web applications."
+        description:"Looking for a passionate developer to build responsive and modern web applications."
     },
+
+       {   id:1,
+        title:"Software Developer",
+        postDate:"07 May 2026",
+        role:"SEO Developer",
+        Requirement:"React JS, JavaScript, CSS",
+        salary:"5000k - 7000k",
+        qualification:"B.Tech, M.Tech, BCA, MCA",
+        location:"Bangalore",
+        experience:"1+ Years",
+        description:"Looking for a passionate developer to build responsive and modern web applications."
+    },
+
+       {   id:1,
+        title:"Software Developer",
+        postDate:"07 May 2026",
+        role:"SEO Developer",
+        Requirement:"React JS, JavaScript, CSS",
+        salary:"5000k - 7000k",
+        qualification:"B.Tech, M.Tech, BCA, MCA",
+        location:"Bangalore",
+        experience:"1+ Years",
+        description:"Looking for a passionate developer to build responsive and modern web applications."
+    },
+
+       {   id:1,
+        title:"Software Developer",
+        postDate:"07 May 2026",
+        role:"SEO Developer",
+        Requirement:"React JS, JavaScript, CSS",
+        salary:"5000k - 7000k",
+        qualification:"B.Tech, M.Tech, BCA, MCA",
+        location:"Bangalore",
+        experience:"1+ Years",
+        description:"Looking for a passionate developer to build responsive and modern web applications."
+    },
+
+
 
 
 

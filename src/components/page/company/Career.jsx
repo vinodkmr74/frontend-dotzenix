@@ -15,7 +15,6 @@ export default function Career() {
 
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
       () => {
-
         setMassage(true);
 
         setTimeout(() => {
@@ -163,18 +162,38 @@ export default function Career() {
 
               <div className="job-card-details">
                 <div className="job-card-description">
-                  <h1>Role:</h1>
-                  <h1>Experience:</h1>
-                  <h1>Requirement:</h1>
-                  <h1>Description:</h1>
+                  <div className="job-info">
+                    <h1>Role: </h1>
+                    <p>{item.role}</p>
+                  </div>
+                  <div className="job-info">
+                    <h1>Experience: </h1>
+                    <p>{item.experience}</p>
+                  </div>
+                  <div className="job-info">
+                    <h1>Skills Required: </h1>
+                    <p>{item.Requirement}</p>
+                  </div>
+                    <div className="job-info">
+                    <h1>Salary: </h1>
+                    <p>{item.salary}</p>
+                  </div>
+                    <div className="job-info">
+                    <h1>Qualification: </h1>
+                    <p>{item.qualification}</p>
+                  </div>
+                    <div className="job-info">
+                    <h1>Location: </h1>
+                    <p>{item.location}</p>
+                  </div>
+                  <div className="job-info-de">
+                    <h1>Description: </h1>
+                    <p>{item.description}</p>
+                  </div>
                 </div>
 
-                <div className="job-card-description">
-                  <p>{item.role}</p>
-                  <p>{item.experience}</p>
-                  <p>{item.Requirement}</p>
-                  <p>{item.description}</p>
-                </div>
+                {/* <div className="job-card-description">
+                </div> */}
               </div>
 
               <div className="job-card-apply">
@@ -287,7 +306,7 @@ export default function Career() {
                   value={formData.experience}
                   onChange={handleChange}
                 >
-                  <option id="select" value="">
+                  <option value="">
                     Select Experience
                   </option>
                   <option value="Fresher">Fresher</option>
