@@ -331,7 +331,6 @@
 .career-opportunities-header p {
   color: #ffffff;
   padding: 4px;
-
 }
 
 .card-job-box {
@@ -394,27 +393,24 @@
   font-weight: 500;
   line-height: 2;
   font-size: 16px;
-
 }
 .job-info p {
   color: rgba(255, 255, 255, 0.555);
   line-height: 1.5;
   padding-top: 4px;
-font-size: 16px;
+  font-size: 16px;
 }
 
 .job-info-de h1 {
   color: #ffffffbe;
   font-weight: 500;
   line-height: 2;
-font-size: 16px;
-
+  font-size: 16px;
 }
 .job-info-de p {
   color: rgba(255, 255, 255, 0.555);
   line-height: 1.5;
-font-size: 16px;
-
+  font-size: 16px;
 }
 
 .job-card-apply {
@@ -495,10 +491,8 @@ font-size: 16px;
 }
 .application-form select {
   color: rgba(29, 26, 68, 0.884);
-width: 100%;
+  width: 100%;
 }
-
-
 
 .application-form textarea {
   border: 1px solid rgb(29, 26, 68);
@@ -603,9 +597,9 @@ width: 100%;
   .job-card {
     width: 100%;
   }
-.job-card-header h2 {
-  font-size: 18px;
-}
+  .job-card-header h2 {
+    font-size: 18px;
+  }
   .popup-form {
     width: 80%;
   }
@@ -614,7 +608,7 @@ width: 100%;
     width: 70%;
   }
   select option {
-  max-width: 80%;
+    max-width: 80%;
   }
 }
 
@@ -667,8 +661,52 @@ width: 100%;
   .application-form {
     width: 100%;
   }
- select option {
+  select option {
     max-width: 80%;
+  }
+}
 
+.custom-select {
+  position: relative;
+  width: 100%;
+}
+
+.select-box {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  /* background: #fff; */
+  cursor: pointer;
+}
+
+.select-options {
+  position: absolute;
+  top: 105%;
+  left: 0;
+  width: 100%;
+  background: #f5f3f3fb;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  z-index: 1000;
+}
+
+.select-option {
+  padding: 12px;
+  cursor: pointer;
+}
+
+.select-option:hover {
+  background: #b7e9eb7e;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .select-options {
+    width: 50%;
   }
 }

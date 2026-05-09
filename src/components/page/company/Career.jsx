@@ -129,6 +129,23 @@ export default function Career() {
       Object.fromEntries(Object.keys(formData).map((key) => [key, ""])),
     );
   };
+
+  const [showExperience, setShowExperience] = useState(false);
+
+  const experienceOptions = [
+    "Fresher",
+    "1 Year",
+    "2 Years",
+    "3 Years",
+    "4+ Years",
+  ];
+
+  /* state */
+
+  const [showGender, setShowGender] = useState(false);
+
+  const genderOptions = ["Male", "Female"];
+
   return (
     <>
       <CardAllImage image="/image/vector.avif" title="Careers" />
@@ -174,15 +191,15 @@ export default function Career() {
                     <h1>Skills Required: </h1>
                     <p>{item.Requirement}</p>
                   </div>
-                    <div className="job-info">
+                  <div className="job-info">
                     <h1>Salary: </h1>
                     <p>{item.salary}</p>
                   </div>
-                    <div className="job-info">
+                  <div className="job-info">
                     <h1>Qualification: </h1>
                     <p>{item.qualification}</p>
                   </div>
-                    <div className="job-info">
+                  <div className="job-info">
                     <h1>Location: </h1>
                     <p>{item.location}</p>
                   </div>
@@ -271,7 +288,7 @@ export default function Career() {
                   </p>
                 ) : null}
 
-                <select
+                {/* <select
                   name="gender"
                   value={formData.gender}
                   onChange={handleChange}
@@ -281,7 +298,38 @@ export default function Career() {
                   </option>
                   <option value="Male">Male</option>
                   <option value="Female">Female</option>
-                </select>
+                </select> */}
+
+                <div className="custom-select">
+                  <div
+                    className="select-box"
+                    onClick={() => setShowGender(!showGender)}
+                  >
+                    {formData.gender || "Select Gender"}
+                  </div>
+
+                  {showGender && (
+                    <div className="select-options">
+                      {genderOptions.map((item, index) => (
+                        <div
+                          key={index}
+                          className="select-option"
+                          onClick={() => {
+                            setFormData({
+                              ...formData,
+                              gender: item,
+                            });
+
+                            setShowGender(false);
+                          }}
+                        >
+                          {item}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+
                 {error.gender ? (
                   <p style={{ color: "red", fontSize: "14px" }}>
                     {error.gender}
@@ -301,7 +349,7 @@ export default function Career() {
                   </p>
                 ) : null}
 
-                <select
+                {/* <select
                   name="experience"
                   value={formData.experience}
                   onChange={handleChange}
@@ -314,7 +362,37 @@ export default function Career() {
                   <option value="2 Years">2 Years</option>
                   <option value="3 Years">3 Years</option>
                   <option value="4+ Years">4+ Years</option>
-                </select>
+                </select> */}
+
+                <div className="custom-select">
+                  <div
+                    className="select-box"
+                    onClick={() => setShowExperience(!showExperience)}
+                  >
+                    {formData.experience || "Select Experience"}
+                  </div>
+
+                  {showExperience && (
+                    <div className="select-options">
+                      {experienceOptions.map((item, index) => (
+                        <div
+                          key={index}
+                          className="select-option"
+                          onClick={() => {
+                            setFormData({
+                              ...formData,
+                              experience: item,
+                            });
+
+                            setShowExperience(false);
+                          }}
+                        >
+                          {item}
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
 
                 {error.experience ? (
                   <p style={{ color: "red", fontSize: "14px" }}>
