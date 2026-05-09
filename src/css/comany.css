@@ -676,7 +676,7 @@
 .select-box {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(29, 26, 68);
   border-radius: 6px;
   /* background: #fff; */
   cursor: pointer;
