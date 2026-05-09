@@ -612,7 +612,7 @@ width: 100%;
     width: 70%;
   }
   select option {
-  max-width: 100%;
+  max-width: 80%;
   }
 }
 
@@ -666,7 +666,7 @@ width: 100%;
     width: 100%;
   }
  select option {
-    max-width: 100%;
+    max-width: 80%;
 
   }
 }
