@@ -607,9 +607,7 @@
   .application-form {
     width: 70%;
   }
-  select option {
-    max-width: 80%;
-  }
+
 }
 
 @media (max-width: 480px) {
@@ -664,6 +662,10 @@
   select option {
     max-width: 80%;
   }
+.job-card-header h2 {
+    font-size: 16px;
+ /* font-weight: 500; */
+  }
 }
 
 .custom-select {
@@ -707,6 +709,6 @@
 
 @media (max-width: 768px) {
   .select-options {
-    width: 50%;
+    width: 100%;
   }
 }
