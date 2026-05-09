@@ -495,6 +495,13 @@ font-size: 16px;
 }
 .application-form select {
   color: rgba(29, 26, 68, 0.884);
+width: 100%;
+}
+
+option{
+border-radius: 10px;
+
+
 }
 
 .application-form textarea {
@@ -608,9 +615,9 @@ font-size: 16px;
   .application-form {
     width: 70%;
   }
- .application-form option{
-width: 50%;
-
+.application-form select {
+  color: rgba(29, 26, 68, 0.884);
+  width: 100%;
 }
 }
 
@@ -663,4 +670,7 @@ width: 50%;
   .application-form {
     width: 100%;
   }
+.application-form select {
+  width: 100%;
+}
 }
