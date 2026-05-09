@@ -15,10 +15,11 @@ export default function Logo() {
             <span>enix</span>
           </h1>
           <div>
-            <p className="tech">
-              <div className="deas"></div>TECHNOLOGIES PVT.LTD.
+            <div className="tech">
               <div className="deas"></div>
-            </p>
+              TECHNOLOGIES PVT.LTD.
+              <div className="deas"></div>
+            </div>
           </div>
         </div>
       </div>
