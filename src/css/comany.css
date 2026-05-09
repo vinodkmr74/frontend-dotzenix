@@ -603,7 +603,9 @@ width: 100%;
   .job-card {
     width: 100%;
   }
-
+.job-card-header h2 {
+  font-size: 18px;
+}
   .popup-form {
     width: 80%;
   }
