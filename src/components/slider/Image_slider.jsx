@@ -32,7 +32,7 @@ export default function Image_slider() {
           modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
           className="mySwiper"
         >
-          <div className="slider-container">
+          <div className="slider-container" >
             {appData.sliderData.map((item) => (
               <SwiperSlide key={item.id}>
                 <img className="slider-image" src={item.image} />

@@ -182,22 +182,22 @@ export const appData = {
   sliderData: [
     {
       id: 1,
-      image: "image/ai_slider2.jpg",
-      text: "#1 Artificial Intelligence and  Machine Learning",
-    },
-    {
-      id: 2,
-      image: "image/web_developer2.png",
+      image: "image/web_slider.png",
       text: "#2 Web Develoments Turning Ideas into Powerful Digital Experiences",
     },
     {
+      id: 2,
+      image: "image/Ai_slider.png",
+      text: "#1 Artificial Intelligence and  Machine Learning",
+    },
+    {
       id: 3,
-      image: "image/app_slider1.jpg",
+      image: "image/App_dev_slider.png",
       text: "#3 App Development Building Powerful Mobile Apps for the Digital Future",
     },
     {
       id: 4,
-      image: "image/business_development2.jpg",
+      image: "image/Business_slider2.png",
       text: "#4 Business Development Driving Growth Through Smart Digital Strategies",
     },
   ],
