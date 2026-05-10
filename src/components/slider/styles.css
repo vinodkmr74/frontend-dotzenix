@@ -142,6 +142,13 @@ body {
   }
 }
 @media (max-width: 480px) {
+
+ .swiper {
+    height: 310px;
+  }
+  .swiper img {
+    height: 310px;
+  }
   .slider-text {
     font-size: 16px;
   }
