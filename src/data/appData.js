@@ -187,17 +187,17 @@ export const appData = {
     },
     {
       id: 2,
-      image: "image/Ai_slider.png",
+      image: "image/Aislider3.png",
       text: "#1 Artificial Intelligence and  Machine Learning",
     },
     {
       id: 3,
-      image: "image/App_dev_slider.png",
+      image: "image/App_dev_slider2.png",
       text: "#3 App Development Building Powerful Mobile Apps for the Digital Future",
     },
     {
       id: 4,
-      image: "image/Business_slider2.png",
+      image: "image/Business_slider3.png",
       text: "#4 Business Development Driving Growth Through Smart Digital Strategies",
     },
   ],
