@@ -13,8 +13,7 @@ body {
 .img-slider-container {
   width: 100%;
 }
-
-.swiper {
+.mySwiper{
   width: 100%;
   height: 520px;
 }
@@ -31,7 +30,7 @@ body {
   width: 100%;
 }
 
-.swiper img {
+.slider-img {
   width: 100%;
   height: 520px;
 }
@@ -52,7 +51,7 @@ body {
 
 .slider-text {
   position: absolute;
-  top: 200px;
+  top: 190px;
   left: 16%;
   font-size: 28px;
   font-weight: bold;
@@ -151,6 +150,7 @@ body {
   }
   .slider-text {
     font-size: 16px;
+   top: 100px;
   }
   .companySlider .swiper-slide {
     height: 55px;

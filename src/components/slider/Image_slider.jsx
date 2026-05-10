@@ -35,7 +35,7 @@ export default function Image_slider() {
           <div className="slider-container" >
             {appData.sliderData.map((item) => (
               <SwiperSlide key={item.id}>
-                  <img src={item.image} />
+                  <img className="slider-img" src={item.image} />
                 <p className="slider-text">{item.text}</p>
               </SwiperSlide>
             ))}

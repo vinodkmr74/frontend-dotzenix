@@ -1066,6 +1066,13 @@ width: 100%;
   .text-box h1 {
     font-size: 20px;
   }
+
+.heading-box h1{
+font-size: 24px;
+}
+.subheading-box h3{
+font-size: 18px;
+}
   .scale-card {
     flex-direction: column;
   }
