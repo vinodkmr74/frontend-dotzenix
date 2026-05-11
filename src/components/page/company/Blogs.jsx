@@ -11,8 +11,6 @@ export default function Blogs() {
 
       <div className="blog-main">
         <div className="blog-in">
-     
-          
           {blogsData.blogs.map((item) => (
 
           <div key={item} className="blog-card">
