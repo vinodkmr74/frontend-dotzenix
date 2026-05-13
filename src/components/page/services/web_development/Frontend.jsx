@@ -34,7 +34,7 @@ export default function Frontend() {
             <div className="why-heding">
               <ImArrowRight2 className="arro-icon" />
               <p>
-                <spen>{item.title} : </spen> {item.subtext}
+                <span>{item.title} : </span> {item.subtext}
               </p>
             </div>
           </div>
