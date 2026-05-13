@@ -255,7 +255,7 @@ width: 100%;
   /* background: linear-gradient(135deg, #354969, #6f8db8); */
   justify-content: center;
   align-items: center;
-  margin-top: 6px;
+  margin-top: 2px;
 }
 .text-wrapper {
   display: flex;

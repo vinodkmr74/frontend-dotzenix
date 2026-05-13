@@ -39,7 +39,7 @@ export default function Image_slider() {
                 <p className="slider-text">{item.text}</p>
               </SwiperSlide>
             ))}
-          </div>
+          </div>  
         </Swiper>
       </div>
     </>
