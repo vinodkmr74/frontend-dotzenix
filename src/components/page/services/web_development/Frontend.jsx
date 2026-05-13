@@ -1,11 +1,11 @@
 import React from "react";
 import Service_hero from "../../../component/Service_hero";
-import Service_about from "../../../component/service_about";
 import { serviceData } from "../../../../data/serviceData";
 import Technologies from "../../../slider/Technologies";
 import { ImArrowRight2 } from "react-icons/im";
 import Dev_process from "../../../component/Dev_process";
 import Cta from "../../../component/Cta";
+import Service_abouts from "../../../component/Service_abouts";
 
 export default function Frontend() {
   return (
@@ -18,7 +18,8 @@ export default function Frontend() {
         image={"image/frontend.png"}
         btn={"Get start"}
       />
-      <Service_about
+
+      <Service_abouts
         heading={"What is Frontend Development?"}
         text={
           "Frontend development focuses on creating visually attractive,responsive, and interactive user interfaces for websites and web applications. We create fast, scalable, and modern digital solutions that enhance user experience."

@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react'
 import { serviceData } from "../../data/serviceData";
 
-export default function Service_about({ heading, text, image, }) {
-  return (
-    <>
+export default function Service_abouts() {
+  return (<>
+  
       <div className="service_about">
         <div className="service_about_in">
           <div className="service_about_text">
@@ -12,10 +12,7 @@ export default function Service_about({ heading, text, image, }) {
           </div>
         </div>
       </div>
-
-
-
-
-    </>
-  );
+  
+  </>
+  )
 }
