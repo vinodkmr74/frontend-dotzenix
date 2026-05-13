@@ -569,7 +569,7 @@ width: 100%;
   margin-top: 32px;
   padding: 16px;
   position: relative;
-  background-image: url("image/vector.avif");
+  background-image: url("/image/vector.avif");
   background-size: cover;
   background-position: center;
 }
