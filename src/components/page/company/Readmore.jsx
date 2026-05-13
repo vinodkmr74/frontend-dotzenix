@@ -3,7 +3,7 @@ import CardAllImage from '../../component/CardAllImage'
 
 export default function Readmore() {
   return (<>
-        <CardAllImage image="/image/vector.avif" title="Read more" />
+        <CardAllImage image="image/vector.avif" title="Read more" />
   
   
   

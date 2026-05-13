@@ -9,7 +9,7 @@ const About = () => {
   return (<>
      <div>
       <CardAllImage
-      image="/image/vector.avif"
+      image="image/vector.avif"
       title="About Us"    />
      </div>
 

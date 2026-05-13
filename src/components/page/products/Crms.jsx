@@ -4,7 +4,7 @@ import CardAllImage from '../../component/CardAllImage'
 export default function Crms() {
   return (<>
     <CardAllImage
-         image="/image/vector.avif"
+         image="image/vector.avif"
          title="crm"
         />
 

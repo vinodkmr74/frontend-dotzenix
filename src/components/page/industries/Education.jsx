@@ -3,7 +3,7 @@ import CardAllImage from '../../component/CardAllImage'
 export default function Education() {
   return (
         <CardAllImage
-      image="/image/vector.avif"
+      image="image/vector.avif"
       title="Education"
      />
   )

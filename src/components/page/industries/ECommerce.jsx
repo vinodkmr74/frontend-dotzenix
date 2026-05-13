@@ -4,7 +4,7 @@ export default function ECommerce() {
   return (
     <>
        <CardAllImage
-         image="/image/vector.avif"
+         image="image/vector.avif"
          title="E-Commerce"
         />
     </>

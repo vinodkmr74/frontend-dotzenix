@@ -148,7 +148,7 @@ export default function Career() {
 
   return (
     <>
-      <CardAllImage image="/image/vector.avif" title="Careers" />
+      <CardAllImage image="image/vector.avif" title="Careers" />
       <div className="career-main">
         {careersData.careerAbout.map((item, index) => (
           <div key={index} className="career-about">
