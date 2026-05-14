@@ -244,6 +244,99 @@ backendpointData:[
 
     },
 ],
+Database:[
+    {
+        id:1,
+        title:"Secure Data Management",
+        subtext:"We ensure your business data is stored securely with advanced protection and backup solutions."
+    },
+     {
+        id:2,
+        title:"High Performance",
+        subtext:"Our optimized database systems deliver fast data processing and smooth application performance."
+    },
+     {
+        id:3,
+        title:"Scalable Solutions",
+        subtext:"We build scalable databases that can handle growing business data and user traffic efficiently."
+    },
+     {
+        id:4,
+        title:"Reliable Data Storage",
+        subtext:"We provide stable and reliable database architectures for uninterrupted business operations."
+    },
+     {
+        id:5,
+        title:"Database Optimization",
+        subtext:"We optimize queries, tables, and performance to improve speed and efficiency."
+    },
+     {
+        id:6,
+        title:"Modern Database Technologies",
+        subtext:"We work with MySQL, PostgreSQL, MongoDB, SQL Server, and other modern database systems."
+    },
+     {
+        id:7,
+        title:"Backup & Recovery",
+        subtext:"We implement secure backup and recovery systems to protect critical business data."
+    },
+     {
+        id:8,
+        title:"Easy Integration",
+        subtext:"Our database solutions integrate seamlessly with web, mobile, and enterprise applications."
+    },
+],
+ databaseServiceCard:[
+    {
+        id:1,
+        image:"",
+        heading:"MySQL Database",
+        text:"Secure and high-performance relational database solutions for modern applications."
+    },
+      {
+        id:2,
+        image:"",
+        heading:"MongoDB Database",
+        text:"Scalable NoSQL database solutions for flexible and dynamic data management."
+    },
+      {
+        id:3,
+        image:"",
+        heading:"PostgreSQL Database",
+        text:"Advanced open-source database solutions with powerful performance and reliability."
+    },
+      {
+        id:4,
+        image:"",
+        heading:"SQL Server",
+        text:"Enterprise-grade database management solutions for secure business applications."
+    },
+      {
+        id:5,
+        image:"",
+        heading:"Database Design",
+        text:"Optimized database architecture for better performance and efficient data handling."
+    },
+      {
+        id:6,
+        image:"",
+        heading:"Database Optimization",
+        text:"Improve database speed, query performance, and overall application efficiency."
+    },
+      {
+        id:7,
+        image:"",
+        heading:"Backup & Recovery",
+        text:"Secure backup and disaster recovery solutions to protect critical business data."
+    },
+      {
+        id:8,
+        image:"",
+        heading:"Cloud Database Services",
+        text:"Scalable cloud-based database deployment and management solutions."
+    },
 
+
+ ],
 
 }

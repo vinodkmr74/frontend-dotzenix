@@ -11,29 +11,29 @@ export default function Database() {
   return (<>
   
        <Service_hero
-          heading={"Frontend Development Services"}
+          heading={"Database Services"}
           text={
-            "We build responsive, custom, high-performance, and user-friendly web applications using modern frontend technologies such as React.js,Next.js, JavaScript, and UI"
+            "We provide secure, scalable, and high-performance database solutions for efficient data storage, management, optimization, and seamless business operations."
           }
-          image={"image/frontend.png"}
+          image={"image/database.png"}
           btn={"Get start"}
         />
   
         <Service_abouts
-          heading={"What is Frontend Development?"}
+          heading={"What is Database?"}
           text={
-            "Frontend development focuses on creating visually attractive,responsive, and interactive user interfaces for websites and web applications. We create fast, scalable, and modern digital solutions that enhance user experience."
+            "A database is an organized collection of data that is stored, managed, and accessed electronically. It helps businesses securely store information, manage records efficiently, and retrieve data quickly for websites, applications, and software systems."
           }
-          image={"image/web-image.png"}
+          image={"image/dataimg.png"}
           title={"Transforming Ideas Into Powerful Digital Solutions"}
           subtext={"We create modern, scalable, and user-friendly applications with advanced technology and robust architecture that help businesses grow."}
         />
   
         <div className="why-chose">
           <div className="why-chose-heading">
-            <h1>Why Choose Our Frontend Development Services?</h1>
+            <h1>Why Choose Our Database Services?</h1>
           </div>
-          {serviceData.whyData.map((item, index) => (
+          {serviceData.Database.map((item, index) => (
             <div className="why-chose-in" key={index}>
               <div className="why-heding">
                 <ImArrowRight2 className="arro-icon" />
@@ -48,11 +48,11 @@ export default function Database() {
         <div className="our_frontend_service">
           <div className="our_fron_service_in">
             <div className="our_frontend_service_text">
-              <h1>Our Frontend Services</h1>
+              <h1>Our Database Services</h1>
             </div>
   
             <div className="our_frontend_service_card_main">
-              {serviceData.ourServiceCard.map((item, index) => (
+              {serviceData.databaseServiceCard.map((item, index) => (
                 <div className="our_frontend_service_card" key={index}>
                   <h1>{item.heading}</h1>
                   <p>{item.text}</p>
@@ -69,12 +69,12 @@ export default function Database() {
           </div>
           <div className="frontend_slider_in">
             <Technologies
-              html={"image/react-js-training-igmguru_1474547454_l.jpg"}
-              css={"image/html.png"}
-              javascript={"image/images_js.png"}
-              react={"image/css.jpg"}
-              bootstrap={"image/bootstrap.jpg"}
-              nextjs={"image/nexjs.png"}
+              html={"image/mysql.png"}
+              css={"image/mongo.png"}
+              javascript={"image/post.png"}
+              react={"image/sql_se.png"}
+              bootstrap={"image/cloud.png"}
+              nextjs={"image/backup.png"}
             />
           </div>
         </div>
