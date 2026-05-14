@@ -131,6 +131,119 @@ Devprocess:[
         text:"Deployment & Support",
     },
  
-]
+],
+
+backendpointData:[
+    {
+    id:1,
+    title:"Secure Backend Architecture ",
+    subtext:"We build secure backend systems with strong authentication, authorization, and data protection to keep your applications safe and reliable."
+    },
+      {
+    id:2,
+    title:"Scalable Server Solutions",
+    subtext:"Our backend architectures are designed to handle growing traffic, users, and business requirements with high scalability."
+    },
+      {
+    id:3,
+    title:"Robust API Development",
+    subtext:"We develop fast, secure, and well-structured REST APIs and backend services for seamless frontend and third-party integrations."
+    },
+      {
+    id:4,
+    title:"Modern Backend Technologies",
+    subtext:"We use advanced technologies like Node.js, Java, Spring Boot, Python, Django, FastAPI, PHP, and MySQL for powerful backend solutions."
+    },
+      {
+    id:5,
+    title:"Database Management",
+    subtext:"Our team designs optimized database structures for efficient data storage, faster queries, and smooth application performance."
+    },
+      {
+    id:6,
+    title:"High Performance & Reliability",
+    subtext:"We create high-performance backend systems that ensure fast response times, stability, and uninterrupted user experiences"
+    },
+      {
+    id:7,
+    title:"Custom Backend Solutions",
+    subtext:"Every business has unique requirements, so we develop customized backend solutions tailored to your project goals"
+    },
+      {
+    id:8,
+    title:"Clean & Maintainable Code",
+    subtext:"We follow industry best practices to write clean, scalable, and maintainable backend code for long-term growth"
+    },
+      {
+    id:9,
+    title:"Third-Party Integration",
+    subtext:"We integrate payment gateways, cloud services, APIs, authentication systems, and external tools smoothly into your application."
+    },
+      {
+    id:10,
+    title:"Faster Development Process",
+    subtext:"Using modern frameworks and efficient workflows, we deliver backend solutions quickly without compromising quality."
+    },
+],
+
+ ourbackendServiceCard:[
+    {
+        id:1,
+        image:"/assets/service1.png",
+        heading:"Java Development",
+        text:"Build secure, scalable, and enterprise-grade backend applications using Java and Spring Boot."
+
+    },
+    {
+        id:2,
+        image:"/assets/service1.png",
+        heading:"Python Development",
+        text:"Develop fast, flexible, and high-performance backend systems using Python, Django, and FastAPI"
+
+    },
+      {
+        id:3,
+        image:"/assets/service1.png",
+        heading:"Node.js Development",
+        text:"Create real-time, scalable, and efficient server-side applications using Node.js and Express.js."
+
+    },
+    {
+        id:4,
+        image:"/assets/service1.png",
+        heading:"PHP Development",
+        text:"Build dynamic, secure, and reliable web applications using modern PHP frameworks."
+
+    },
+      {
+        id:5,
+        image:"/assets/service1.png",
+        heading:"API Development",
+        text:"Develop robust REST APIs for seamless frontend, mobile, and third-party integrations."
+
+    },
+    {
+        id:6,
+        image:"/assets/service1.png",
+        heading:"Database Management",
+        text:"Design optimized MySQL and database solutions for secure data handling and high performance."
+
+    },
+      {
+        id:7,
+        image:"/assets/service1.png",
+        heading:"Authentication & Security",
+        text:"Implement secure authentication, authorization, and data protection systems for applications."
+
+    },
+    {
+        id:8,
+        image:"/assets/service1.png",
+        heading:"Cloud & Server Deployment",
+        text:"Deploy and manage backend applications on modern cloud and server infrastructures."
+
+    },
+],
+
 
 }

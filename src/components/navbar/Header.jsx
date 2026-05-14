@@ -7,11 +7,13 @@ import { FaLinkedin } from "react-icons/fa";
 import { appData } from "../../data/appData";
 import Logo from "../component/Logo";
 import { IoIosArrowDown } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
   const location = useLocation();
   const [disableHover, setDisableHover] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     setOpen(false);
@@ -110,15 +112,14 @@ export default function Header() {
                 <div className="dropdown-menu">
                   <ul>
                     {appData.company.map((item) => (
-                      <li key={item.id}>
-                        <Link
-                          to={item.company_path}
-                          onClick={() => {
-                            setDisableHover(true);
-                          }}
-                        >
-                          {item.company}
-                        </Link>
+                      <li
+                        key={item.id}
+                        onClick={() => {
+                          setDisableHover(true);
+                          navigate(item.company_path);
+                        }}
+                      >
+                        <Link to={item.company_path}>{item.company}</Link>
                       </li>
                     ))}
                   </ul>
@@ -141,15 +142,14 @@ export default function Header() {
                         <p className="menu-title">{item.title}</p>
                         <ul>
                           {item.items.map((sub) => (
-                            <li key={sub.name}>
-                              <Link
-                                to={sub.path}
-                                onClick={() => {
-                                  setDisableHover(true);
-                                }}
-                              >
-                                {sub.name}
-                              </Link>
+                            <li
+                              key={sub.name}
+                              onClick={() => {
+                                setDisableHover(true);
+                                navigate(sub.path);
+                              }}
+                            >
+                              <Link to={sub.path}>{sub.name}</Link>
                             </li>
                           ))}
                         </ul>
@@ -170,15 +170,14 @@ export default function Header() {
                 <div className="dropdown-menu">
                   <ul>
                     {appData.Product.map((item) => (
-                      <li key={item.id}>
-                        <Link
-                          to={item.product_path}
-                          onClick={() => {
-                            setDisableHover(true);
-                          }}
-                        >
-                          {item.product}
-                        </Link>
+                      <li
+                        key={item.id}
+                        onClick={() => {
+                          setDisableHover(true);
+                          navigate(item.product_path);
+                        }}
+                      >
+                        <Link to={item.product_path}>{item.product}</Link>
                       </li>
                     ))}
                   </ul>
@@ -196,15 +195,14 @@ export default function Header() {
                 <div className="dropdown-menu">
                   <ul>
                     {appData.Industries.map((item) => (
-                      <li key={item.id}>
-                        <Link
-                          to={item.industries_path}
-                          onClick={() => {
-                            setDisableHover(true);
-                          }}
-                        >
-                          {item.Industries}
-                        </Link>
+                      <li
+                        key={item.id}
+                        onClick={() => {
+                          setDisableHover(true);
+                          navigate(item.industries_path);
+                        }}
+                      >
+                        <Link to={item.industries_path}>{item.Industries}</Link>
                       </li>
                     ))}
                   </ul>
