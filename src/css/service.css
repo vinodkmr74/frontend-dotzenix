@@ -51,7 +51,7 @@
 }
 .service_hero_text h1 {
   font-size: 30px;
-  color: #29bba3;
+  color: #22d3ee;
   font-weight: bold;
 }
 .service_hero_text p {
@@ -85,7 +85,7 @@
 }
 .why-chose-heading {
   width: 80%;
-  color: #29bba3;
+  color:#22d3ee;
   font-size: 26px;
   text-align: start;
   font-weight: 500;
@@ -102,7 +102,7 @@
 }
 .service_about_text h1 {
   font-size: 28px;
-  color: #29bba3;
+  color: #22d3ee;
   font-weight: 500;
   text-align: center;
 }
@@ -111,6 +111,39 @@
   color: #ffffffbb;
   text-align: center;
 }
+.service_about_img{
+width: 100%;
+display: flex;
+justify-content: center;
+justify-items: center;
+justify-self: center;
+}
+.service_web_img{
+width: 60%;
+}
+.service_web_img img{
+width: 100%;
+height: 400px;
+}
+.service_groth_text{
+display: flex;
+width: 40%;
+flex-direction: column;
+justify-content: center;
+justify-items: center;
+
+}
+.service_groth_text h1{
+color: #22d3ee;
+font-size: 28px;
+font-weight: 500;
+
+}
+.service_groth_text p{
+color: #ffffff8f;
+font-size: 17px;
+}
+
 .our_frontend_service {
   width: 100%;
   display: flex;
@@ -131,7 +164,7 @@
 }
 .our_frontend_service_text h1 {
   font-size: 28px;
-  color: #29bba3;
+  color:#22d3ee;
   font-weight: 500;
   text-align: center;
 }
@@ -145,49 +178,39 @@
   width: 100%;
 }
 .our_frontend_service_card {
-  position: relative;
-  overflow: hidden;
   width: 23%;
   padding: 10px 20px;
   border-radius: 20px;
   background: #70bbbe2a;
   transition: 0.4s;
 }
-.our_frontend_service_card::before {
+
+.our_frontend_service_card{
+  position: relative;
+  overflow: hidden;
+}
+.our_frontend_service_card::before{
   content: "";
   position: absolute;
-  inset: 0;
-  padding: 2px;
-  border-radius: 20px;
-  background: linear-gradient(90deg, red, yellow, green, blue, red);
-  background-size: 300%;
-  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, rgb(240, 58, 58), yellow, blue, rgb(43, 255, 0));
+  transform: scaleX(0);
   transition: 0.4s;
-
-  -webkit-mask:
-    linear-gradient(#fff 0 0) content-box,
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
 }
 
-/* Hover */
-.our_frontend_service_card:hover::before {
-  opacity: 1;
-  animation: borderMove 4s linear infinite;
+.our_frontend_service_card:hover::before{
+  transform: scaleX(1);
 }
-.our_frontend_service_card:hover {
+
+.our_frontend_service_card:hover{
   transform: translateY(-10px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px rgba(3, 236, 236, 0.205);
 }
-/* Animation */
-@keyframes borderMove {
-  0% {
-    background-position: 0%;
-  }
-  100% {
-    background-position: 300%;
-  }
-}
+
+
 .our_frontend_service_card h1 {
   font-size: 17px;
   color: #29bba3;
@@ -203,7 +226,7 @@
   flex-direction: column;
   justify-content: center;
   justify-items: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .why-chose-in {
   width: 86%;
@@ -246,7 +269,7 @@
 }
 .dev_process_heading {
   padding: 10px;
-  color: #29bba3;
+  color:#22d3ee;
   font-size: 28px;
   font-weight: 500;
 }
@@ -309,6 +332,33 @@
   .service_about_text {
     width: 100%;
   }
+
+.service_web_img{
+width: 100%;
+
+}
+.service_web_img img{
+width: 100%;
+height: 350px;
+}
+
+.service_groth_text{
+width: 100%;
+margin-top: 10px;
+gap: 4px;
+padding-left: 20px;
+}
+.service_groth_text h1{
+font-size: 24px;
+}
+.service_groth_text p{
+font-size: 16px;
+}
+
+
+.service_about_img{
+flex-direction: column;
+}
   .our_frontend_service_card {
     width: 46%;
   }
@@ -372,6 +422,25 @@
   .service_about_text p {
     font-size: 15px;
   }
+ 
+.service_web_img img{
+width: 100%;
+height: 250px;
+}
+
+.service_groth_text{
+width: 100%;
+margin-top: 10px;
+gap: 4px;
+padding-left: 14px;
+}
+.service_groth_text h1{
+font-size: 20px;
+}
+.service_groth_text p{
+font-size: 15px;
+}
+
   .our_frontend_service_card {
     width: 100%;
   }

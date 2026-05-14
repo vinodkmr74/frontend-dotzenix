@@ -24,6 +24,9 @@ export default function Frontend() {
         text={
           "Frontend development focuses on creating visually attractive,responsive, and interactive user interfaces for websites and web applications. We create fast, scalable, and modern digital solutions that enhance user experience."
         }
+        image={"image/web-image.png"}
+        title={"Transforming Ideas Into Powerful Digital Solutions"}
+        subtext={"We create modern, scalable, and user-friendly applications with advanced technology and robust architecture that help businesses grow."}
       />
 
       <div className="why-chose">
