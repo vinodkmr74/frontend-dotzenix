@@ -570,6 +570,264 @@ export const serviceData = {
       heading: "Development Tools",
       text: "Android Studio, VS Code, GitHub"
     },
-
 ],
+  whyiosService: [
+    {
+      id: 1,
+      title: "Innovative iOS App Solutions",
+      subtext:"We develop high-performance iOS applications that deliver smooth functionality and exceptional user experiences."
+    },
+      {
+      id: 2,
+      title: "Custom iOS Applications",
+      subtext:"Our team creates tailored iOS app solutions based on your business goals and customer requirements."
+    },
+      {
+      id: 3,
+      title: "Modern UI/UX Design",
+      subtext:"We design clean, attractive, and intuitive interfaces for seamless user interaction on Apple devices."
+    },
+      {
+      id: 4,
+      title: "Responsive & Scalable Apps",
+      subtext:"Our iOS applications are optimized for iPhone and iPad devices with scalable architecture and smooth performance."
+    },
+      {
+      id: 5,
+      title: "API & Backend Integration",
+      subtext:"We integrate secure APIs, payment gateways, databases, and third-party services for complete app functionality."
+    },
+      {
+      id: 6,
+      title: "Fast Performance & Security",
+      subtext:"We build secure and reliable iOS applications with optimized speed and advanced data protection."
+    },
+      {
+      id: 7,
+      title: "App Maintenance & Support",
+      subtext:"We provide regular updates, bug fixes, app monitoring, and technical support after deployment."
+    },
+],
+   iosservicecard:[
+    {
+      id: 1,
+      image: "",
+      heading:"iPhone App Development",
+      text: "Custom iPhone application development with modern features and smooth performance.",
+    },
+      {
+      id: 2,
+      heading: "iPad App Development",
+      text:"Responsive iPad applications designed for productivity and better user experiences.",
+      image: "",
+    },
+      {
+      id: 3,
+      image: "",
+      heading:"Custom iOS Solutions",
+      text: "Tailored iOS app solutions based on your business requirements and audience needs.",
+    },
+      {
+      id: 4,
+      image: "",
+      heading:"UI/UX iOS Design",
+      text: "Creative and intuitive iOS app UI/UX designs for seamless user interaction.",
+    },
+      {
+      id: 5,
+      image: "",
+      heading:"App Maintenance & Support",
+      text: "Reliable maintenance, updates, and performance optimization services for iOS applications.",
+    },
+      {
+      id: 6,
+      image: "",
+      heading:"API Integration Services",
+      text: "Secure API integration for payment systems, databases, and third-party platforms.",
+    },
+      {
+      id: 7,
+      image: "",
+      heading:"Secure iOS Applications",
+      text: "Advanced security implementation for safe, reliable, and scalable iOS applications.",
+    },
+      {
+      id: 8,
+      image: "",
+      heading:"Business iOS Solutions",
+      text: "Professional iOS applications that improve customer engagement and business productivity.",
+    },
+],
+    iosusetech: [
+    {
+      id: 1,
+      heading: "Programming Languages",
+      text: "Swift, Objective-C, FastAPI, Node.js"
+    },
+     {
+      id: 2,
+      heading: "iOS Frameworks",
+      text: "SwiftUI, UIKit"
+    },
+     {
+      id: 3,
+      heading: "Database Management",
+      text: "MySQL, Firebase"
+    },
+     {
+      id: 4,
+      heading: "API Integration",
+      text: "REST API Services"
+    },
+     {
+      id: 5,
+      heading: "Authentication & Security",
+      text: "JWT, Firebase Authentication"
+    },
+     {
+      id: 6,
+      heading: "Cloud & Hosting",
+      text: "Firebase, AWS"
+    },
+     {
+      id: 7,
+      heading: "Development Tools",
+      text: "Xcode, GitHub, VS Code"
+    },
+],
+  whyottService: [
+    {
+      id: 1,
+      title: "High-Performance Streaming Solutions",
+      subtext:"We develop fast and reliable OTT applications with smooth video playback and high-quality streaming experiences."
+    },
+      {
+      id: 2,
+      title: "Custom OTT Platforms",
+      subtext:"Our team creates customized OTT applications tailored to your content, audience, and business requirements."
+    },
+      {
+      id: 3,
+      title: "Multi-Device Compatibility",
+      subtext:"We build OTT apps that work seamlessly across mobile devices, smart TVs, tablets, and web platforms."
+    },
+      {
+      id: 4,
+      title: "Modern UI/UX Design",
+      subtext:"We design clean, interactive, and user-friendly interfaces for better audience engagement and viewing experiences."
+    },
+      {
+      id: 5,
+      title: "Secure Content Management",
+      subtext:"Our OTT solutions include secure video hosting, content protection, and user authentication systems."
+    },
+      {
+      id: 6,
+      title: "Live Streaming & Video On Demand",
+      subtext:"We provide live streaming and on-demand video features with scalable and optimized performance."
+    },
+      {
+      id: 7,
+      title: "Scalable & Secure Architecture",
+      subtext:"Our OTT applications are built with secure and scalable technologies to handle growing users and content."
+    },
+      {
+      id: 8,
+      title: "Maintenance & Technical Support",
+      subtext:"We provide regular updates, bug fixes, performance optimization, and ongoing technical support."
+    },
+  ],
+     ottservicecard:[
+    {
+      id: 1,
+      image: "",
+      heading:"Video Streaming Apps",
+      text: "High-performance OTT streaming applications with smooth and buffer-free video playback.",
+    },
+      {
+      id: 2,
+      image: "",
+      heading:"Live Streaming Solutions",
+      text: "Interactive live streaming apps with real-time broadcasting and audience engagement features.",
+    },
+      {
+      id: 3,
+      image: "",
+      heading:"Video On Demand Platforms",
+      text: "Custom OTT platforms for movies, shows, and digital video content streaming.",
+    },
+      {
+      id: 4,
+      image: "",
+      heading:"Smart TV OTT Apps",
+      text: "Responsive OTT applications designed for smart TVs and large-screen devices.",
+    },
+      {
+      id: 5,
+      image: "",
+      heading:"Multi-Platform OTT Apps",
+      text: "OTT applications compatible with mobile, web, tablet, and smart devices.",
+    },
+      {
+      id: 6,
+      image: "",
+      heading:"UI/UX OTT Design",
+      text: "Modern and user-friendly OTT app interfaces for seamless viewing experiences.",
+    },
+      {
+      id: 7,
+      image: "",
+      heading:"Secure Content Management",
+      text: "Advanced content protection, user authentication, and secure media delivery systems.",
+    },
+      {
+      id: 8,
+      image: "",
+      heading:"OTT Maintenance & Support",
+      text: "Regular updates, performance optimization, and technical support for OTT platforms.",
+    },
+],
+    ottusetech: [
+    {
+      id: 1,
+      heading: "Frontend Technologies",
+      text: "React Native, Flutter"
+    },
+     {
+      id: 2,
+      heading: "Backend Technologies",
+      text: "Node.js, python,,java FastAPI "
+    },
+     {
+      id: 3,
+      heading: "Database Management",
+      text: "MySQL, Firebase"
+    },
+     {
+      id: 4,
+      heading: "Video Streaming APIs",
+      text: "HLS, RTMP, WebRTC"
+    },
+     {
+      id: 5,
+      heading: "Authentication & Security",
+      text: "JWT, Firebase Authentication"
+    },
+     {
+      id: 6,
+      heading: "Cloud & Hosting",
+      text: "Firebase, AWS"
+    },
+     {
+      id: 7,
+      heading: "Development Tools",
+      text: "Xcode, GitHub, VS Code"
+    },
+    {
+        id:8,
+        heading:"Payment Gateway Integration",
+        text:"Razorpay, Stripe"
+    }
+],
+
 };

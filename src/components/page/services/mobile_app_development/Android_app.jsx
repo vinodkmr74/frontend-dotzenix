@@ -86,11 +86,6 @@ export default function Android_app() {
           </div>
 
            
-
-
-
-
-    
           <div className="frontend_slider">
             <div className="frontend_tech_heading">
               <h1>Technologies We Use</h1>
