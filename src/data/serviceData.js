@@ -437,4 +437,139 @@ export const serviceData = {
     },
   
   ],
+    mobApp: [
+    {
+      id: 1,
+      title: "Custom Mobile Applications",
+      subtext:"We create custom mobile apps tailored to your business needs, industry requirements, and customer expectations."
+    },
+      {
+      id: 2,
+      title: "Responsive & Scalable Apps",
+      subtext:"Our applications are optimized for smartphones, tablets, and different screen sizes to ensure seamless user experiences"
+    },
+      {
+      id: 3,
+      title: "UI/UX Focused Design",
+      subtext:"We integrate secure APIs, databases, payment gateways, and third-party services for complete app functionality."
+    },
+      {
+      id: 4,
+      title: "Fast Performance & Security",
+      subtext:"Our mobile apps are built with strong security standards, fast loading speed, and reliable performance."
+    },
+      {
+      id: 5,
+      title: "API & Backend Integration",
+      subtext:"We integrate secure APIs, databases, payment gateways, and third-party services for complete app functionality"
+    },
+      {
+      id: 6,
+      title: "Maintenance & Support",
+      subtext:"We provide ongoing support, updates, bug fixing, and performance optimization after app deployment."
+    },  {
+      id: 7,
+      title: "Innovative Mobile App Solutions",
+      subtext:"We build high-performance mobile applications that help businesses connect with customers, improve engagement, and grow digitally."
+    },
+    
+
+    ],
+    mobservicecard:[
+          {
+      id: 1,
+      image: "",
+      heading:"Android App Development",
+      text: "High-performance and scalable Android applications with smooth functionality and modern design.",
+    },
+        {
+      id: 2,
+      image: "",
+      heading:"Custom Mobile Solutions",
+      text: "Tailored mobile app solutions designed according to your business goals and user requirements.",
+    },
+        {
+      id: 3,
+      image: "",
+      heading:"UI/UX Mobile Design",
+      text: "Creative and user-friendly mobile app UI/UX designs for seamless customer experiences.",
+    },
+        {
+      id: 4,
+      image: "",
+      heading:"App Maintenance & Support",
+      text:"Reliable app maintenance, updates, bug fixing, and ongoing technical support services.",
+
+    },
+        {
+      id: 5,
+      image: "",
+      heading:"API Integration Services",
+      text: "Secure API and third-party service integrations for enhanced app functionality and performance.",
+    },
+        {
+      id: 6,
+      image: "",
+      heading:"Responsive Mobile Apps",
+      text:"Fully responsive mobile applications optimized for different Android devices and screen sizes.",
+
+    },
+        {
+      id: 7,
+      image: "",
+      heading:"Secure App Development",
+      text: "Secure and reliable mobile applications built with advanced security standards and protection.",
+    },
+        {
+      id: 8,
+      image: "",
+      heading:"Business App Solutions",
+      text: "Smart mobile app solutions that help businesses improve engagement, productivity, and growth.",
+    },
+          {
+      id: 9,
+      image: "",
+      heading:"Mobile App Technologies",
+      text: "We use modern technologies like Java, Kotlin, React Native, Flutter, Firebase, FastAPI, and MySQL to build scalable mobile applications."
+    },
+    ],
+
+    usetech: [
+    {
+      id: 1,
+      heading: "Programming Languages",
+      text: "Java, Kotlin, python"
+    },
+     {
+      id: 2,
+      heading: "Cross-Platform Frameworks",
+      text: "Flutter, Dart React Native"
+    },
+     {
+      id: 3,
+      heading: "Database Management",
+      text: "MySQL, Firebase"
+    },
+     {
+      id: 4,
+      heading: "API Integration",
+      text: "REST API Services"
+    },
+     {
+      id: 5,
+      heading: "Authentication & Security",
+      text: "JWT, Firebase Authentication"
+    },
+     {
+      id: 6,
+      heading: "Cloud & Hosting",
+      text: "Firebase, AWS"
+    },
+     {
+      id: 7,
+      heading: "Development Tools",
+      text: "Android Studio, VS Code, GitHub"
+    },
+
+],
 };
