@@ -26,7 +26,9 @@ export default function Frontend() {
         }
         image={"image/web-image.png"}
         title={"Transforming Ideas Into Powerful Digital Solutions"}
-        subtext={"We create modern, scalable, and user-friendly applications with advanced technology and robust architecture that help businesses grow."}
+        subtext={
+          "We create modern, scalable, and user-friendly applications with advanced technology and robust architecture that help businesses grow."
+        }
       />
 
       <div className="why-chose">
@@ -54,6 +56,8 @@ export default function Frontend() {
           <div className="our_frontend_service_card_main">
             {serviceData.ourServiceCard.map((item, index) => (
               <div className="our_frontend_service_card" key={index}>
+                <div className="img-icon"></div>
+
                 <h1>{item.heading}</h1>
                 <p>{item.text}</p>
                 <img src={item.image} alt="" />

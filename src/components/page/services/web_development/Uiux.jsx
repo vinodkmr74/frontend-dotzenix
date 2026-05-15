@@ -8,79 +8,83 @@ import Cta from "../../../component/Cta";
 import Service_abouts from "../../../component/Service_abouts";
 
 export default function Uiux() {
-  return (<>
-       <Service_hero
-          heading={"Frontend Development Services"}
-          text={
-            "We build responsive, custom, high-performance, and user-friendly web applications using modern frontend technologies such as React.js,Next.js, JavaScript, and UI"
-          }
-          image={"image/frontend.png"}
-          btn={"Get start"}
-        />
-  
-        <Service_abouts
-          heading={"What is Frontend Development?"}
-          text={
-            "Frontend development focuses on creating visually attractive,responsive, and interactive user interfaces for websites and web applications. We create fast, scalable, and modern digital solutions that enhance user experience."
-          }
-          image={"image/web-image.png"}
-          title={"Transforming Ideas Into Powerful Digital Solutions"}
-          subtext={"We create modern, scalable, and user-friendly applications with advanced technology and robust architecture that help businesses grow."}
-        />
-  
-        <div className="why-chose">
-          <div className="why-chose-heading">
-            <h1>Why Choose Our Frontend Development Services?</h1>
+  return (
+    <>
+      <Service_hero
+        heading={"UI/UX Design Services"}
+        text={
+          "We create modern, user-friendly, and visually engaging UI/UX designs that deliver seamless digital experiences. Our design solutions focus on usability, creativity, responsiveness, and user satisfaction to help businesses build impactful products and stronger customer engagement."
+        }
+        image={"image/ui.png"}
+        btn={"Get start"}
+      />
+
+      <Service_abouts
+        heading={"What is UI/UX Design?"}
+        text={
+          "UI/UX design focuses on creating visually appealing, user-friendly, and interactive digital experiences using modern design tools like Figma, Adobe XD, Sketch, Framer, Photoshop, and Illustrator. UI (User Interface) design enhances the visual look and feel of applications, while UX (User Experience) design improves usability, accessibility, and overall user satisfaction."
+        }
+        image={"image/web-image.png"}
+        title={"Transforming Ideas Into Powerful Digital Solutions"}
+        subtext={
+          "We create modern, scalable, and user-friendly applications with advanced technology and robust architecture that help businesses grow."
+        }
+      />
+
+      <div className="why-chose">
+        <div className="why-chose-heading">
+          <h1>Why Choose Our UI/UX Design Services?</h1>
+        </div>
+        {serviceData.uiux.map((item, index) => (
+          <div className="why-chose-in" key={index}>
+            <div className="why-heding">
+              <ImArrowRight2 className="arro-icon" />
+              <p>
+                <span>{item.title} : </span> {item.subtext}
+              </p>
+            </div>
           </div>
-          {serviceData.whyData.map((item, index) => (
-            <div className="why-chose-in" key={index}>
-              <div className="why-heding">
-                <ImArrowRight2 className="arro-icon" />
-                <p>
-                  <span>{item.title} : </span> {item.subtext}
-                </p>
+        ))}
+      </div>
+
+      <div className="our_frontend_service">
+        <div className="our_fron_service_in">
+          <div className="our_frontend_service_text">
+            <h1>Our UI/UX Services</h1>
+          </div>
+
+          <div className="our_frontend_service_card_main">
+            {serviceData.uiuxCard.map((item, index) => (
+              <div className="our_frontend_service_card" key={index}>
+                <div className="img-icon"></div>
+
+                <h1>{item.heading}</h1>
+                <p>{item.text}</p>
+                <img src={item.image} alt="" />
               </div>
-            </div>
-          ))}
-        </div>
-  
-        <div className="our_frontend_service">
-          <div className="our_fron_service_in">
-            <div className="our_frontend_service_text">
-              <h1>Our Frontend Services</h1>
-            </div>
-  
-            <div className="our_frontend_service_card_main">
-              {serviceData.ourServiceCard.map((item, index) => (
-                <div className="our_frontend_service_card" key={index}>
-                  <h1>{item.heading}</h1>
-                  <p>{item.text}</p>
-                  <img src={item.image} alt="" />
-                </div>
-              ))}
-            </div>
+            ))}
           </div>
         </div>
-  
-        <div className="frontend_slider">
-          <div className="frontend_tech_heading">
-            <h1>Technologies We Use</h1>
-          </div>
-          <div className="frontend_slider_in">
-            <Technologies
-              html={"image/react-js-training-igmguru_1474547454_l.jpg"}
-              css={"image/html.png"}
-              javascript={"image/images_js.png"}
-              react={"image/css.jpg"}
-              bootstrap={"image/bootstrap.jpg"}
-              nextjs={"image/nexjs.png"}
-            />
-          </div>
+      </div>
+
+      <div className="frontend_slider">
+        <div className="frontend_tech_heading">
+          <h1>Technologies We Use</h1>
         </div>
-  
-        <Dev_process />
-        <Cta />
-  
-  
-  </>  )
+        <div className="frontend_slider_in">
+          <Technologies
+            html={"image/figma.png"}
+            css={"image/dx.png"}
+            javascript={"image/sketch.png"}
+            react={"image/framer.png"}
+            bootstrap={"image/iiiust.png"}
+            nextjs={"image/ps.png"}
+          />
+        </div>
+      </div>
+
+      <Dev_process />
+      <Cta />
+    </>
+  );
 }
