@@ -23,7 +23,6 @@ import Android_app from "./components/page/services/mobile_app_development/Andro
 import IOS_app from "./components/page/services/mobile_app_development/IOS_app"
 import OTT_appd_evelopment from "./components/page/services/mobile_app_development/OTT_appd_evelopment"
 import Custom_ecommerce from "./components/page/services/e_commerce_development/Custom_ecommerce"
-import Prestashop from "./components/page/services/e_commerce_development/Prestashop"
 import Shopify from "./components/page/services/e_commerce_development/Shopify"
 import Wordpress from "./components/page/services/e_commerce_development/Wordpress"
 import AI_and_mL from "./components/page/services/digital_transformation/AI_and_mL"
@@ -77,7 +76,6 @@ export default function Router() {
           <Route path="/ott-app-development" element={<OTT_appd_evelopment />} />
           {/* ..................Ecommerce Development............... */}
           <Route path="/custom-ecommerce" element={<Custom_ecommerce />} />
-          <Route path="/prestashop" element={<Prestashop />} />
           <Route path="/shopify" element={<Shopify />} />
           <Route path="/wordpress" element={<Wordpress />} />        
           {/* ...................Digital Transformation................ */}

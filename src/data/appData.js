@@ -125,10 +125,15 @@ export const appData = {
       title: "Ecommerce Development",
       items: [
         { id: 1, name: "Shopify", path: "/shopify" },
-        {
-          id: 3,
-          name: "Prestashop",
-          path: "/prestashop",
+        // {
+        //   id: 3,
+        //   name: "Prestashop",
+        //   path: "/prestashop",
+        // },
+          {
+          id: 7,
+          name: "Custom Ecommerce",
+          path: "/custom-ecommerce",
         },
       
         {
@@ -136,11 +141,7 @@ export const appData = {
           name: "WordPress",
           path: "/wordpress",
         },
-        {
-          id: 7,
-          name: "Custom Ecommerce",
-          path: "/custom-ecommerce",
-        },
+     
       ],
     },
     {
@@ -154,11 +155,11 @@ export const appData = {
           name: "Content Marketing",
           path: "/content-marketing",
         },
-        {
-          id: 6,
-          name: "Affiliate Marketing",
-          path: "/affiliate-marketing",
-        },
+        // {
+        //   id: 6,
+        //   name: "Affiliate Marketing",
+        //   path: "/affiliate-marketing",
+        // },
       ],
     },
     {

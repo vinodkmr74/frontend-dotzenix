@@ -57,7 +57,6 @@ export default function OTT_appd_evelopment() {
             {serviceData.ottservicecard.map((item, index) => (
               <div className="our_frontend_service_card" key={index}>
                 <div className="img-icon"></div>
-
                 <h1>{item.heading}</h1>
                 <p>{item.text}</p>
                 <img src={item.image} alt="" />

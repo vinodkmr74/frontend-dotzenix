@@ -1,7 +1,104 @@
-import React from 'react'
-
+import React from "react";
+import Service_hero from "../../../component/Service_hero";
+import { serviceData } from "../../../../data/serviceData";
+import Technologies from "../../../slider/Technologies";
+import { ImArrowRight2 } from "react-icons/im";
+import Dev_process from "../../../component/Dev_process";
+import Cta from "../../../component/Cta";
+import Service_abouts from "../../../component/Service_abouts";
 export default function Devops() {
   return (
-    <div>Devops</div>
-  )
+    <>
+      <Service_hero
+        heading={"DevOps Services"}
+        text={
+          "We provide secure, scalable, and automated DevOps solutions to improve software development, deployment speed, infrastructure management, and system reliability."
+        }
+        image={"image/devops2.png"}
+        btn={"Get start"}
+      />
+
+      <Service_abouts
+        heading={"What is DevOps?"}
+        text={
+          "DevOps is the process of combining development and operations practices to automate software delivery, improve collaboration, increase deployment speed, and maintain reliable and scalable infrastructure."
+        }
+        image={"image/web-image.png"}
+        title={"Transforming Ideas Into Powerful Digital Solutions"}
+        subtext={
+          "We create modern, scalable, and user-friendly applications with advanced technology and robust architecture that help businesses grow."
+        }
+      />
+
+      <div className="why-chose">
+        <div className="why-chose-heading">
+          <h1>Why Choose Our DevOps ?</h1>
+        </div>
+        {serviceData.whyChooseDevOps.map((item, index) => (
+          <div className="why-chose-in" key={index}>
+            <div className="why-heding">
+              <ImArrowRight2 className="arro-icon" />
+              <p>
+                <span>{item.title} : </span> {item.subtext}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className="our_frontend_service">
+        <div className="our_fron_service_in">
+          <div className="our_frontend_service_text">
+            <h1>Our DevOps Services</h1>
+          </div>
+
+          <div className="our_frontend_service_card_main">
+            {serviceData.devOpsServices.map((item, index) => (
+              <div className="our_frontend_service_card" key={index}>
+                <div className="img-icon"></div>
+                <h1>{item.heading}</h1>
+                <p>{item.text}</p>
+                <img src={item.image} alt="" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className="why-chose">
+        <div className="why-chose-heading">
+          <h1>Technologies We Use in DevOps </h1>
+        </div>
+        {serviceData.technologiesWeUse.map((item, index) => (
+          <div className="why-chose-in" key={index}>
+            <div className="why-heding">
+              <ImArrowRight2 className="arro-icon" />
+              <p>
+                <span>{item.heading} : </span> {item.text}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className="frontend_slider">
+        <div className="frontend_tech_heading">
+          <h1>Technologies We Use</h1>
+        </div>
+        <div className="frontend_slider_in">
+          <Technologies
+            html={"image/shopify.png"}
+            css={"image/php.png"}
+            javascript={"image/html.png"}
+            react={"image/devops-logo.webp"}
+            bootstrap={"image/css.jpg"}
+            nextjs={"image/reactjs.png"}
+          />
+        </div>
+      </div>
+
+      <Dev_process />
+      <Cta />
+    </>
+  );
 }
