@@ -72,16 +72,16 @@ export const appData = {
       product: "HRM",
       product_path: "/hrm",
     },
-    {
-      id: 4,
-      product: "AI Solutions",
-      product_path: "/aisolutions",
-    },
-    {
-      id: 5,
-      product: "Business Analytics",  
-      product_path: "/businessanalytics",
-    },
+    // {
+    //   id: 4,
+    //   product: "AI Solutions",
+    //   product_path: "/aisolutions",
+    // },
+    // {
+    //   id: 5,
+    //   product: "Business Analytics",  
+    //   product_path: "/businessanalytics",
+    // },
     {
       id: 6,
       product: "Website Builder",

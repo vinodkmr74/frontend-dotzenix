@@ -8,10 +8,10 @@ export default function CardAllImage({ image, title,title1 ,title2,text }) {
 
       style={{ backgroundImage: `url(${image})` }}
     >
-      <div className="absolute inset-0 bg-[#ededf74d]"></div>
-      <h1 className="text-[#ffffff] font-bold text-5xl "> {title}</h1>
+      <div className="absolute inset-0 bg-[#d7dddf49]"></div>
+      <h1 className="text-white font-bold text-5xl "> {title}</h1>
       <h1 className="text-[#ffffff] font-bold text-5xl "> {title1}</h1>
-      <p className="text-[#ffffff] font- text-xl font-bold w-[50%] "> {text}</p>
+      <p className="text-[#ffffff] font- text-xl font-bold w-[60%] "> {text}</p>
 
 
     </div>

@@ -280,9 +280,11 @@ font-weight: 500;
 .dev_process_in {
   width: 90%;
   flex-direction: column;
-  /* padding: 10px; */
+  padding-right: 10px;
   padding-top: 30px;
 padding-bottom: 40px;
+padding-left: 18px;
+
   justify-content: center;
   justify-items: center;
 }
