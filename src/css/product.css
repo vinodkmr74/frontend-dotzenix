@@ -3,7 +3,7 @@ display: flex;
 width: 100%;
 justify-content: center;
 justify-items: center;
-margin-top: 20px;
+margin-top: 18px;
 }
 .overview-in{
 display: flex;
@@ -14,14 +14,14 @@ justify-items: center;
 }
 .overview-heading{
 color:#22d3ee;
-font-size: 30px;
+font-size: 28px;
 font-weight: 500;
 text-align: center;
 padding: 10px;
 }
 .overview-text{
 color: #ffffffb6;
-font-size: 18px;
+font-size: 17px;
 padding: 10px 10px 10px 30px;
 line-height: 2;
 }
@@ -30,7 +30,7 @@ display: flex;
 width: 100%;
 justify-content: center;
 justify-items: center;
-margin-top: 20px;
+margin-top: 18px;
 }
 .business-automation-in{
 display: flex;
@@ -50,9 +50,46 @@ line-height: 2;
 content: "Business Automation";
 display: block;
 color:#22d3ee;
-font-size: 30px;
+font-size: 28px;
 font-weight: 500;
 text-align: center;
 padding: 10px;
+}
+
+
+@media (max-width: 768px) {
+
+.overview-heading{
+font-size: 26px;
+}
+.overview-text{
+font-size: 15px;
+}
+
+.business-automation-in{
+font-size: 15px;
+}
+.business-automation-in::before{
+font-size: 26px;
+}
+
+}
+
+@media (max-width: 480px) {
+
+.overview-heading{
+font-size: 22px;
+}
+.overview-text{
+font-size: 14px;
+line-height: 1.5;
+}
+.business-automation-in{
+font-size: 14px;
+line-height: 1.5;
+}
+.business-automation-in::before{
+font-size: 22px;
+}
 
 }

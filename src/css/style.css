@@ -1338,3 +1338,85 @@ font-size: 18px;
     width: 100%;
   }
 }
+
+.card-image-head {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 400px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.card-image-head::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(2, 33, 71, 0.925),
+    rgba(134, 173, 231, 0.322)
+  );
+}
+
+.card-content-hlay {
+  position: relative;
+  text-align: center;
+  width: 70%;
+}
+
+.card-content-hlay h2,
+.card-content-hlay h1{
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+.card-content-hlay p {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  width: 100%;
+  margin: 10px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .card-image-head {
+    min-height: 350px;
+  }
+.card-content-hlay {
+  width: 90%;
+}
+.card-content-hlay h2,
+.card-content-hlay h1{
+  font-size: 30px;
+}
+.card-content-hlay p {
+  color: white;
+  font-size: 17px;
+}
+}
+@media (max-width: 480px) {
+  .card-image-head {
+    min-height: 300px;
+  }
+.card-content-hlay {
+  width: 90%;
+}
+.card-content-hlay h2,
+.card-content-hlay h1{
+  font-size: 28px;
+}
+.card-content-hlay p {
+  color: white;
+  font-size: 15px;
+}
+}
