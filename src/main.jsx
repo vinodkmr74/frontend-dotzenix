@@ -6,6 +6,7 @@ import "../src/css/style.css"
 import "../src/css/comany.css"
 import "../src/css/blogs.css"
 import "../src/css/service.css"
+import "../src/css/product.css"
 
 import Router from "./routers"
 

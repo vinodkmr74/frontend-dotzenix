@@ -273,19 +273,21 @@ font-weight: 500;
   flex-direction: column;
   justify-content: center;
   justify-items: center;
-  margin-top: 20px;
+  margin-top: 40px;
   background-color: #ffffff0e;
   padding-bottom: 20px;
 }
 .dev_process_in {
   width: 90%;
   flex-direction: column;
-  padding: 10px;
+  /* padding: 10px; */
+  padding-top: 30px;
+padding-bottom: 40px;
   justify-content: center;
   justify-items: center;
 }
 .dev_process_heading {
-  padding: 10px;
+  padding-bottom: 10px;
   color:#22d3ee;
   font-size: 28px;
   font-weight: 500;
