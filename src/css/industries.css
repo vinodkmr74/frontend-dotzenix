@@ -1,0 +1,125 @@
+.healthcare-container {
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Hero */
+.healthcare-hero {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: url("https://images.unsplash.com/photo-1586773860418-d37222d8fce3")
+    center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 51, 102, 0.6);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  width: 70%;
+  margin: auto;
+}
+
+/* About */
+.healthcare-about {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.healthcare-about h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.healthcare-about p {
+  max-width: 900px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* Services */
+.healthcare-services {
+  padding: 60px 20px;
+  background: #f5f7fb;
+}
+
+.healthcare-services h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.service-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.service-card h3 {
+  margin-bottom: 10px;
+  color: #003366;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-content h1 {
+    font-size: 45px;
+  }
+
+  .hero-content p {
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .healthcare-about h2,
+  .healthcare-services h2 {
+    font-size: 30px;
+  }
+}

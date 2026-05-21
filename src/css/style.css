@@ -1360,15 +1360,15 @@ font-size: 18px;
   inset: 0;
   background: linear-gradient(
     to right,
-    rgba(2, 33, 71, 0.925),
-    rgba(134, 173, 231, 0.322)
+    rgba(3, 47, 102, 0.747),
+    rgba(134, 173, 231, 0.226)
   );
 }
 
 .card-content-hlay {
   position: relative;
   text-align: center;
-  width: 70%;
+  width: 60%;
 }
 
 .card-content-hlay h2,
