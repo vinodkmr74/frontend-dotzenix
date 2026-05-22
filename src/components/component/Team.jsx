@@ -1,27 +1,29 @@
 import React from "react";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { MdOutlineEmail } from "react-icons/md";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Team() {
   const teamData = [
     {
       id: 1,
       name: "Vinod Kumar",
-      role: "Python Developer",
+      role: "Python, java Developer",
       about:
-        "Experienced Python developer with expertise in FastAPI, MySQL, and backend systems.",
+        "Experienced Python,java developer with expertise in FastAPI, SpringBoot MySQL, and backend systems.",
       img: "image/vinod.png",
       social: {
-        facebook: "#",
-        instagram: "#",
+        email: "vinodstm74@gmail.com",
+        Whatsapp: "6206030752",
         twitter: "#",
       },
     },
     {
       id: 2,
-      name: "Rahul Sharma",
-      role: "Frontend Developer",
-      about: "Skilled in React, JavaScript, and modern UI design.",
+      name: "Rajan kumar",
+      role: " Flutter, Dart React Native Developer",
+      about: "Skilled in Flutter, Dart React Native and modern App Development.",
       img: "image/vinod.png",
       social: {
         facebook: "#",
@@ -29,24 +31,13 @@ export default function Team() {
         twitter: "#",
       },
     },
+
     {
       id: 3,
-      name: "Aman Kumar",
-      role: "Python Developer",
+      name: "Avinash kumar",
+      role: "FullStack Developer",
       about:
-        "Experienced Python developer with expertise in FastAPI, MySQL, and backend systems.",
-      img: "image/vinod.png",
-      social: {
-        facebook: "#",
-        instagram: "#",
-        twitter: "#",
-      },
-    },
-    {
-      id: 4,
-      name: "Avinash Sharma",
-      role: "Frontend Developer",
-      about: "Skilled in React, JavaScript, and modern UI design.",
+        "Skilled in JavaScript, React, Nextjs Nodejs and modern UI design.",
       img: "image/vinod.png",
       social: {
         facebook: "#",
@@ -81,12 +72,14 @@ export default function Team() {
                   <p>Contact</p>
 
                   <div className="social-icons-links">
-                    <Link to ={item.social.facebook}>
-                      <FaFacebookF />
+                    <Link to={item.social.email}>
+                      <MdOutlineEmail className="icon" />
                     </Link>
-                    <Link to={item.social.instagram}>
-                      <FaInstagram />
-                   </Link>
+
+                    <Link to={item.social.Whatsapp}>
+                      <FaWhatsapp className="icon" />
+                    </Link>
+
                     <Link to={item.social.twitter}>
                       <FaTwitter />
                     </Link>

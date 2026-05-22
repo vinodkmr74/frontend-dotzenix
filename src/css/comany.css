@@ -107,7 +107,7 @@
 
   justify-content: center;
   justify-items: center;
-  gap: 10px;
+  gap: 30px;
   width: 90%;
   transition: 0.3s;
 }
@@ -115,7 +115,7 @@
 .team-card {
   width: 23%;
   min-width: 220px;
-  height: 350px;
+  height: 360px;
   border-radius: 10px;
   transition: 0.3s;
   background: linear-gradient(135deg, #1e293b, #334155);
@@ -125,6 +125,7 @@
   overflow: hidden;
   position: relative;
   margin-top: 16px;
+ border-top-left-radius: 40px;
 }
 
 .team-card:hover {
@@ -180,8 +181,9 @@
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: 15px;
+  border-radius: 10px;
   border: 1px solid rgba(175, 167, 167, 0.274);
+
 }
 .social-icons-container {
   display: flex;

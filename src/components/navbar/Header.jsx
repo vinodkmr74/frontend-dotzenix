@@ -39,13 +39,11 @@ export default function Header() {
           {appData.contact.map((item) => (
             <div key={item.id} className="contact-wrapper">
               <div className="left-section">
-                <div className="item">
+                <div className="emailadd">
+ <div className="item">
                   <MdOutlineEmail className="icon" />
                   <Link
-                    to={`https://makil.google.com/mail/?view=cm&fs=1&to=${item.email}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
+                   to={`mailto:${item.email}`}>
                     {item.email}
                   </Link>
                 </div>
@@ -53,6 +51,9 @@ export default function Header() {
                   <IoLocationSharp className="icon" />
                   <Link to="#">{item.address}</Link>
                 </div>
+
+                </div>
+               
               </div>
               <div className="right-section">
                 <div className="item">

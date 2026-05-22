@@ -4,9 +4,9 @@ export const appData = {
   contact: [
     {
       id: 1,
-      email: "dotzenix96@gmail.com",
+      email: "dotzenixtechnologies@gmail.com",
       mob: "6206030752",
-      address: "noida",
+      address: "Sector-62, Noida, Uttar Pradesh, India",
       linkedin: "https://www.linkedin.com/in/vinod-kumar210196/",
     },
   ],
@@ -292,10 +292,10 @@ export const appData = {
           id: 12,
           subitem: "React Native",
         },
-        {
-          id: 13,
-          subitem: "Hybrid App",
-        },
+        // {
+        //   id: 13,
+        //   subitem: "Hybrid App",
+        // },
         {
           id: 14,
           subitem: "OTT App Development",
@@ -331,10 +331,10 @@ export const appData = {
           id: 27,
           subitem: "Affiliate Marketing",
         },
-        {
-          id: 28,
-          subitem: "Ecommerce SEO",
-        },
+        // {
+        //   id: 28,
+        //   subitem: "Ecommerce SEO",
+        // },
       ],
     },
     {
@@ -358,18 +358,18 @@ export const appData = {
           id: 37,
           subitem: "AI and ML",
         },
-        {
-          id: 38,
-          subitem: "Blockchain",
-        },
+        // {
+        //   id: 38,
+        //   subitem: "Blockchain",
+        // },
         {
           id: 39,
           subitem: "Cloud Engineering",
         },
-        {
-          id: 40,
-          subitem: "Big Data",
-        },
+        // {
+        //   id: 40,
+        //   subitem: "Big Data",
+        // },
       ],
     },
   ],
@@ -445,7 +445,7 @@ export const appData = {
     },
     {
       id: 6,
-      text: "INDUSTRY EXPERTISE",
+      text: "Industry Expertise",
       number: 5,
     },
     {
