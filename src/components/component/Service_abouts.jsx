@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { serviceData } from "../../data/serviceData";
+import Aos from "aos";
 
 export default function Service_abouts({ heading, text, image,title,subtext }) {
+      useEffect(() => {
+      Aos.init();
+    }, []);
+    
   return (
     <>
       <div className="service_about">
@@ -11,7 +16,9 @@ export default function Service_abouts({ heading, text, image,title,subtext }) {
             <p>{text}</p>
           </div>
           <div className="service_about_img">
-            <div className="service_web_img">
+            <div className="service_web_img"
+            data-aos="zoom-in"
+            >
               <img src={image} alt="" />
             </div>
             <div className="service_groth_text">

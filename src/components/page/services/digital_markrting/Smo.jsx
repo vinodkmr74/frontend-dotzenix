@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Service_hero from "../../../component/Service_hero";
 import { serviceData } from "../../../../data/serviceData";
 import Technologies from "../../../slider/Technologies";
@@ -7,7 +7,13 @@ import Dev_process from "../../../component/Dev_process";
 import Cta from "../../../component/Cta";
 import Service_abouts from "../../../component/Service_abouts";
 import Service_img_card from "../../../component/Service_img_card";
+import Aos from "aos";
+
 export default function Smo() {
+      useEffect(() => {
+      Aos.init();
+    }, []);
+    
   return (
     <>
       <Service_hero
@@ -55,7 +61,9 @@ export default function Smo() {
 
           <div className="our_frontend_service_card_main">
             {serviceData.smoServices.map((item, index) => (
-              <div className="our_frontend_service_card" key={index}>
+              <div className="our_frontend_service_card" 
+                data-aos="zoom-in"
+              key={index}>
                 <div className="img-icon"></div>
                 <h1>{item.heading}</h1>
                 <p>{item.text}</p>
@@ -71,7 +79,8 @@ export default function Smo() {
           <h1>Technologies We Use in SMO</h1>
         </div>
         {serviceData.technologiesWeUse.map((item, index) => (
-          <div className="why-chose-in" key={index}>
+          <div className="why-chose-in" 
+          key={index}>
             <div className="why-heding">
               <ImArrowRight2 className="arro-icon" />
               <p>
