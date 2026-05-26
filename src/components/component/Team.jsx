@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
+import Aos from "aos";
+
 
 export default function Team() {
   const teamData = [
@@ -47,15 +49,24 @@ export default function Team() {
     },
   ];
 
+      useEffect(() => {
+      Aos.init();
+    }, []);
+    
+
   return (
     <div className="team-main">
       <div>
         {" "}
         <h1 className="meet">Meet Our Team</h1>
       </div>
-      <div className="team-in">
+      <div className="team-in"
+      >
         {teamData.map((item) => (
-          <div key={item.id} className="team-card">
+          <div key={item.id} className="team-card"
+                data-aos="zoom-in"
+
+          >
             <div className="team-img">
               <img src={item.img} alt={item.name} />
             </div>

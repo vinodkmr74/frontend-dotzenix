@@ -11,8 +11,12 @@ import { BASE_URL } from "../../config";
 import { appData } from "../../data/appData";
 import Logo from "../component/Logo";
 import Media_contact from "../component/Media_contact";
+import Aos from "aos";
 
 export default function Home() {
+    useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <div>
       <div className="img-slider">
@@ -55,6 +59,7 @@ export default function Home() {
 
             <img
               className="image-style"
+              data-aos="flip-left"
               src="image/crm-software-examples.jpg"
               alt=""
             />

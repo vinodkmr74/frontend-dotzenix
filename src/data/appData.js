@@ -28,7 +28,7 @@ export const appData = {
     },
   ],
 
-    Industries: [
+  Industries: [
     {
       id: 1,
       Industries: "Healthcare",
@@ -36,17 +36,17 @@ export const appData = {
     },
     {
       id: 2,
-         Industries: "Education",
+      Industries: "Education",
       industries_path: "/education",
     },
     {
       id: 3,
-    Industries: "Ecommerce",
+      Industries: "Ecommerce",
       industries_path: "/ecommerce",
     },
     {
       id: 4,
-       Industries: "Menufacturing",
+      Industries: "Menufacturing",
       industries_path: "/menufacturing",
     },
     {
@@ -79,7 +79,7 @@ export const appData = {
     // },
     // {
     //   id: 5,
-    //   product: "Business Analytics",  
+    //   product: "Business Analytics",
     //   product_path: "/businessanalytics",
     // },
     {
@@ -130,18 +130,17 @@ export const appData = {
         //   name: "Prestashop",
         //   path: "/prestashop",
         // },
-          {
+        {
           id: 7,
           name: "Custom Ecommerce",
           path: "/custom-ecommerce",
         },
-      
+
         {
           id: 6,
           name: "WordPress",
           path: "/wordpress",
         },
-     
       ],
     },
     {
@@ -549,6 +548,160 @@ export const appData = {
       heading: "Our Services",
       text: "We provide design and Web development, software development, AI development, and custom software solutions. By leveraging modern technologies, we deliver secure, scalable, and high-performance digital solutions that support business growth.",
       image: "image/images_service.jpg",
+    },
+  ],
+
+  seviceImgCard: [
+    {
+      id: 1,
+      img: "image/erp1.png",
+      web: "Frontend Developer",
+      webitems: [
+        {
+          id: 1,
+          subitem: "html",
+        },
+        {
+          id: 1,
+          item: "Css",
+        },
+        {
+          id: 1,
+          item: "Tailwind",
+        },
+        {
+          id: 1,
+          item: "Bootstrap",
+        },
+        {
+          id: 1,
+          item: "javaScript",
+        },
+        {
+          id: 1,
+          item: "Reactjs",
+        },
+        {
+          id: 1,
+          item: "Next.js",
+        },
+      ],
+    },
+    {
+      id: 1,
+      img: "image/backend.png",
+      web: "Backend Developer",
+      webitems: [
+        {
+          id: 1,
+          subitem: "java",
+        },
+        {
+          id: 2,
+          subitem: "SpringBoot",
+        },
+        {
+          id: 3,
+          item: "Python",
+        },
+        {
+          id: 4,
+          item: "FastApi,Django",
+        },
+        {
+          id: 5,
+          item: "PHP, Larawel",
+        },
+        {
+          id: 6,
+          item: "Nodejs",
+        },
+      ],
+    },
+      {
+      id: 1,
+      img: "image/App_dev_slider.png",
+      web: "Mobile App Development",
+      webitems: [
+        {
+          id: 1,
+          subitem: "Android App",
+        },
+        {
+          id: 2,
+          subitem: "IOS App",
+        },
+        {
+          id: 3,
+          item: "Flutter App",
+        },
+        {
+          id: 4,
+          item: "React Native",
+        },
+        {
+          id: 5,
+          item: "OTT App Development",
+        },
+      ],
+    },
+       {
+      id: 1,
+      img: "image/What-Is-Digital-Transformation.webp",
+      web: "Digital Transformation",
+      webitems: [
+        {
+          id: 1,
+          subitem: "IoT",
+        },
+        {
+          id: 2,
+          subitem: "DevOps",
+        },
+        {
+          id: 3,
+          item: "AI and ML",
+        },
+        {
+          id: 4,
+          item: "Cloud Engineering",
+        },
+        {
+          id: 5,
+          item: "OTT App Development",
+        },
+      ],
+    },
+        {
+      id: 1,
+      img: "image/What-is-digital-marketing.webp",
+      web: "Digital Marketing",
+      webitems: [
+        {
+          id: 1,
+          subitem: "SEO",
+        },
+        {
+          id: 2,
+          subitem: "SMO",
+        },
+        {
+          id: 3,
+          item: "Content Marketing",
+        },
+        {
+          id: 4,
+          item: "Paid Media Marketing",
+        },
+        {
+          id: 5,
+          item: "Video Marketing",
+        },
+        {
+          id: 6,
+          item: "Affiliate Marketing",
+        },
+      ],
     },
   ],
 };

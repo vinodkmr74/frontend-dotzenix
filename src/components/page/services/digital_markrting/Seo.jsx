@@ -6,6 +6,7 @@ import { ImArrowRight2 } from "react-icons/im";
 import Dev_process from "../../../component/Dev_process";
 import Cta from "../../../component/Cta";
 import Service_abouts from "../../../component/Service_abouts";
+import Service_img_card from "../../../component/Service_img_card";
 export default function Seo() {
   return (
 
@@ -97,8 +98,8 @@ export default function Seo() {
                   />
                 </div>
               </div>
-        
               <Dev_process />
+              <Service_img_card />
               <Cta />
             </>
 

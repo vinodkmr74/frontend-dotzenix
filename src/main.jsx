@@ -8,6 +8,7 @@ import "../src/css/blogs.css"
 import "../src/css/service.css"
 import "../src/css/product.css"
 import "../src/css/industries.css"
+import "../src/css/componante.css"
 
 import Router from "./routers"
 

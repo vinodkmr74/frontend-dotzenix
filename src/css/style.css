@@ -337,8 +337,8 @@ display: flex;
   max-width: 255px;
   padding: 8px;
   margin-top: 16px;
-  background-color: #ffffff;
-  border: 1px solid #ccc;
+  /* background-color: #ffffff; */
+  border: 1px solid #cccccc4b;
   border-radius: 6px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   align-items: center;
@@ -347,7 +347,7 @@ display: flex;
 .service-card:hover {
   background-color: #1e293b;
   color: #ffffff;
-  box-shadow: rgba(100, 233, 240, 0.904) 0px 20px 30px -10px;
+  box-shadow: rgba(70, 236, 245, 0.37) 0px 20px 30px -10px;
 }
 
 .service-image-box {
@@ -362,19 +362,20 @@ display: flex;
   border-radius: 16px;
 }
 .service-title {
-  color: #092241;
+  color: #22d3ee;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 17px;
   margin-top: 8px;
 }
 .service-card:hover .service-title {
-  color: #22d3ee;
+  color: #29bba3;
 }
 .service-subitem {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   margin-bottom: 4px;
   margin-top: 10px;
+color: #ffffffbe;
 }
 .product-main-container {
   display: flex;
@@ -415,7 +416,7 @@ display: flex;
 }
 .image-style {
   width: 100%;
-  height: 240px;
+  height: 290px;
   border-radius: 32px;
   margin-top: 24px;
 }
@@ -430,7 +431,9 @@ display: flex;
 .product-card {
   position: relative;
   overflow: hidden;
-  background-color: white;
+  /* background-color: white; */
+  background-color: #d5e2fafd;
+
   border-radius: 16px;
   /* border: 1px solid #e5e7eb; */
   padding: 16px;

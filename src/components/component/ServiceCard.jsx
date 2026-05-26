@@ -1,11 +1,19 @@
 import React, { useEffect, useState } from "react";
 import { appData } from "../../data/appData";
+import Aos from "aos";
+
 export default function ServiceCard() {
+    useEffect(() => {
+    Aos.init();
+  }, []);
+  
   return (
     <div className="services-container">
       <div className="services-wrapper">
         {appData.servicesCard.map((item) => (
-          <div key={item.id} className="service-card">
+          <div key={item.id} className="service-card"
+          data-aos="zoom-in"
+          >
             <div className="service-image-box">
               <img
                 src={item.iconpath}
