@@ -589,6 +589,15 @@ color: #ffffffbe;
 .success-text {
   width: 35%;
   margin-top: 40px;
+
+
+}
+.btnlink{
+width: 50%;
+z-index: 2;
+position: relative;
+margin-top: 80px;
+margin-left: 30px;
 }
 .success-text h1 {
   color: #ffffff;
@@ -1002,6 +1011,18 @@ color: #ffffffbe;
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+
+.btnlink{
+width: 80%;
+z-index: 2;
+position: relative;
+margin-top: 50px;
+margin-left: 30px;
+display: flex;
+justify-content: center;
+justify-items: center;
+}
+
   .contact-wrapper {
     flex-direction: column;
     gap: 10px;

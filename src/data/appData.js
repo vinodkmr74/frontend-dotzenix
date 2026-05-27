@@ -395,7 +395,7 @@ export const appData = {
       id: 5,
       image: "image/artificial-intelligen.jpg",
       title: "AI Solutions",
-      path: "/aisolutions",
+      path: "/ai-ml",
     },
     {
       id: 6,
@@ -483,14 +483,14 @@ export const appData = {
       image: "image/digital.png",
       tital: "Social Media Marketing",
       text: "Grow your brand’s presence on social platforms with strategic marketing. We help you engage your audience, build trust, and generate quality leads.",
-      buttonlink: "/paid-media-marketing",
+      buttonlink: "/content-marketing",
     },
     {
       id: 6,
       image: "image/product-dev.png",
       tital: "Product Development",
       text: "Transform your ideas into powerful digital products. We design and develop scalable, high-quality solutions tailored to your business needs.",
-      buttonlink: "/salesforce-product-development",
+      buttonlink: "/websitebuilder",
     },
     {
       id: 7,
@@ -504,7 +504,7 @@ export const appData = {
       image: "image/bigcommerce-logo-icon.png",
       tital: "E-Commerce Development",
       text: "Launch and grow your online store with BigCommerce solutions designed for performance, flexibility, and seamless user experience.",
-      buttonlink: "/bigcommerce",
+      buttonlink: "/custom-ecommerce",
     },
   ],
 

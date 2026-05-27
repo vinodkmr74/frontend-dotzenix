@@ -12,9 +12,10 @@ import { appData } from "../../data/appData";
 import Logo from "../component/Logo";
 import Media_contact from "../component/Media_contact";
 import Aos from "aos";
+import ButtonAll from "../component/ButtonAll";
 
 export default function Home() {
-    useEffect(() => {
+  useEffect(() => {
     Aos.init();
   }, []);
   return (
@@ -103,8 +104,13 @@ export default function Home() {
         <div className="our-success-box">
           {appData.TextData.filter((item) => item.id == 3).map((item) => (
             <div key={item.id} className="success-text">
-              <h1>{item.hedding}</h1>
-              <p>{item.subhedding}</p>
+              <div>
+                <h1>{item.hedding}</h1>
+                <p>{item.subhedding}</p>
+              </div>
+              <div className="btnlink">
+                <ButtonAll link="/connect-us" text="Connect Us" />
+              </div>
             </div>
           ))}
 
@@ -151,10 +157,7 @@ export default function Home() {
               .filter((item) => item.id === 5)
               .map((item) => (
                 <div key={item.id} className="explore-left1">
-                  <img
-                 data-aos="fade-right"
-
-                  src={item.image} alt="" />
+                  <img data-aos="fade-right" src={item.image} alt="" />
 
                   <h1>{item.tital}</h1>
 
@@ -173,12 +176,14 @@ export default function Home() {
               .filter((item) => item.id === 6 || item.id === 7)
               .map((item) => (
                 <div key={item.id} className="explore-right2">
-                  <img 
-                  data-aos="fade-left"
-                  src={item.image} alt="" />
+                  <img data-aos="fade-left" src={item.image} alt="" />
                   <h1>{item.tital}</h1>
                 </div>
               ))}
+
+               <div className="btnlink">
+                <ButtonAll link="/blogs" text="View All Blogs" />
+              </div>
           </div>
         </div>
       </div>

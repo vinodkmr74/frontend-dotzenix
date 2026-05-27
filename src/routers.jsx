@@ -32,7 +32,8 @@ import Crms from "./components/page/products/Crms"
 import Ai_Solution from "./components/page/products/Ai_Solution"
 import Backend from "./components/page/services/web_development/Backend"
 import Database from "./components/page/services/web_development/Database"
-import Readmore from "./components/page/company/Readmore"
+import Readmore from "./components/page/company/Connect_us"
+import Connect_us from "./components/page/company/Connect_us"
 
 
 export default function Router() {
@@ -45,7 +46,7 @@ export default function Router() {
           <Route path="/about" element={<About />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/careers" element={<Career />} />
-          <Route path="/readmore" element={<Readmore />} />
+          <Route path="/connect-us" element={<Connect_us />} />
 
            {/* ............Industries.......... */}
           <Route path="/ecommerce" element={<ECommerce />} />
