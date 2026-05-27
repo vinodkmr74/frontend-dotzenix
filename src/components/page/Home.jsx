@@ -151,7 +151,10 @@ export default function Home() {
               .filter((item) => item.id === 5)
               .map((item) => (
                 <div key={item.id} className="explore-left1">
-                  <img src={item.image} alt="" />
+                  <img
+                 data-aos="fade-right"
+
+                  src={item.image} alt="" />
 
                   <h1>{item.tital}</h1>
 
@@ -170,7 +173,9 @@ export default function Home() {
               .filter((item) => item.id === 6 || item.id === 7)
               .map((item) => (
                 <div key={item.id} className="explore-right2">
-                  <img src={item.image} alt="" />
+                  <img 
+                  data-aos="fade-left"
+                  src={item.image} alt="" />
                   <h1>{item.tital}</h1>
                 </div>
               ))}

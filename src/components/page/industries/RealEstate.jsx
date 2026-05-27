@@ -5,10 +5,10 @@ import Cta from "../../component/Cta";
 import Aos from "aos";
 
 export default function RealEstate() {
-      useEffect(() => {
-      Aos.init();
-    }, []);
-    
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <>
       <CardAllImage
@@ -55,10 +55,11 @@ export default function RealEstate() {
 
           <div className="our_frontend_service_card_main">
             {industries.manufacturing.map((item, index) => (
-              <div className="our_frontend_service_card"
-              data-aos="zoom-in"
-
-              key={index}>
+              <div
+                className="our_frontend_service_card"
+                data-aos="zoom-in"
+                key={index}
+              >
                 <div className="img-icon"></div>
 
                 <h1>{item.heading}</h1>
