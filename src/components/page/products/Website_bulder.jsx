@@ -11,9 +11,9 @@ export default function Website_bulder() {
     <>
       <CardAllImage
         image="image/wd.png"
-       title1="Website Builder"
-text="We build smart and scalable Website Builder solutions that help businesses create, manage, and customize professional websites with ease. Our Website Builder platforms streamline website design, content management, SEO optimization, and user experience while providing modern, responsive, and high-performance website solutions."
-/>
+        title1="Website Builder"
+        text="We build smart and scalable Website Builder solutions that help businesses create, manage, and customize professional websites with ease. Our Website Builder platforms streamline website design, content management, SEO optimization, and user experience while providing modern, responsive, and high-performance website solutions."
+      />
 
       <div className="overview">
         <div className="overview-in">
@@ -60,7 +60,7 @@ text="We build smart and scalable Website Builder solutions that help businesses
 
       <div className="why-chose">
         <div className="why-chose-heading">
-          <h1>Why Choose Our HRM Services?</h1>
+          <h1>Why Choose Our Website Builder Services?</h1>
         </div>
         {product.whywebService.map((item, index) => (
           <div className="why-chose-in" key={index}>
@@ -76,7 +76,7 @@ text="We build smart and scalable Website Builder solutions that help businesses
 
       <div className="why-chose">
         <div className="why-chose-heading">
-          <h1>Technologies We Use in Android App Development</h1>
+          <h1>Technologies We Use in Website Builder</h1>
         </div>
         {product.webtechuse.map((item, index) => (
           <div className="why-chose-in" key={index}>
@@ -105,7 +105,6 @@ text="We build smart and scalable Website Builder solutions that help businesses
           />
         </div>
       </div>
-
 
       <Dev_process />
       <Cta />

@@ -184,21 +184,29 @@ export const appData = {
       id: 1,
       image: "image/web_slider.png",
       text: "#2 Web Develoments Turning Ideas into Powerful Digital Experiences",
+      btnlink:"/websitebuilder",
+      btntext:"Let's Start >",
     },
     {
       id: 2,
       image: "image/Aislider3.png",
-      text: "#1 Artificial Intelligence and  Machine Learning",
+      text: "#1 Artificial Intelligence and  Machine Learning Solutions",
+      btnlink:"/ai-ml",
+      btntext:"Let's Start >",
     },
     {
       id: 3,
       image: "image/App_dev_slider2.png",
       text: "#3 App Development Building Powerful Mobile Apps for the Digital Future",
+      btnlink: "/android-app",
+      btntext: "Let's Start >",
     },
     {
       id: 4,
       image: "image/Business_slider3.png",
       text: "#4 Business Development Driving Growth Through Smart Digital Strategies",
+      btnlink: "",
+      btntext: "Let's Start >",
     },
   ],
   TextData: [
@@ -618,7 +626,7 @@ export const appData = {
         },
       ],
     },
-      {
+    {
       id: 1,
       img: "image/App_dev_slider.png",
       web: "Mobile App Development",
@@ -645,7 +653,7 @@ export const appData = {
         },
       ],
     },
-       {
+    {
       id: 1,
       img: "image/What-Is-Digital-Transformation.webp",
       web: "Digital Transformation",
@@ -672,7 +680,7 @@ export const appData = {
         },
       ],
     },
-        {
+    {
       id: 1,
       img: "image/What-is-digital-marketing.webp",
       web: "Digital Marketing",

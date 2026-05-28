@@ -109,7 +109,7 @@ export default function Home() {
                 <p>{item.subhedding}</p>
               </div>
               <div className="btnlink">
-                <ButtonAll link="/connect-us" text="Connect Us" />
+                <ButtonAll link="/connect-us" text="Connect Us >" />
               </div>
             </div>
           ))}
@@ -182,7 +182,7 @@ export default function Home() {
               ))}
 
                <div className="btnlink">
-                <ButtonAll link="/blogs" text="View All Blogs" />
+                <ButtonAll link="/blogs" text="View All Blogs >" />
               </div>
           </div>
         </div>

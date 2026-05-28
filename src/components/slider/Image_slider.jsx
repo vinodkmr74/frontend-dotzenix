@@ -6,6 +6,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "../slider/styles.css";
 import { appData } from "../../data/appData";
+import { NavLink } from 'react-router-dom'
+
 
 import {
   Navigation,
@@ -32,14 +34,19 @@ export default function Image_slider() {
           modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
           className="mySwiper"
         >
-          <div className="slider-container" >
+          <div className="slider-container">
             {appData.sliderData.map((item) => (
               <SwiperSlide key={item.id}>
-                  <img className="slider-img" src={item.image} />
+                <img className="slider-img" src={item.image} />
                 <p className="slider-text">{item.text}</p>
+
+                <NavLink to={item.btnlink}>
+                  <div className="btnslider">{item.btntext}</div>
+                </NavLink>
+
               </SwiperSlide>
             ))}
-          </div>  
+          </div>
         </Swiper>
       </div>
     </>
