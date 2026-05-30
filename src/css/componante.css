@@ -156,7 +156,10 @@ width: 24%;
   width: 70%;
 }
 .allbtn-in{
-width: 34%;
+width: 30%;
+display: flex;
+text-align: center;
+
 }
 
   .service-img-card-item {
