@@ -51,28 +51,6 @@ const About = () => {
       </div>
 
       <Mission_vision />
-      {/* 
-      <div className="founder-section">
-        <div className="founder-image">
-          <img src="image/vinod.png" alt="Founder" />
-        </div>
-
-        <div className="founder-content">
-          <h4>Meet Our Founder</h4>
-          <h2>Vinod Kumar</h2>
-          <h3>Founder & CEO</h3>
-
-          <p>
-            At Dotzenix Technologies, our founder believes in transforming ideas
-            into impactful digital solutions and helping businesses grow through
-            innovation and technology.
-          </p>
-
-          <div className="founder-tagline">
-            "Turning Vision into Innovation."
-          </div>
-        </div>
-      </div> */}
 
       <div className="founder-section">
         <div className="founder-section-in">

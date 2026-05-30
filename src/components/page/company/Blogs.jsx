@@ -13,9 +13,9 @@ export default function Blogs() {
 
       <div className="blog-main">
         <div className="blog-in">
-          {blogsData.blogs.map((item) => (
+          {blogsData.blogs.map((item,index) => (
 
-          <div key={item} className="blog-card">
+          <div key={index} className="blog-card">
             <div className="image">
               <img src={item.Image} alt="" />
             </div>

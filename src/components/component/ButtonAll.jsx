@@ -7,7 +7,7 @@ export default function ButtonAll({link,text}) {
   <div className='allbtn'>
     <NavLink to={link}>
     <div className='allbtn-in'>
-        <Link> {text}</Link>
+      {text}
     </div>
     </NavLink>
   </div>

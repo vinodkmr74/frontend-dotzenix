@@ -19,7 +19,7 @@ export default function Home() {
     Aos.init();
   }, []);
   return (
-    <div>
+    <div className="asd">
       <div className="img-slider">
         <Image_slider />
       </div>
