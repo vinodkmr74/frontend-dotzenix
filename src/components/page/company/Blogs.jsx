@@ -7,7 +7,9 @@ import Media_contact from "../../component/Media_contact";
 export default function Blogs() {
   return (
     <>
-      <CardAllImage image="image/vector.avif" title="Blogs" />
+      <CardAllImage image="image/vector.avif" title="Blogs" 
+      text="Explore Expert Insights, Industry Trends, and Innovative Ideas."
+      />
 
       <div className="blog-main">
         <div className="blog-in">

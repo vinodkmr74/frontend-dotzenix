@@ -14,7 +14,7 @@ export default function Team() {
       role: "Python, java Developer",
       about:
         "Experienced Python,java developer with expertise in FastAPI, SpringBoot MySQL, and backend systems.",
-      img: "image/vinod.png",
+      img: "image/vinod1.jpg",
       social: {
         email: "vinodstm74@gmail.com",
         Whatsapp: "6206030752",
@@ -26,7 +26,7 @@ export default function Team() {
       name: "Rajan kumar",
       role: " Flutter, Dart React Native Developer",
       about: "Skilled in Flutter, Dart React Native and modern App Development.",
-      img: "image/vinod.png",
+      img: "image/ranjan3.png",
       social: {
         facebook: "#",
         instagram: "#",
@@ -40,7 +40,7 @@ export default function Team() {
       role: "FullStack Developer",
       about:
         "Skilled in JavaScript, React, Nextjs Nodejs and modern UI design.",
-      img: "image/vinod.png",
+      img: "image/avinash.jpeg",
       social: {
         facebook: "#",
         instagram: "#",

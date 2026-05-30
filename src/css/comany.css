@@ -89,6 +89,77 @@
   height: 250px;
   border-radius: 5px;
 }
+.founder-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  background: #f8fafc;
+  margin-top: 50px;
+}
+.founder-section-in {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  padding-top: 30px;
+  gap: 50px;
+  padding-bottom: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+.founder-image {
+  width: 30%;
+  margin-left: 20px;
+}
+.founder-image img {
+  width: 100%;
+  height: 480px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 30px;
+  object-fit: fill;
+}
+.founder-text {
+  width: 60%;
+margin-top: 20px;
+}
+.founder-text h4 {
+  color: #f97316;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.founder-text h3 {
+  color: #4c8b81;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.founder-text h2 {
+  color: #022d62;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.founder-text p {
+  color: #555;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+.founder-tagline {
+  padding: 15px 25px;
+  border-left: 4px solid #f97316;
+  background: #fff;
+  border-radius: 8px;
+  color: #022d62;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 500;
+}
 .team-main {
   flex-direction: column;
   justify-content: center;
@@ -111,7 +182,6 @@
   width: 90%;
   transition: 0.3s;
 }
-
 .team-card {
   width: 23%;
   min-width: 220px;
@@ -125,7 +195,7 @@
   overflow: hidden;
   position: relative;
   margin-top: 16px;
- border-top-left-radius: 40px;
+  border-top-left-radius: 40px;
 }
 
 .team-card:hover {
@@ -183,7 +253,6 @@
   inset: 0;
   border-radius: 10px;
   border: 1px solid rgba(175, 167, 167, 0.274);
-
 }
 .social-icons-container {
   display: flex;
@@ -561,6 +630,35 @@
     width: 100%;
     height: 200px;
   }
+  .founder-image {
+    width: 56%;
+  }
+  .founder-image img {
+    width: 100%;
+    height: 400px;
+  }
+  .founder-text {
+    width: 100%;
+    text-align: center;
+  }
+  .founder-text h4 {
+    font-size: 15px;
+  }
+  .founder-text h3 {
+    font-size: 17px;
+  }
+
+  .founder-text h2 {
+    font-size: 28px;
+  }
+  .founder-text p {
+    font-size: 16px;
+  }
+  .founder-tagline {
+    font-size: 17px;
+    text-align: start;
+  }
+
   .team-card {
     width: 24%;
     min-width: 220px;
@@ -608,7 +706,6 @@
   .application-form {
     width: 70%;
   }
-
 }
 
 @media (max-width: 480px) {
@@ -654,6 +751,14 @@
     height: 180px;
     margin-top: 5px;
   }
+  .founder-image {
+    width: 100%;
+  }
+  .founder-image img {
+    width: 100%;
+    height: 380px;
+  }
+
   .popup-form {
     width: 90%;
   }
@@ -663,9 +768,9 @@
   select option {
     max-width: 80%;
   }
-.job-card-header h2 {
+  .job-card-header h2 {
     font-size: 16px;
- /* font-weight: 500; */
+    /* font-weight: 500; */
   }
 }
 

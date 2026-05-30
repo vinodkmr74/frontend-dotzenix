@@ -10,7 +10,11 @@ const About = () => {
   return (
     <>
       <div>
-        <CardAllImage image="image/vector.avif" title="About Us" />
+        <CardAllImage
+          image="image/vector.avif"
+          title="About Us"
+          text="Empowering Businesses with Smart Technology and Digital Excellence."
+        />
       </div>
 
       <div className="Who-are-we">
@@ -47,6 +51,68 @@ const About = () => {
       </div>
 
       <Mission_vision />
+      {/* 
+      <div className="founder-section">
+        <div className="founder-image">
+          <img src="image/vinod.png" alt="Founder" />
+        </div>
+
+        <div className="founder-content">
+          <h4>Meet Our Founder</h4>
+          <h2>Vinod Kumar</h2>
+          <h3>Founder & CEO</h3>
+
+          <p>
+            At Dotzenix Technologies, our founder believes in transforming ideas
+            into impactful digital solutions and helping businesses grow through
+            innovation and technology.
+          </p>
+
+          <div className="founder-tagline">
+            "Turning Vision into Innovation."
+          </div>
+        </div>
+      </div> */}
+
+      <div className="founder-section">
+        <div className="founder-section-in">
+          <div className="founder-image">
+            <img src="image/vinod.png" alt="Founder" />
+          </div>
+          <div className="founder-text">
+            <h4>Meet Our Founder</h4>
+            <h2>Vinod Kumar</h2>
+            <h3>Founder & CEO</h3>
+
+            <p>
+              At Dotzenix Technologies, our founder is driven by a passion for
+              innovation, technology, and excellence. With a vision to help
+              businesses thrive in the digital world, he has built a company
+              that focuses on delivering reliable, scalable, and impactful
+              technology solutions.
+            </p>
+            <p>
+              His leadership is centered on continuous learning, customer
+              success, and creating value through innovation. By combining
+              technical expertise with a deep understanding of business needs,
+              he inspires the team to develop solutions that empower
+              organizations to grow, adapt, and succeed in an ever-evolving
+              digital landscape.
+            </p>
+            <p>
+              Under his guidance, Dotzenix Technologies continues to transform
+              ideas into powerful digital experiences, helping clients achieve
+              their goals through cutting-edge web, mobile, and digital
+              transformation services.
+            </p>
+
+            <div className="founder-tagline">
+              ""Turning Vision into Innovation, and Innovation into Success.""
+            </div>
+          </div>
+        </div>
+      </div>
+
       <Certified />
       <Team />
       <Service_img_card />

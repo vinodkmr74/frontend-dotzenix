@@ -148,7 +148,9 @@ export default function Career() {
 
   return (
     <>
-      <CardAllImage image="image/vector.avif" title="Careers" />
+      <CardAllImage image="image/vector.avif" title="Careers"
+      text="Join Dotzenix Technologies and build the future with innovation and technology."
+      />
       <div className="career-main">
         {careersData.careerAbout.map((item, index) => (
           <div key={index} className="career-about">

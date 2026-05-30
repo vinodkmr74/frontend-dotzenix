@@ -19,7 +19,7 @@ export default function CardAllImage({ image, title,title1 ,title2,text }) {
 
     <div
   className="card-image-head"
-  style={{ backgroundImage: `url(${image})`, height: "400px",width:"100%" }}
+  style={{ backgroundImage: `url(${image})`, height: "380px",width:"100%" }}
 >
   <div className="card-content-hlay">
     <h1>{title}</h1>
