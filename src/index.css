@@ -13,17 +13,19 @@ body {
  /* dark navy */
 
 }
+html,
+body {
+  overflow-x: hidden;
+}
 body {
 /* #0f172a, #1e293b */
   background: linear-gradient(135deg, #071635, #0d1c35);
   /* background-color: #071635; */
 
-
-}
-
-body {
   overflow-x: hidden;
+
 }
+
 * {
   box-sizing: border-box;
  margin: 0px;
