@@ -206,6 +206,18 @@ export default function Home() {
       </div>
 
       <Media_contact />
+
+        <Link
+        to="https://wa.me/916206030752?text=Hello%20welcome:%20Dotzenix%20Technologies"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="whatsapp-float"
+      >
+        <img src="image/whatAppImage1.png" alt="WhatsApp" />
+      </Link>
+
+
+
     </div>
   );
 }
