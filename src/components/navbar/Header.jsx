@@ -86,7 +86,7 @@ export default function Header() {
             <div className="menu-icon" onClick={() => setOpen(!open)}>
               {open ? "✖" : "☰"}
             </div>
-            
+
            <div>
               <Link to="/"><Logo /></Link>
           </div>
@@ -212,7 +212,9 @@ export default function Header() {
                 <div className="underline"></div>
               </div>
             </div>
+            <Link to="/request-quote">
             <button className="quote-btn">Request Quote</button>
+            </Link>
           </div>
         </nav>
       </div>

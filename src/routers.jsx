@@ -34,6 +34,7 @@ import Backend from "./components/page/services/web_development/Backend"
 import Database from "./components/page/services/web_development/Database"
 import Readmore from "./components/page/company/Connect_us"
 import Connect_us from "./components/page/company/Connect_us"
+import Request_quote from "./components/navbar/Request-quote"
 
 
 export default function Router() {
@@ -47,6 +48,8 @@ export default function Router() {
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/careers" element={<Career />} />
           <Route path="/connect-us" element={<Connect_us />} />
+          <Route path="/request-quote" element={<Request_quote />} />
+
 
            {/* ............Industries.......... */}
           <Route path="/ecommerce" element={<ECommerce />} />

@@ -216,8 +216,6 @@ export default function Home() {
         <img src="image/whatAppImage1.png" alt="WhatsApp" />
       </Link>
 
-
-
     </div>
   );
 }
