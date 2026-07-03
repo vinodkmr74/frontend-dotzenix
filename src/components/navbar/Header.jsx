@@ -86,10 +86,11 @@ export default function Header() {
             <div className="menu-icon" onClick={() => setOpen(!open)}>
               {open ? "✖" : "☰"}
             </div>
-
-            <div>
-              <Logo />
-            </div>
+            
+           <div>
+              <Link to="/"><Logo /></Link>
+          </div>
+            
             <div className={`nav-links ${open ? "show" : ""}`}>
               <div
                 className={`dropdown ${disableHover ? "no-hover" : ""}`}
